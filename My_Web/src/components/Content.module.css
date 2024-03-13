@@ -1,8 +1,8 @@
 .Content {
   grid-column-start: 1;
   grid-column-end: -1;
-  grid-row-start: 2;
-  grid-row-end: 4;
+  grid-row-start: 4;
+  grid-row-end: 6;
   margin: 20px;
 }
 
@@ -30,6 +30,7 @@
 .Tools {
   color: var(--second-color);
   font-weight: 400;
+  margin-top: 5rem;
 }
 
 .TextTool {
