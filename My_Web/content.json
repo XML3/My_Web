@@ -3,30 +3,36 @@
     {
       "id": "1",
       "title": "Electronic Music Events - FED",
-      "text": "A fictional Front-end React.js project that allows users to search for an event by location or name, as well as posting, editing and/or deleting events.",
+      "text": "Front-end React.js project that allows users to search for an event by location or name, as well as posting, editing and/or deleting events.",
       "tools": "React.js, ChakraUI",
       "link": "https://github.com/XML3/starter-final-project-react"
     },
     {
       "id": "2",
       "title": "Electronic Music Events - BED",
-      "text": "Back-end Node.js project",
-      "tools": "Node.js, Express.js, Prisma - MySQL, Planet Scale DB, Sentry ... more",
+      "text": "Back-end Node.js project. It manages the database to post, edit and delete events.",
+      "tools": "Node.js, Express.js, Prisma - MySQL, Planet Scale DB, Sentry...",
       "link": "https://github.com/XML3/express-events-starter/tree/main/starter"
     },
     {
       "id": "3",
       "title": "Property",
-      "text": "A fictional Back-end Node.js project which allows users to post, edit or delete a property or a booking.  It calculates review scores of each property... more",
+      "text": "Back-end Node.js project. It manages the database to post, edit or delete a property or a booking.  It calculates review scores of each property... more",
       "tools": "Node.js, Express.js, Prisma - MySQL, Planet Scale DB, Sentry, ... more",
       "link": "https://github.com/XML3/BED-Final-Project"
     },
     {
       "id": "4",
       "title": "Recipes Search",
-      "text": "A fictional Front-end React.js projects that allows the user to search for recepies ... more",
+      "text": "Front-end React.js project that allows the user to search for recepies ... more",
       "tools": "React.js, ChakraUI",
       "link": "https://github.com/XML3/react-basics-project-starter"
+    }
+  ],
+  "about": [
+    {
+      "id": "1",
+      "AboutMe": "Hi, I am Full-stack Web Developer who was driven by the ambition to transition into a new career path to cultivate both my creative and analytical capabilities.  With a strong focus on efficiency and an innate attention to detail, I posses a natural aptitude for understanding the intricacies of design and code structure.  Committed to continual growth to make a lasting impact on user experience."
     }
   ]
 }
