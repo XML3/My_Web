@@ -1,28 +1,61 @@
-img {
-  width: 200px;
-  height: auto;
-  margin: 10px;
-}
-
 .Headers {
   grid-row: 1;
   grid-column: 1;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(3, 200px);
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .HeaderOne {
   grid-row: 2;
-  grid-column: 2 / span 6;
+  grid-column: 2 / span 5;
   color: var(--main-fontcolor);
   font-family: var(--main-fontfamily);
   font-size: 30px;
 }
 
 .HeaderTwo {
-  grid-row: 3;
+  grid-row: 3 / span 4;
   grid-column: 2 / span 4;
   color: var(--main-fontcolor);
   font-family: var(--main-fontfamily);
+}
+
+.Intro {
+  grid-row: 3 / span 2;
+  grid-column: 2 / span 4;
+  margin-top: 50px;
+  color: var(--main-fontcolor);
+  font-family: var(--main-fontfamily);
+  line-height: 1.5;
+}
+
+img {
+  width: 200px;
+  height: auto;
+  margin: 10px;
+}
+
+.Logo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.Navigation {
+  grid-row: 2 / span 5;
+  grid-column: 1;
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+  margin-left: 150px;
+}
+.Navigation a {
+  margin-bottom: 30px;
+  color: var(--main-fontcolor);
+  font-family: var(--main-fontfamily);
+  text-decoration: none;
 }
