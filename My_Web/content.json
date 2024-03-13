@@ -1,0 +1,32 @@
+{
+  "content": [
+    {
+      "id": "1",
+      "title": "Electronic Music Events - FED",
+      "text": "A fictional Front-end React.js project that allows users to search for an event by location or name, as well as posting, editing and/or deleting events.",
+      "tools": "React.js, ChakraUI",
+      "link": "https://github.com/XML3/starter-final-project-react"
+    },
+    {
+      "id": "2",
+      "title": "Electronic Music Events - BED",
+      "text": "Back-end Node.js project",
+      "tools": "Node.js, Express.js, Prisma - MySQL, Planet Scale DB, Sentry ... more",
+      "link": "https://github.com/XML3/express-events-starter/tree/main/starter"
+    },
+    {
+      "id": "3",
+      "title": "Property",
+      "text": "A fictional Back-end Node.js project which allows users to post, edit or delete a property or a booking.  It calculates the review score of each property... more",
+      "tools": "Node.js, Express.js, Prisma - MySQL, Planet Scale DB, Sentry, ... more",
+      "link": "https://github.com/XML3/BED-Final-Project"
+    },
+    {
+      "id": "4",
+      "title": "Recipes Search",
+      "text": "A fictional Front-end React.js projects that allows the user to search for recepies ... more",
+      "tools": "React.js, ChakraUI",
+      "link": "https://github.com/XML3/react-basics-project-starter"
+    }
+  ]
+}

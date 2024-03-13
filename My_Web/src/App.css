@@ -1,0 +1,14 @@
+* {
+  box-sizing: border-box;
+}
+
+.App {
+  grid-row: 1 / -1; /*Occupy all  rows*/
+  grid-column: 1 / -1;
+}
+
+.Container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+}

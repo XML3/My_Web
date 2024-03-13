@@ -1,0 +1,40 @@
+import React from "react";
+import { useState, useEffect } from "react";
+import ContentCSS from "../components/Content.module.css";
+
+export const Content = () => {
+  const [contentData, setContentData] = useState([]);
+
+  useEffect(() => {
+    const fetchContent = async () => {
+      try {
+        const response = await fetch("http://localhost:5173/content.json");
+        const jsonData = await response.json();
+        setContentData(jsonData.content);
+      } catch (error) {
+        console.error("Error fetching data from content:", error);
+      }
+    };
+    fetchContent();
+  }, []);
+
+  return (
+    <>
+      <div className={ContentCSS.Content}>
+        <div className={ContentCSS.ContentCards}>
+          {contentData.map((item) => (
+            <div key={item.id} className={ContentCSS.Card}>
+              <h2>{item.title}</h2>
+              <p>{item.text}</p>
+              <h3 className={ContentCSS.Tools}>Tools</h3>
+              <p>{item.tools}</p>
+              <a href={item.link} target="_blank" rel="noopener noreferrer">
+                <button className={ContentCSS.btn}>Github</button>
+              </a>
+            </div>
+          ))}
+        </div>
+      </div>
+    </>
+  );
+};
