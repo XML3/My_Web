@@ -17,7 +17,7 @@
     {
       "id": "3",
       "title": "Property",
-      "text": "A fictional Back-end Node.js project which allows users to post, edit or delete a property or a booking.  It calculates the review score of each property... more",
+      "text": "A fictional Back-end Node.js project which allows users to post, edit or delete a property or a booking.  It calculates review scores of each property... more",
       "tools": "Node.js, Express.js, Prisma - MySQL, Planet Scale DB, Sentry, ... more",
       "link": "https://github.com/XML3/BED-Final-Project"
     },
