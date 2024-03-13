@@ -10,7 +10,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 10px;
+  gap: 30px;
   color: var(--main-fontcolor);
   font-family: var(--main-fontfamily);
 }
@@ -20,9 +20,18 @@
   height: 500px;
   padding: 20px;
   border-radius: 20px;
+  background-color: var(--background-color);
+  transition: background-color 0.3s;
+}
+.Card:hover {
   background-color: #162737;
 }
 
 .Tools {
   color: var(--second-color);
+  font-weight: 400;
+}
+
+.TextTool {
+  font-size: 15px;
 }
