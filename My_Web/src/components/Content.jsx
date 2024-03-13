@@ -27,7 +27,9 @@ export const Content = () => {
               <h2>{item.title}</h2>
               <p>{item.text}</p>
               <h3 className={ContentCSS.Tools}>Tools</h3>
-              <p>{item.tools}</p>
+              <div className={ContentCSS.TextTool}>
+                <p>{item.tools}</p>
+              </div>
               <a href={item.link} target="_blank" rel="noopener noreferrer">
                 <button className={ContentCSS.btn}>Github</button>
               </a>
