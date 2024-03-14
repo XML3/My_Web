@@ -38,6 +38,8 @@ export const Headers = () => {
           <h3>{intro}</h3>
         </div>
       </div>
+      {/* navigation */}
+
       <nav className={HeadersCSS.Navigation}>
         <a
           href="#"
