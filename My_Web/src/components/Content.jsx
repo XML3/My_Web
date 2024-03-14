@@ -26,7 +26,9 @@ export const Content = () => {
             contentData.map((item) => (
               <div key={item.id} className={ContentCSS.Card}>
                 <h2>{item.title}</h2>
-                <p>{item.text}</p>
+                <div className={ContentCSS.CardText}>
+                  <p>{item.text}</p>
+                </div>
                 <h3 className={ContentCSS.Tools}>Tools</h3>
                 <div className={ContentCSS.TextTool}>
                   <p>{item.tools}</p>
