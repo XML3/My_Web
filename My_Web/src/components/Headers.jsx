@@ -25,47 +25,51 @@ export const Headers = () => {
 
   return (
     <>
-      <div className={HeadersCSS.Headers}>
-        <img className={HeadersCSS.Logo} src={xaglyWebLogo} alt="Logo" />
+      <div className={HeadersCSS.Container}>
+        <div className={HeadersCSS.HeadersContainer}>
+          <div className={HeadersCSS.Headers}>
+            <img className={HeadersCSS.Logo} src={xaglyWebLogo} alt="Logo" />
 
-        <div className={HeadersCSS.HeaderOne}>
-          <h1>{headerOne}</h1>
+            <div className={HeadersCSS.HeaderOne}>
+              <h1>{headerOne}</h1>
+            </div>
+            <div className={HeadersCSS.HeaderTwo}>
+              <h2>{headerTwo}</h2>
+            </div>
+            <div className={HeadersCSS.Intro}>
+              <h3>{intro}</h3>
+            </div>
+          </div>
         </div>
-        <div className={HeadersCSS.HeaderTwo}>
-          <h2>{headerTwo}</h2>
-        </div>
-        <div className={HeadersCSS.Intro}>
-          <h3>{intro}</h3>
-        </div>
+        {/* navigation */}
+
+        <nav className={HeadersCSS.Navigation}>
+          <a
+            href="#"
+            onMouseEnter={() => handleMouseEnter("about")}
+            onMouseLeave={() => handleMouseLeave("about")}
+            style={{ fontSize: hoveredItem.about ? "30px" : "15px" }}
+          >
+            About
+          </a>
+          <a
+            href="#"
+            onMouseEnter={() => handleMouseEnter("projects")}
+            onMouseLeave={() => handleMouseLeave("projects")}
+            style={{ fontSize: hoveredItem.projects ? "30px" : "15px" }}
+          >
+            Projects
+          </a>
+          <a
+            href="#"
+            onMouseEnter={() => handleMouseEnter("contact")}
+            onMouseLeave={() => handleMouseLeave("contact")}
+            style={{ fontSize: hoveredItem.contact ? "30px" : "15px" }}
+          >
+            Contact
+          </a>
+        </nav>
       </div>
-      {/* navigation */}
-
-      <nav className={HeadersCSS.Navigation}>
-        <a
-          href="#"
-          onMouseEnter={() => handleMouseEnter("about")}
-          onMouseLeave={() => handleMouseLeave("about")}
-          style={{ fontSize: hoveredItem.about ? "30px" : "15px" }}
-        >
-          About
-        </a>
-        <a
-          href="#"
-          onMouseEnter={() => handleMouseEnter("projects")}
-          onMouseLeave={() => handleMouseLeave("projects")}
-          style={{ fontSize: hoveredItem.projects ? "30px" : "15px" }}
-        >
-          Projects
-        </a>
-        <a
-          href="#"
-          onMouseEnter={() => handleMouseEnter("contact")}
-          onMouseLeave={() => handleMouseLeave("contact")}
-          style={{ fontSize: hoveredItem.contact ? "30px" : "15px" }}
-        >
-          Contact
-        </a>
-      </nav>
     </>
   );
 };
