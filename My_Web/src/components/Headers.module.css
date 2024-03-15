@@ -1,63 +1,17 @@
-.Headers {
-  grid-row: 1;
-  grid-column: 1;
+.Container {
+  grid-column-start: 1;
+  grid-column-end: -1;
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: repeat(3, 200px);
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.HeaderOne {
-  grid-row: 2;
-  grid-column: 2 / span 5;
-  color: var(--main-fontcolor);
-  font-family: var(--main-fontfamily);
-  font-size: 30px;
-}
-
-.HeaderTwo {
-  grid-row: 3 / span 4;
-  grid-column: 2 / span 4;
-  color: var(--main-fontcolor);
-  font-family: var(--main-fontfamily);
-  background-color: #162737;
-  padding: 10px;
-  padding-left: 20px;
-  border-radius: 20px;
-}
-
-.Intro {
-  grid-row: 3 / span 2;
-  grid-column: 2 / span 4;
-  margin-top: 50px;
-  color: var(--main-fontcolor);
-  font-family: var(--main-fontfamily);
-  line-height: 1.5;
-  padding-top: 25px;
-  padding-left: 20px;
-}
-
-img {
-  width: 200px;
-  height: auto;
-  margin: 10px;
-}
-
-.Logo {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
+  grid-template-columns: 1fr auto 1fr; /* Two columns: auto for navigation, 1fr for headers */
 }
 
 .Navigation {
-  grid-row: 1 / span 5;
   grid-column: 1;
+  grid-row: 1;
   display: flex;
   flex-direction: column;
   margin-top: 20px;
-  margin-left: 50px;
+  margin-left: 20px; /* Adjust the margin to separate from headers */
 }
 
 .Navigation a {
@@ -73,5 +27,56 @@ img {
 }
 
 .Navigation a:last-child:before {
-  content: "└───"; /* Change character for last item */
+  content: "└───";
+}
+
+.HeadersContainer {
+  grid-column: 2;
+  display: flex;
+  justify-content: center; /* Center the content horizontally */
+  align-items: center; /* Center the content vertically */
+}
+
+.Headers {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(3, 200px);
+  background-color: #162737;
+  padding: 10px;
+  padding-left: 20px;
+  border-radius: 20px;
+}
+
+.HeaderOne {
+  grid-row: 2;
+  grid-column: 2 / span 5;
+  color: var(--main-fontcolor);
+  font-family: var(--main-fontfamily);
+  font-size: 30px;
+}
+
+.HeaderTwo {
+  grid-row: 3 / span 4;
+  grid-column: 2 / span 4;
+  color: var(--main-fontcolor);
+  font-family: var(--main-fontfamily);
+}
+
+.Intro {
+  grid-row: 3 / span 2;
+  grid-column: 2 / span 4;
+  margin-top: 50px;
+  color: var(--main-fontcolor);
+  font-family: var(--main-fontfamily);
+  line-height: 1.5;
+  padding-top: 25px;
+}
+
+.Logo {
+  width: 200px;
+  height: auto;
+  margin: 10px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
