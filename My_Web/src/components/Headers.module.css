@@ -23,11 +23,46 @@
 
 .Navigation a:before {
   content: "├───";
-  margin-right: 10px;
+  margin-left: 10px;
 }
 
 .Navigation a:last-child:before {
   content: "└───";
+}
+
+.NavTwo {
+  grid-column: 3;
+  grid-row: 1;
+  margin-top: 14.5rem;
+  margin-left: 3rem;
+}
+
+.NavTwo a {
+  margin-bottom: 20px;
+  padding-right: 10px;
+  color: var(--button-fontcolor);
+  font-family: var(--main-fontfamily);
+  text-decoration: none;
+  /* display: flex;
+  align-items: center; */
+}
+
+.NavTwo a .githubIcon {
+  width: 45px;
+  height: auto;
+  margin-left: 48px;
+}
+
+.NavTwo a .Element {
+  margin-left: 10px;
+}
+
+.NavTwo a:before {
+  content: "───┤";
+  position: absolute;
+  right: 10.5rem;
+  top: 16rem;
+  transform: translateY(-50%);
 }
 
 .HeadersContainer {
