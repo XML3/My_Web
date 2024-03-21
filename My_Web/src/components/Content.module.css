@@ -1,8 +1,8 @@
-.Content {
+/* .Content {
   grid-column-start: 1;
   grid-column-end: -1;
-  grid-row-start: 4;
-  grid-row-end: 6;
+  grid-row-start: 3;
+  grid-row-end: 5;
   margin: 20px;
 }
 
@@ -42,4 +42,27 @@
 .CardText p {
   line-height: 1.5;
   padding-top: 20px;
+} */
+
+.ContentCards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  color: var(--main-fontcolor);
+  font-family: var(--main-fontfamily);
+}
+
+.Card {
+  flex: 0 0 auto;
+  width: 100%;
+  /* margin-right: 20px; */
+  padding-top: 20px;
+  border-radius: 20px;
+  background-color: var(--background-color);
+  transition: background-color 0.3s;
+}
+
+.Card:hover {
+  background-color: #162737;
 }
