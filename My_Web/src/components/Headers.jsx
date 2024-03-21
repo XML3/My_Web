@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import xaglyWebLogo from "../img/xagly_web_logo.png";
+import xaglyWebLogo from "../img/xagly_web_logo3.png";
+import githibIcon from "../img/github_cyan.svg";
 import HeadersCSS from "../components/Headers.module.css";
 
 export const Headers = () => {
@@ -12,6 +13,7 @@ export const Headers = () => {
     about: false,
     projects: false,
     contact: false,
+    github: false,
   });
 
   //Function to handle hover / objext spread syntax to copy object and set it to true
@@ -67,6 +69,23 @@ export const Headers = () => {
             style={{ fontSize: hoveredItem.contact ? "30px" : "15px" }}
           >
             Contact
+          </a>
+        </nav>
+
+        {/* navigation Right */}
+        <nav className={HeadersCSS.NavTwo}>
+          <a
+            href="#"
+            onMouseEnter={() => handleMouseEnter("github")}
+            onMouseLeave={() => handleMouseLeave("github")}
+            style={{ fontSize: hoveredItem.github ? "30px" : "15px" }}
+          >
+            <img
+              src={githibIcon}
+              alt="Github Icon"
+              className={HeadersCSS.githubIcon}
+            />
+            <span className={HeadersCSS.Element}></span>
           </a>
         </nav>
       </div>
