@@ -1,49 +1,3 @@
-/* .Content {
-  grid-column-start: 1;
-  grid-column-end: -1;
-  grid-row-start: 3;
-  grid-row-end: 5;
-  margin: 20px;
-}
-
-.ContentCards {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 30px;
-  color: var(--main-fontcolor);
-  font-family: var(--main-fontfamily);
-}
-
-.Card {
-  width: 400px;
-  height: 600px;
-  padding: 20px;
-  border-radius: 20px;
-  background-color: var(--background-color);
-  transition: background-color 0.3s;
-}
-.Card:hover {
-  background-color: #162737;
-}
-
-.Tools {
-  color: var(--second-color);
-  font-weight: 400;
-  margin-top: 5rem;
-}
-
-.TextTool p {
-  font-size: 16px;
-  margin-bottom: 5rem;
-  line-height: 1.5;
-}
-
-.CardText p {
-  line-height: 1.5;
-  padding-top: 20px;
-} */
-
 .Content {
   min-height: 30rem;
   min-width: 300rem;
@@ -70,4 +24,21 @@
 
 .Card:hover {
   background-color: #162737;
+}
+
+.Tools {
+  color: var(--second-color);
+  font-weight: 400;
+  margin-top: 5rem;
+}
+
+.TextTool p {
+  font-size: 16px;
+  margin-bottom: 5rem;
+  line-height: 1.5;
+}
+
+.CardText p {
+  line-height: 1.5;
+  padding-top: 20px;
 }
