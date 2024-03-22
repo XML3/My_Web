@@ -4,4 +4,7 @@
   grid-row-start: 3;
   grid-row-end: 4;
   margin-top: 8rem;
+  cursor: grab;
+  overflow: hidden;
+  margin: 0 10%;
 }
