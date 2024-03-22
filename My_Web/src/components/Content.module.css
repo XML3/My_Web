@@ -44,3 +44,10 @@
   line-height: 1.5;
   padding-top: 20px;
 }
+
+.githubIcon {
+  width: 45px;
+  height: auto;
+  border-radius: 50%;
+  box-shadow: 3px 3px 6px rgb(94, 234, 212);
+}
