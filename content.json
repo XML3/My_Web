@@ -4,7 +4,7 @@
       "id": "1",
       "title": "Electronic Music Events - FED",
       "text": "Front-end React.js project that allows users to search for an event by location or name, as well as posting, editing and/or deleting events.",
-      "tools": "React.js, ChakraUI",
+      "tools": "React.js, ChakraUI, JSON",
       "link": "https://github.com/XML3/starter-final-project-react"
     },
     {
@@ -25,7 +25,7 @@
       "id": "4",
       "title": "Recipes Search",
       "text": "Front-end React.js project that allows the user to search for recepies ... more",
-      "tools": "React.js, ChakraUI",
+      "tools": "React.js, ChakraUI, JSON",
       "link": "https://github.com/XML3/react-basics-project-starter"
     }
   ],
