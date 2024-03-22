@@ -75,7 +75,8 @@ export const Headers = () => {
         {/* navigation Right */}
         <nav className={HeadersCSS.NavTwo}>
           <a
-            href="#"
+            href="https://github.com/XML3"
+            target="_blank"
             onMouseEnter={() => handleMouseEnter("github")}
             onMouseLeave={() => handleMouseLeave("github")}
             style={{ fontSize: hoveredItem.github ? "30px" : "15px" }}
