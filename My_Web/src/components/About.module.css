@@ -6,7 +6,7 @@
   /* margin-top: 5rem; */
   padding: 0 5rem;
   width: 100%;
-  height: auto;
+  height: 100%;
   background-color: rgb(213, 209, 191);
   display: grid;
   grid-template-columns: 1fr, 1fr;
@@ -16,6 +16,7 @@
   grid-column: 1;
   display: flex;
   align-items: center;
+  padding-left: 4rem;
 }
 
 .Section h2 {
