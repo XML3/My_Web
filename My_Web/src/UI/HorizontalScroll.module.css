@@ -3,8 +3,9 @@
   grid-column-end: -1;
   grid-row-start: 3;
   grid-row-end: 4;
-  margin-top: 8rem;
+  /* margin-top: 8rem; */
   cursor: grab;
   overflow: hidden;
   margin: 0 10%;
+  /* border: 1px solid rgb(222, 185, 146); */
 }
