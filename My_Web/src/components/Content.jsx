@@ -1,7 +1,6 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import ContentCSS from "../components/Content.module.css";
-import { HorizontalScroll } from "../UI/HorizontalScroll";
 
 export const Content = () => {
   const [contentData, setContentData] = useState([]);
