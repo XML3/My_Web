@@ -1,6 +1,7 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import ContentCSS from "../components/Content.module.css";
+import githibIcon from "../img/github_cyan.svg";
 
 export const Content = () => {
   const [contentData, setContentData] = useState([]);
@@ -34,7 +35,12 @@ export const Content = () => {
                   <p>{item.tools}</p>
                 </div>
                 <a href={item.link} target="_blank" rel="noopener noreferrer">
-                  <button className={ContentCSS.btn}>Github</button>
+                  {/* <button className={ContentCSS.btn}>Github</button> */}
+                  <img
+                    src={githibIcon}
+                    alt="Github Icon"
+                    className={ContentCSS.githubIcon}
+                  />
                 </a>
               </div>
             ))
