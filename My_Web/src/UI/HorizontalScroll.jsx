@@ -11,7 +11,8 @@ export const HorizontalScroll = ({ children }) => {
   }, []);
 
   return (
-    <div className={styles.Main}>
+    <div className={styles.MainScroll}>
+      <h2 className={styles.Projects}>Projects</h2>
       <motion.div className={styles.HorizontalScroll} ref={carousel}>
         <motion.div drag="x" dragConstraints={{ right: 0, left: -width }}>
           {/* children/Content component  here */}
