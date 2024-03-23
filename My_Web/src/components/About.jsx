@@ -8,17 +8,14 @@ export const About = () => {
     const fetchAbout = async () => {
       try {
         const response = await fetch("http://localhost:3000/about");
-        //console.log("Response:", response);
         const aboutData = await response.json();
-        //console.log("about data:", aboutData);
         setAboutData(aboutData[0]);
       } catch (error) {
-        //console.error("Error fetching data from about:", error);
+        console.error("Error fetching data from about:", error);
       }
     };
     fetchAbout();
   }, []);
-  //console.log("about data state:", aboutData);
 
   return (
     <>
