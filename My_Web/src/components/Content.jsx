@@ -35,7 +35,6 @@ export const Content = () => {
                   <p>{item.tools}</p>
                 </div>
                 <a href={item.link} target="_blank" rel="noopener noreferrer">
-                  {/* <button className={ContentCSS.btn}>Github</button> */}
                   <img
                     src={githibIcon}
                     alt="Github Icon"
