@@ -4,6 +4,7 @@
   --second-color: #1ba098;
   --button-color: rbg(19, 78, 74);
   --button-fontcolor: rgb(94, 234, 212);
+  --header-fontfamily: "Karla", sans-serif;
   --main-fontfamily: "Inconsolata", monospace;
   --background-color: #051622;
   --light-weight: 100;
@@ -16,7 +17,7 @@ body {
 h1 {
   font-size: 3em;
   line-height: 1.1;
-  font-weight: 100;
+  font-weight: 400;
 }
 
 h3,
