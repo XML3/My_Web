@@ -3,19 +3,26 @@
   grid-column-end: -1;
   display: grid;
   grid-template-columns: 1fr auto 1fr; /* Two columns: auto for navigation, 1fr for headers */
+  background-image: linear-gradient(to bottom right, #0abfbc, #fc354c);
+  width: 95%;
+  height: 100%;
+  margin-top: 2rem;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .Navigation {
   grid-column: 1;
   display: flex;
   flex-direction: column;
-  margin-top: 15rem;
+  margin-top: 18rem;
   margin-left: 8rem; /* Adjust the margin to separate from headers */
 }
 
 .Navigation a {
   margin-bottom: 20px;
-  color: var(--button-fontcolor);
+  color: var(--background-color);
   font-family: var(--main-fontfamily);
   text-decoration: none;
 }
@@ -32,14 +39,15 @@
 .NavTwo {
   grid-column: 3;
   grid-row: 1;
-  margin-top: 14.5rem;
-  margin-left: 3rem;
+  margin-top: 17.5rem;
+  margin-left: 1rem;
 }
 
 .NavTwo a {
   margin-bottom: 20px;
   padding-right: 10px;
-  color: var(--button-fontcolor);
+  /* color: var(--button-fontcolor); */
+  color: #051622;
   font-family: var(--main-fontfamily);
   text-decoration: none;
   /* display: flex;
@@ -47,7 +55,7 @@
 }
 
 .NavTwo a .githubIcon {
-  width: 45px;
+  width: 55px;
   height: auto;
   margin-left: 48px;
 }
@@ -59,11 +67,12 @@
 .NavTwo a:before {
   content: "───┤";
   position: absolute;
-  right: 10.5rem;
-  top: 16rem;
+  right: 8.5rem;
+  top: 18.8rem;
   transform: translateY(-50%);
 }
 
+/* Middle Section / Header */
 .HeadersContainer {
   grid-column: 2;
   grid-row: 1;
@@ -71,7 +80,7 @@
   display: flex;
   justify-content: center; /* Center the content horizontally */
   /* Center the content vertically */
-  margin-top: 2rem;
+  margin-top: 5rem;
 }
 
 .Headers {
@@ -79,7 +88,6 @@
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(3, 200px);
   background-color: #162737;
-
   padding-left: 20px;
   border-radius: 20px;
 }
@@ -88,7 +96,7 @@
   grid-row: 2;
   grid-column: 2 / span 5;
   color: var(--main-fontcolor);
-  font-family: var(--main-fontfamily);
+  font-family: var(--header-fontfamily);
   font-size: 30px;
 }
 
@@ -96,7 +104,11 @@
   grid-row: 3 / span 4;
   grid-column: 2 / span 4;
   color: var(--main-fontcolor);
-  font-family: var(--main-fontfamily);
+  font-family: var(--header-fontfamily);
+}
+
+.HeaderTwo h2 {
+  font-weight: 400;
 }
 
 .Intro {
@@ -105,8 +117,7 @@
   margin-top: 50px;
   color: var(--main-fontcolor);
   font-family: var(--main-fontfamily);
-  line-height: 1.5;
-  padding-top: 10px;
+  padding-top: 1px;
 }
 
 .Logo {
