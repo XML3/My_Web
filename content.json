@@ -17,7 +17,7 @@
     {
       "id": "3",
       "title": "Properties",
-      "text": "Back-end Express API with the implementation of Routers, Middleware, Authentication, Error Handling, and Debugging.  Using Databases / Prisma to connect the database to a back-end app, integrate Prisma in the application, create data models and schemas, querying and modifying data, and dealing with schema changes and migrations. The app allows users to create, view, update and delete: * Users * Hosts * Properties - also will have their average rate updated through review’s scores. * Amenities  * Bookings * Reviews ",
+      "text": "Back-end Express API with the implementation of Routers, Middleware, Authentication, Error Handling, and Debugging.  Using Databases / Prisma to connect the database to a back-end app, integrate Prisma in the application, create data models and schemas, querying and modifying data, and dealing with schema changes and migrations. The app allows users to create, view, update and delete: * Users * Hosts * Properties - in addition, properties will have their average rate updated through review’s scores. * Amenities  * Bookings * Reviews ",
       "tools": "Node.js, Express.js, Prisma - MySQL, Planet Scale DB, Sentry, ... more",
       "link": "https://github.com/XML3/BED-Final-Project"
     },
