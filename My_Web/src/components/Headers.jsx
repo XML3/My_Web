@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import xaglyWebLogo from "../img/xagly_web_logo3.png";
-import githibIcon from "../img/github_cyan.svg";
+import githibIcon from "../img/github_dark.svg";
 import HeadersCSS from "../components/Headers.module.css";
 
 export const Headers = () => {
@@ -50,7 +50,7 @@ export const Headers = () => {
             href="#"
             onMouseEnter={() => handleMouseEnter("about")}
             onMouseLeave={() => handleMouseLeave("about")}
-            style={{ fontSize: hoveredItem.about ? "30px" : "15px" }}
+            style={{ fontSize: hoveredItem.about ? "30px" : "20px" }}
           >
             About
           </a>
@@ -58,7 +58,7 @@ export const Headers = () => {
             href="#"
             onMouseEnter={() => handleMouseEnter("projects")}
             onMouseLeave={() => handleMouseLeave("projects")}
-            style={{ fontSize: hoveredItem.projects ? "30px" : "15px" }}
+            style={{ fontSize: hoveredItem.projects ? "30px" : "20px" }}
           >
             Projects
           </a>
@@ -66,7 +66,7 @@ export const Headers = () => {
             href="#"
             onMouseEnter={() => handleMouseEnter("contact")}
             onMouseLeave={() => handleMouseLeave("contact")}
-            style={{ fontSize: hoveredItem.contact ? "30px" : "15px" }}
+            style={{ fontSize: hoveredItem.contact ? "30px" : "20px" }}
           >
             Contact
           </a>
@@ -79,7 +79,7 @@ export const Headers = () => {
             target="_blank"
             onMouseEnter={() => handleMouseEnter("github")}
             onMouseLeave={() => handleMouseLeave("github")}
-            style={{ fontSize: hoveredItem.github ? "30px" : "15px" }}
+            style={{ fontSize: hoveredItem.github ? "30px" : "20px" }}
           >
             <img
               src={githibIcon}
