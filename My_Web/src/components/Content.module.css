@@ -1,20 +1,21 @@
 .Content {
   min-height: 30rem;
-  min-width: 300rem;
+  min-width: 150rem; /*300*/
   padding: 40px;
   margin: 5% 0;
 }
 
 .ContentCards {
   display: flex;
-  /* justify-content: center; */
   gap: 30px;
   color: var(--main-fontcolor);
   font-family: var(--main-fontfamily);
 }
-
+.Cards h2 {
+  font-family: var(--header-fontfamily);
+}
 .Card {
-  width: 100%;
+  width: 70%; /* width connected to HorizonScroll carousel (dragConstraints = -width)*/
   height: 500px;
   margin-right: 20px;
   padding: 30px;
@@ -30,6 +31,7 @@
 
 .Tools {
   color: var(--second-color);
+  font-family: var(--header-fontfamily);
   font-weight: 400;
   margin-top: 5rem;
 }
