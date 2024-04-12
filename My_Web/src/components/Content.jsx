@@ -19,6 +19,14 @@ export const Content = () => {
     fetchContent();
   }, []);
 
+  const renderStyledTools = (tools) => {
+    return tools.split(", ").map((tool, index) => (
+      <span key={index} className={ContentCSS.Tool}>
+        {tool}
+      </span>
+    ));
+  };
+
   return (
     <>
       <div className={ContentCSS.Content}>
@@ -26,14 +34,6 @@ export const Content = () => {
           {contentData && contentData.length > 0 ? (
             contentData.map((item) => (
               <div key={item.id} className={ContentCSS.Card}>
-                <h2>{item.title}</h2>
-                <div className={ContentCSS.CardText}>
-                  <p>{item.text}</p>
-                </div>
-                <h3 className={ContentCSS.Tools}>Tools</h3>
-                <div className={ContentCSS.TextTool}>
-                  <p>{item.tools}</p>
-                </div>
                 <a href={item.link} target="_blank" rel="noopener noreferrer">
                   <img
                     src={githibIcon}
@@ -41,6 +41,14 @@ export const Content = () => {
                     className={ContentCSS.githubIcon}
                   />
                 </a>
+                <h2>{item.title}</h2>
+                <div className={ContentCSS.CardText}>
+                  <p>{item.text}</p>
+                </div>
+
+                <div className={ContentCSS.TextTool}>
+                  {renderStyledTools(item.tools)}
+                </div>
               </div>
             ))
           ) : (
