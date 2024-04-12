@@ -10,7 +10,7 @@
     {
       "id": "2",
       "title": "Electronic Music Events - Express API",
-      "text": "Back-end Node.js project. It manages the database to post, edit and delete events.",
+      "text": "This Back-end ExpressAPI project is the backbone of the event management system. This project effectively manages the database, enabling seamless posting, editing, and deletion of events.  Additionally, this back-end handles the contact form functionality using nodemailer, facilitating smooth communication between users and event organizers. Furthermore, it seamlessly manages image uploads by users, ensuring they are efficiently hosted on an image hosting site for their respective events.  It coherently integrates with the front-end solution to deliver a comprehensive event management experience.",
       "tools": "Node.js, Express.js, Prisma - MySQL, Planet Scale DB, Sentry...",
       "link": "https://github.com/XML3/express-events-starter/tree/main/starter"
     },
