@@ -11,9 +11,11 @@
   color: var(--main-fontcolor);
   font-family: var(--main-fontfamily);
 }
+
 .Cards h2 {
   font-family: var(--header-fontfamily);
 }
+
 .Card {
   position: relative;
   width: 70%; /* width connected to HorizonScroll carousel (dragConstraints = -width)*/
@@ -49,7 +51,7 @@
 
 .Tool {
   display: inline-block;
-  margin-bottom: 5rem;
+  margin-bottom: 2rem;
   line-height: 1.5;
   background-color: #2b3642;
   margin: 0.5rem;
