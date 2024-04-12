@@ -11,14 +11,14 @@
       "id": "2",
       "title": "Electronic Music Events - Express API",
       "text": "This Back-end ExpressAPI project is the backbone of the event management system. This project effectively manages the database, enabling seamless posting, editing, and deletion of events.  Additionally, this back-end handles the contact form functionality using nodemailer, facilitating smooth communication between users and event organizers. Furthermore, it seamlessly manages image uploads by users, ensuring they are efficiently hosted on an image hosting site for their respective events.  It coherently integrates with the front-end solution to deliver a comprehensive event management experience.",
-      "tools": "Node.js, Express.js, Prisma - MySQL, Planet Scale DB, Sentry...",
+      "tools": "Node.js, Express.js, Prisma - MySQL, Planet Scale DB, Sentry",
       "link": "https://github.com/XML3/express-events-starter/tree/main/starter"
     },
     {
       "id": "3",
       "title": "Properties - Express API",
       "text": "Back-end Express API project, aimed at replicating the functionality of a property booking system online. This project enables users and hosts to interact with the platform, allowing them to create, view, update, and delete their personal bookings or properties effortlessly.   Moreover, the API facilitates the rating of properties and the creation of reviews, allowing users to share their experiences and insights. Notably, the system dynamically calculates the average rating for each property, ensuring up-to-date and accurate feedback for users. ",
-      "tools": "Node.js, Express.js, Prisma - MySQL, Planet Scale DB, Sentry, ... more",
+      "tools": "Node.js, Express.js, Prisma - MySQL, Planet Scale DB, Sentry",
       "link": "https://github.com/XML3/BED-Final-Project"
     },
     {
