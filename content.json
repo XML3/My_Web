@@ -2,28 +2,28 @@
   "content": [
     {
       "id": "1",
-      "title": "Electronic Music Events - FED",
-      "text": "Front-end React.js project that allows users to search for an event by location or name, as well as posting, editing and/or deleting events.",
+      "title": "Electronic Music Events - Front-End",
+      "text": "Front-end React.js project, designed to simulate the enhancement of your event experience. Seamlessly search for events by location or name, dive into informative articles, and effortlessly connect via our contact form.  The app allows event creators with intuitive tools to effortlessly manage their events. From creating, editing, to deleting events, we've streamlined the process for smooth event management experience. The project is meant to provide the versatility and convenience for event exploration and organization.",
       "tools": "React.js, ChakraUI, JSON",
       "link": "https://github.com/XML3/starter-final-project-react"
     },
     {
       "id": "2",
-      "title": "Electronic Music Events - BED",
+      "title": "Electronic Music Events - Express API",
       "text": "Back-end Node.js project. It manages the database to post, edit and delete events.",
       "tools": "Node.js, Express.js, Prisma - MySQL, Planet Scale DB, Sentry...",
       "link": "https://github.com/XML3/express-events-starter/tree/main/starter"
     },
     {
       "id": "3",
-      "title": "Properties",
-      "text": "Back-end Express API with the implementation of Routers, Middleware, Authentication, Error Handling, and Debugging.  Using Databases / Prisma to connect the database to a back-end app, integrate Prisma in the application, create data models and schemas, querying and modifying data, and dealing with schema changes and migrations. The app allows users to create, view, update and delete: * Users * Hosts * Properties - in addition, properties will have their average rate updated through review’s scores. * Amenities  * Bookings * Reviews ",
+      "title": "Properties - Express API",
+      "text": "Back-end Express API project, aimed at replicating the functionality of a property booking system online. This project enables users and hosts to interact with the platform, allowing them to create, view, update, and delete their personal bookings or properties effortlessly.   Moreover, the API facilitates the rating of properties and the creation of reviews, allowing users to share their experiences and insights. Notably, the system dynamically calculates the average rating for each property, ensuring up-to-date and accurate feedback for users. ",
       "tools": "Node.js, Express.js, Prisma - MySQL, Planet Scale DB, Sentry, ... more",
       "link": "https://github.com/XML3/BED-Final-Project"
     },
     {
       "id": "4",
-      "title": "Recipes Search",
+      "title": "Recipes Search - Front-End",
       "text": "Front-end React.js project that allows the user to search for recepies ... more",
       "tools": "React.js, ChakraUI, JSON",
       "link": "https://github.com/XML3/react-basics-project-starter"
