@@ -20,7 +20,7 @@
   cursor: grab;
   overflow: hidden;
   margin: 10% 2%;
-  border-radius: 1%;
+  border-radius: 30px;
   /* background-image: linear-gradient(to right, #162737, rgb(94, 234, 212)); */
   background-image: linear-gradient(to right, #0abfbc, #fc354c);
 }
