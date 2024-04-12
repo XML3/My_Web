@@ -17,6 +17,9 @@
 }
 
 .Card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   position: relative;
   width: 70%; /* width connected to HorizonScroll carousel (dragConstraints = -width)*/
   height: 500px;
