@@ -23,7 +23,7 @@
     },
     {
       "id": "4",
-      "title": "Recipes Search - Front-End",
+      "title": "Recipes - Front-End",
       "text": "A simple Front-end React.js project designed to elevate your culinary journey. Explore an array of recipes by effortlessly searching with keywords such as 'grilled’, ’vegetarian’, or even ‘drinks’ along with specific dietary preferences like label, dietLabels, cautions, and healthLabels. Enhancing the user experience, our project incorporates color-coded sections on recipe cards to denote whether the recipe is Vegetarian or Vegan, as well as color labels highlighting cautions and dietary preferences.  A delightful culinary adventure created with an tuitive React.js project, meticulously crafted to cater to dietary needs and preferences. Explore, cook, and enjoy!",
       "tools": "React.js, ChakraUI, JSON",
       "link": "https://github.com/XML3/react-basics-project-starter"
