@@ -1,0 +1,47 @@
+.ContactForm {
+  grid-column-start: 1;
+  grid-column-end: -1;
+  grid-row-start: 5;
+  grid-row-end: -1;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  width: 100%;
+  height: auto;
+}
+
+.Form {
+  position: relative;
+  left: 5rem;
+  font-family: var(--main-fontfamily);
+  color: var(--main-fontcolor);
+}
+
+.Form div {
+  margin-bottom: 20px;
+}
+
+.Form input,
+.Form textarea {
+  border-top: none; /*Remove default border*/
+  border-right: none;
+  border-left: none;
+  border-bottom: 1px solid #deb992;
+  background-color: transparent;
+  width: 100%;
+  padding: 1rem;
+  color: var(--main-fontcolor);
+  margin-bottom: 2rem;
+  /* position: relative; */
+}
+
+.Form input:focus,
+.Form textarea:focus {
+  outline: none; /*Remove focus outlive*/
+  border-bottom: 1px solid #0abfbc;
+  background-color: transparent;
+}
+
+.ErrorMessage {
+  color: #fc354c;
+}
