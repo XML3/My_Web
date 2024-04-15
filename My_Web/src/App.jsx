@@ -4,6 +4,7 @@ import { Headers } from "./components/Headers";
 import { About } from "./components/About";
 import { HorizontalScroll } from "./UI/HorizontalScroll";
 import { Content } from "./components/Content";
+import { ContactForm } from "./components/Contact";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <HorizontalScroll>
             <Content />
           </HorizontalScroll>
+          <ContactForm />
         </div>
       </div>
     </>
