@@ -19,6 +19,7 @@ export const Content = () => {
     fetchContent();
   }, []);
 
+  //Map thought tools in order to style each indivual one
   const renderStyledTools = (tools) => {
     return tools.split(", ").map((tool, index) => (
       <span key={index} className={ContentCSS.Tool}>
