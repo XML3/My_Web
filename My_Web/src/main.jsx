@@ -5,6 +5,7 @@ import "./index.css";
 import App from "./App.jsx";
 import { Headers } from "./components/Headers.jsx";
 import { Content } from "./components/Content.jsx";
+import { ContactForm } from "./components/Contact.jsx";
 
 const router = createBrowserRouter([
   {
@@ -18,6 +19,10 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Content />,
+      },
+      {
+        path: "/",
+        element: <ContactForm />,
       },
     ],
   },
