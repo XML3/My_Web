@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import ContactCSS from "../components/Contact.module.css";
+import waves from "../img/one_wave_red.svg";
 
 export const ContactForm = () => {
   const [firstName, setFirstName] = useState("");
@@ -45,6 +46,7 @@ export const ContactForm = () => {
   return (
     <>
       <div className={ContactCSS.ContactForm}>
+        <img className={ContactCSS.Waves} src={waves} alt="Abstract waves" />
         <div className={ContactCSS.Form}>
           <form onSubmit={handleSubmit}>
             {/* First Name Section  */}
