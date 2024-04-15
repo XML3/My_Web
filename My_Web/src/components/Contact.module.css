@@ -6,13 +6,28 @@
   display: flex;
   flex-direction: row;
   justify-content: start;
-  width: 100%;
-  height: auto;
+  align-items: center;
+  position: relative;
+  width: 95%;
+  height: 90%;
+  left: 2rem;
+  border: 1px solid #213547;
+  padding: 2rem;
+}
+
+.Waves {
+  position: relative;
+  width: 65%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
+  opacity: 0.7;
 }
 
 .Form {
   position: relative;
-  left: 5rem;
+  z-index: 1;
+  left: 1rem;
   font-family: var(--main-fontfamily);
   color: var(--main-fontcolor);
 }
@@ -31,7 +46,7 @@
   width: 100%;
   padding: 1rem;
   color: var(--main-fontcolor);
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   /* position: relative; */
 }
 
