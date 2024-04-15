@@ -1,10 +1,11 @@
 .WaveCombo {
   grid-column-start: 1;
   grid-column-end: -1;
-  grid-row-start: 4;
-  grid-row-end: 5;
+  grid-row-start: 3;
+  grid-row-end: 4;
   display: flex;
   align-items: center;
+  margin-top: 3rem;
   opacity: 0.8;
 }
 .Colors {
@@ -15,8 +16,8 @@
 .MainScroll {
   grid-column-start: 1;
   grid-column-end: -1;
-  grid-row-start: 5;
-  grid-row-end: 6;
+  grid-row-start: 4;
+  grid-row-end: 5;
   cursor: grab;
   overflow: hidden;
   margin: 10% 2%;
@@ -24,9 +25,3 @@
   /* background-image: linear-gradient(to right, #162737, rgb(94, 234, 212)); */
   background-image: linear-gradient(to right, #0abfbc, #fc354c);
 }
-
-/* .Projects {
-  font-weight: 400;
-  color: var(--button-fontcolor);
-  font-family: var(--main-fontfamily);
-} */
