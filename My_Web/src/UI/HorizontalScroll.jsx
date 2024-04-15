@@ -13,13 +13,6 @@ export const HorizontalScroll = ({ children }) => {
 
   return (
     <>
-      {/* <div className={styles.WaveCombo}>
-        <img
-          className={styles.Colors}
-          src={Combo}
-          alt=" two color Abstract waves"
-        />
-      </div> */}
       <div className={styles.MainScroll}>
         {/* <h2 className={styles.Projects}>Projects</h2> */}
         <motion.div className={styles.HorizontalScroll} ref={carousel}>
