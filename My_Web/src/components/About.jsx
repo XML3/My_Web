@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import AboutCSS from "../components/About.module.css";
 import AboutImage from "../img/blue_buble.svg";
-import waves from "../img/one_wave_combo.svg";
 
 export const About = () => {
   const [aboutData, setAboutData] = useState({});
@@ -20,9 +19,6 @@ export const About = () => {
 
   return (
     <>
-      <div className={AboutCSS.TopImg}>
-        <img className={AboutCSS.Waves} src={waves} alt="Abstract waves" />
-      </div>
       <div className={AboutCSS.AboutContainer}>
         <div className={AboutCSS.About}>
           <div className={AboutCSS.Section}>
