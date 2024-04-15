@@ -3,26 +3,24 @@
   grid-column-end: -1;
   display: grid;
   grid-template-columns: 1fr auto 1fr; /* Two columns: auto for navigation, 1fr for headers */
-  background-image: linear-gradient(to bottom right, #0abfbc, #fc354c);
+  grid-template-rows: 1fr, auto, 1fr;
   width: 95%;
   height: 100%;
-  margin-top: 2rem;
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
 }
 
 .Navigation {
   grid-column: 1;
   display: flex;
   flex-direction: column;
-  margin-top: 18rem;
-  margin-left: 8rem; /* Adjust the margin to separate from headers */
+  margin-top: 2rem;
+  position: relative;
+  left: 70%;
+  transform: translateX(-20%);
 }
 
 .Navigation a {
   margin-bottom: 20px;
-  color: var(--background-color);
+  color: var(--button-fontcolor);
   font-family: var(--main-fontfamily);
   text-decoration: none;
 }
@@ -36,68 +34,45 @@
   content: "└───";
 }
 
-.NavTwo {
-  grid-column: 3;
-  grid-row: 1;
-  margin-top: 17.5rem;
-  margin-left: 1rem;
-}
-
-.NavTwo a {
-  margin-bottom: 20px;
-  padding-right: 10px;
-  /* color: var(--button-fontcolor); */
-  color: #051622;
-  font-family: var(--main-fontfamily);
-  text-decoration: none;
-  /* display: flex;
-  align-items: center; */
-}
-
-.NavTwo a .githubIcon {
-  width: 55px;
-  height: auto;
-  margin-left: 48px;
-}
-
-.NavTwo a .Element {
-  margin-left: 10px;
-}
-
-.NavTwo a:before {
-  content: "───┤";
-  position: absolute;
-  right: 8.5rem;
-  top: 18.8rem;
-  transform: translateY(-50%);
-}
-
 /* Middle Section / Header */
 .HeadersContainer {
   grid-column: 2;
   grid-row: 1;
-  height: 600px;
+  height: 700px;
   display: flex;
   justify-content: center; /* Center the content horizontally */
   /* Center the content vertically */
   margin-top: 5rem;
+  position: relative;
+  z-index: -1;
+  /* top: 5rem; */
 }
 
 .Headers {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(3, 200px);
-  background-color: #162737;
+  box-shadow: 1px 1px 12px 2px #888888;
   padding-left: 20px;
-  border-radius: 20px;
 }
-
+.Waves {
+  grid-row: 1;
+  grid-column: 2;
+  padding-left: 7px;
+  position: relative;
+  top: 10%;
+  width: 65%;
+  left: 50%;
+  transform: translateX(-50%);
+}
 .HeaderOne {
   grid-row: 2;
   grid-column: 2 / span 5;
   color: var(--main-fontcolor);
   font-family: var(--header-fontfamily);
   font-size: 30px;
+  margin-top: 5%;
+  margin-left: 5%;
 }
 
 .HeaderTwo {
@@ -105,6 +80,7 @@
   grid-column: 2 / span 4;
   color: var(--main-fontcolor);
   font-family: var(--header-fontfamily);
+  margin-top: 10%;
 }
 
 .HeaderTwo h2 {
@@ -114,7 +90,7 @@
 .Intro {
   grid-row: 3 / span 2;
   grid-column: 2 / span 4;
-  margin-top: 50px;
+  margin-top: 20%;
   color: var(--main-fontcolor);
   font-family: var(--main-fontfamily);
   padding-top: 1px;
