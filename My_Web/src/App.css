@@ -7,8 +7,27 @@
   grid-column: 1 / -1;
 }
 
+/*screed size 300*/
 .Container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 1fr 800px 400px 1fr 800px;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+}
+
+/*screed size 700*/
+@media screen and (min-width: 700px) {
+  .Container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr 800px 100px 1fr 800px;
+  }
+}
+
+/*screed size 1200*/
+@media screen and (min-width: 1200px) {
+  .Container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr 800px 100px 1fr 800px;
+  }
 }
