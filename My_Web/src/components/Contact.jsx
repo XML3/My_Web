@@ -1,9 +1,12 @@
 import React from "react";
 import { useState } from "react";
 import ContactCSS from "../components/Contact.module.css";
-import waves from "../img/one_wave_red.svg";
+import waves from "../img/one_wave_red_rev.png";
 
 export const ContactForm = () => {
+  const headerContact = "Want to build a thing?";
+  const contactMe = "Contact Me";
+
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const [email, setEmail] = useState("");
@@ -47,6 +50,12 @@ export const ContactForm = () => {
     <>
       <div className={ContactCSS.ContactForm}>
         <img className={ContactCSS.Waves} src={waves} alt="Abstract waves" />
+        <div className={ContactCSS.HeaderContact}>
+          <h1>{headerContact}</h1>
+        </div>
+        <div className={ContactCSS.ContactMe}>
+          <h2>{contactMe}</h2>
+        </div>
         <div className={ContactCSS.Form}>
           <form onSubmit={handleSubmit}>
             {/* First Name Section  */}
@@ -109,7 +118,7 @@ export const ContactForm = () => {
                 </span>
               )}
             </div>
-            <button type="submit">Send</button>
+            <button type="submit">Send Message</button>
           </form>
         </div>
       </div>
