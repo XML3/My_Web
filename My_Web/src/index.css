@@ -31,16 +31,16 @@ p {
 }
 
 button {
-  border-radius: 30px;
+  /* border-radius: 30px; */
   border: 1px solid transparent;
   padding: 0.6em 1.2em;
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: var(--second-color);
+  background-color: #213547;
   cursor: pointer;
   transition: border-color 0.25s;
-  color: var(--background-color);
+  color: #fc354c;
 }
 button:hover {
   border-color: #deb992;
