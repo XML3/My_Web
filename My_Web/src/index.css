@@ -31,7 +31,7 @@ h3 {
 }
 
 p {
-  font-size: calc(0.6em * var(--scale-ratio));
+  font-size: calc(0.5em * var(--scale-ratio));
   line-height: 1.3;
 }
 
