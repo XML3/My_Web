@@ -7,6 +7,7 @@
   --header-fontfamily: "Karla", sans-serif;
   --main-fontfamily: "Inconsolata", monospace;
   --background-color: #051622;
+  --scale-ratio: 1.618; /* Golden ratio */
   --light-weight: 100;
 }
 
@@ -14,20 +15,70 @@ body {
   background-color: var(--background-color);
 }
 
+/*screen size 320 */
 h1 {
-  font-size: 3em;
-  line-height: 1.1;
-  font-weight: 400;
+  font-size: calc(0.5em * var(--scale-ratio) * var(--scale-ratio));
 }
 
-h3,
-p {
+h2 {
+  font-size: calc(0.7em * var(--scale-ratio));
+}
+
+h3 {
+  font-size: calc(0.6em * var(--scale-ratio));
+  line-height: 1.3;
   font-weight: 100;
 }
 
 p {
-  font-size: 0.9rem;
-  line-height: 1;
+  font-size: calc(0.6em * var(--scale-ratio));
+  line-height: 1.3;
+}
+
+/*screen size 700 */
+@media screen and (min-width: 700px) {
+  h1 {
+    font-size: calc(0.8em * var(--scale-ratio) * var(--scale-ratio));
+    line-height: 1.1;
+    font-weight: 300;
+  }
+
+  h2 {
+    font-size: calc(0.7em * var(--scale-ratio));
+  }
+
+  h3 {
+    font-size: calc(0.6em * var(--scale-ratio));
+    font-weight: 100;
+  }
+
+  p {
+    font-size: calc(0.4em * var(--scale-ratio));
+    font-weight: 100;
+    line-height: 1;
+  }
+}
+
+/*screen size 1200 */
+@media screen and (min-width: 1200px) {
+  h1 {
+    font-size: calc(
+      0.8em * var(--scale-ratio) * var(--scale-ratio) * var(--scale-ratio)
+    );
+    line-height: 1.1;
+    font-weight: 400;
+  }
+
+  h3 {
+    font-size: calc(0.7em * var(--scale-ratio));
+    font-weight: 100;
+  }
+
+  p {
+    font-size: calc(0.6em * var(--scale-ratio));
+    font-weight: 100;
+    line-height: 1;
+  }
 }
 
 button {
