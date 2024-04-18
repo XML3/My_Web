@@ -1,71 +1,149 @@
-.Content {
-  min-height: 30rem;
-  min-width: 150rem; /*300*/
-  padding: 40px;
-  margin: 5% 0;
+@media screen and (min-width: 320px) {
+  .Content {
+    min-height: 30rem;
+    min-width: 150rem; /*300*/
+    padding: 40px;
+    margin: 5% 0;
+  }
+
+  .ContentCards {
+    display: flex;
+    gap: 30px;
+    color: var(--main-fontcolor);
+    font-family: var(--main-fontfamily);
+  }
+
+  .Cards h2 {
+    font-family: var(--header-fontfamily);
+  }
+
+  .Card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    width: 10%; /* width connected to HorizonScroll carousel (dragConstraints = -width)*/
+    height: 800px;
+    margin-right: 20px;
+    padding: 30px;
+    border-radius: 20px;
+    border: 2px solid #162737;
+    background-color: var(--background-color);
+    transition: background-color 0.3s;
+  }
+
+  .githubIcon {
+    position: absolute;
+    top: 5px;
+    right: 20px;
+    z-index: 1;
+    width: 30px;
+    height: auto;
+    margin-top: 1rem;
+    border-radius: 50%;
+    box-shadow: 3px 3px 6px rgb(94, 234, 212);
+  }
+
+  .Card:hover {
+    background-color: #162737;
+  }
+
+  .TextTool {
+    font-size: 16px;
+    color: var(--button-fontcolor);
+  }
+
+  .Tool {
+    display: inline-block;
+    margin-bottom: 2rem;
+    line-height: 1.5;
+    background-color: #2b3642;
+    margin: 0.5rem;
+    padding: 0.4rem;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+    border-radius: 25px;
+  }
+
+  .CardText p {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    line-height: 1.5;
+    padding-top: 20px;
+  }
 }
 
-.ContentCards {
-  display: flex;
-  gap: 30px;
-  color: var(--main-fontcolor);
-  font-family: var(--main-fontfamily);
-}
+@media screen and (min-width: 1200px) {
+  .Content {
+    min-height: 30rem;
+    min-width: 150rem; /*300*/
+    padding: 40px;
+    margin: 5% 0;
+  }
 
-.Cards h2 {
-  font-family: var(--header-fontfamily);
-}
+  .ContentCards {
+    display: flex;
+    gap: 30px;
+    color: var(--main-fontcolor);
+    font-family: var(--main-fontfamily);
+  }
 
-.Card {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  position: relative;
-  width: 70%; /* width connected to HorizonScroll carousel (dragConstraints = -width)*/
-  height: 500px;
-  margin-right: 20px;
-  padding: 30px;
-  border-radius: 20px;
-  border: 2px solid #162737;
-  background-color: var(--background-color);
-  transition: background-color 0.3s;
-}
+  .Cards h2 {
+    font-family: var(--header-fontfamily);
+  }
 
-.githubIcon {
-  position: absolute;
-  top: 10px;
-  right: 40px;
-  z-index: 1;
-  width: 30px;
-  height: auto;
-  margin-top: 1rem;
-  border-radius: 50%;
-  box-shadow: 3px 3px 6px rgb(94, 234, 212);
-}
+  .Card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    width: 70%; /* width connected to HorizonScroll carousel (dragConstraints = -width)*/
+    height: 500px;
+    margin-right: 20px;
+    padding: 30px;
+    border-radius: 20px;
+    border: 2px solid #162737;
+    background-color: var(--background-color);
+    transition: background-color 0.3s;
+  }
 
-.Card:hover {
-  background-color: #162737;
-}
+  .githubIcon {
+    position: absolute;
+    top: 10px;
+    right: 40px;
+    z-index: 1;
+    width: 30px;
+    height: auto;
+    margin-top: 1rem;
+    border-radius: 50%;
+    box-shadow: 3px 3px 6px rgb(94, 234, 212);
+  }
 
-.TextTool {
-  font-size: 16px;
-  color: var(--button-fontcolor);
-}
+  .Card:hover {
+    background-color: #162737;
+  }
 
-.Tool {
-  display: inline-block;
-  margin-bottom: 2rem;
-  line-height: 1.5;
-  background-color: #2b3642;
-  margin: 0.5rem;
-  padding: 0.4rem;
-  padding-right: 0.5rem;
-  padding-left: 0.5rem;
-  border-radius: 25px;
-}
+  .TextTool {
+    font-size: 16px;
+    color: var(--button-fontcolor);
+  }
 
-.CardText p {
-  display: inline;
-  line-height: 1.5;
-  padding-top: 20px;
+  .Tool {
+    display: inline-block;
+    margin-bottom: 2rem;
+    line-height: 1.5;
+    background-color: #2b3642;
+    margin: 0.5rem;
+    padding: 0.4rem;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+    border-radius: 25px;
+  }
+
+  .CardText p {
+    display: inline;
+    line-height: 1.5;
+    padding-top: 20px;
+  }
 }
