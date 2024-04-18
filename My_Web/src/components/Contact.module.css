@@ -1,81 +1,109 @@
-.ContactForm {
-  grid-column-start: 1;
-  grid-column-end: -1;
-  grid-row-start: 5;
-  grid-row-end: -1;
-  display: flex;
-  flex-direction: row;
-  justify-content: start;
-  align-items: center;
-  position: relative;
-  width: 95%;
-  height: 90%;
-  left: 2rem;
-  border: 1px solid #213547;
-  padding: 2rem;
+@media screen and (min-width: 320px) {
+  .ContactForm {
+    grid-column: 1 / -1;
+    grid-row-start: 5 / 6;
+  }
+
+  .Waves {
+    position: relative;
+    width: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+    opacity: 0.8;
+  }
+
+  .HeaderContact {
+    font-family: var(--main-fontfamily);
+    color: var(--main-fontcolor);
+    position: absolute;
+    z-index: 1;
+    right: 53rem;
+    top: 8%;
+  }
 }
 
-.Waves {
-  position: relative;
-  width: 65%;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: -1;
-  opacity: 0.8;
-}
-.HeaderContact {
-  font-family: var(--main-fontfamily);
-  color: var(--main-fontcolor);
-  position: absolute;
-  z-index: 1;
-  right: 53rem;
-  top: 8%;
-}
+@media screen and (min-width: 1200px) {
+  .ContactForm {
+    grid-column-start: 1;
+    grid-column-end: -1;
+    grid-row-start: 5;
+    grid-row-end: -1;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    position: relative;
+    width: 95%;
+    height: 90%;
+    left: 2rem;
+    border: 1px solid #213547;
+    padding: 2rem;
+  }
 
-.ContactMe {
-  font-family: var(--main-fontfamily);
-  color: var(--main-fontcolor);
-  font-size: large;
-  position: absolute;
-  z-index: 1;
-  left: 3.7rem;
-  top: 25%;
-}
+  .Waves {
+    position: relative;
+    width: 65%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+    opacity: 0.8;
+  }
 
-.Form {
-  position: relative;
-  z-index: 1;
-  right: 1rem;
-  font-family: var(--main-fontfamily);
-  color: var(--main-fontcolor);
-  width: 30%;
-}
+  .HeaderContact {
+    font-family: var(--main-fontfamily);
+    color: var(--main-fontcolor);
+    position: absolute;
+    z-index: 1;
+    right: 53rem;
+    top: 8%;
+  }
 
-.Form div {
-  margin-bottom: 20px;
-}
+  .ContactMe {
+    font-family: var(--main-fontfamily);
+    color: var(--main-fontcolor);
+    font-size: large;
+    position: absolute;
+    z-index: 1;
+    left: 3.7rem;
+    top: 25%;
+  }
 
-.Form input,
-.Form textarea {
-  border-top: none; /*Remove default border*/
-  border-right: none;
-  border-left: none;
-  border-bottom: 1px solid #deb992;
-  background-color: transparent;
-  width: 100%;
-  padding: 1rem;
-  color: var(--main-fontcolor);
-  margin-bottom: 1rem;
-  /* position: relative; */
-}
+  .Form {
+    position: relative;
+    z-index: 1;
+    right: 1rem;
+    font-family: var(--main-fontfamily);
+    color: var(--main-fontcolor);
+    width: 30%;
+  }
 
-.Form input:focus,
-.Form textarea:focus {
-  outline: none; /*Remove focus outlive*/
-  border-bottom: 1px solid #0abfbc;
-  background-color: transparent;
-}
+  .Form div {
+    margin-bottom: 20px;
+  }
 
-.ErrorMessage {
-  color: #fc354c;
+  .Form input,
+  .Form textarea {
+    border-top: none; /*Remove default border*/
+    border-right: none;
+    border-left: none;
+    border-bottom: 1px solid #deb992;
+    background-color: transparent;
+    width: 100%;
+    padding: 1rem;
+    color: var(--main-fontcolor);
+    margin-bottom: 1rem;
+    /* position: relative; */
+  }
+
+  .Form input:focus,
+  .Form textarea:focus {
+    outline: none; /*Remove focus outlive*/
+    border-bottom: 1px solid #0abfbc;
+    background-color: transparent;
+  }
+
+  .ErrorMessage {
+    color: #fc354c;
+  }
 }
