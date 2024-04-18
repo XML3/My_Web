@@ -1,17 +1,38 @@
-.Colors {
-  width: 95%;
-  position: absolute;
-  left: 2%;
+@media screen and (min-width: 320px) {
+  .Colors {
+    width: 95%;
+    position: absolute;
+    left: 2%;
+  }
+
+  .MainScroll {
+    grid-column-start: 1;
+    grid-column-end: -1;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    cursor: grab;
+    overflow: hidden;
+    margin: 10% 2%;
+    background-image: linear-gradient(to right, #0abfbc, #fc354c);
+  }
 }
-.MainScroll {
-  grid-column-start: 1;
-  grid-column-end: -1;
-  grid-row-start: 4;
-  grid-row-end: 5;
-  cursor: grab;
-  overflow: hidden;
-  margin: 10% 2%;
-  /* border-radius: 30px; */
-  /* background-image: linear-gradient(to right, #162737, rgb(94, 234, 212)); */
-  background-image: linear-gradient(to right, #0abfbc, #fc354c);
+
+@media screen and (min-width: 1200px) {
+  .Colors {
+    width: 95%;
+    position: absolute;
+    left: 2%;
+  }
+  .MainScroll {
+    grid-column-start: 1;
+    grid-column-end: -1;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    cursor: grab;
+    overflow: hidden;
+    margin: 10% 2%;
+    /* border-radius: 30px; */
+    /* background-image: linear-gradient(to right, #162737, rgb(94, 234, 212)); */
+    background-image: linear-gradient(to right, #0abfbc, #fc354c);
+  }
 }
