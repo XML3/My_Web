@@ -2,6 +2,7 @@
 .Container {
   grid-column-start: 1;
   grid-column-end: -1;
+  grid-row: 1 / 2;
   display: grid;
   grid-template-columns: 1fr; /* Two columns: auto for navigation, 1fr for headers */
   grid-template-rows: auto 1fr;
@@ -116,6 +117,7 @@
   .Container {
     grid-column-start: 1;
     grid-column-end: -1;
+    grid-row: 1 / 2;
     display: grid;
     grid-template-columns: 1fr; /* Two columns: auto for navigation, 1fr for headers */
     grid-template-rows: auto 1fr;
@@ -231,6 +233,7 @@
   .Container {
     grid-column-start: 1;
     grid-column-end: -1;
+    grid-row: 1 / 2;
     display: grid;
     grid-template-columns: 1fr; /* Two columns: auto for navigation, 1fr for headers */
     grid-template-rows: auto 1fr;
@@ -345,6 +348,7 @@
   .Container {
     grid-column-start: 1;
     grid-column-end: -1;
+    grid-row: 1 / 2;
     display: grid;
     grid-template-columns: 1fr auto 1fr; /* Two columns: auto for navigation, 1fr for headers */
     grid-template-rows: 1fr, auto, 1fr;
@@ -382,7 +386,7 @@
   .HeadersContainer {
     grid-column: 2;
     grid-row: 1;
-    height: 700px;
+    /* height: 700px; */
     display: flex;
     justify-content: center; /* Center the content horizontally */
     /* Center the content vertically */
@@ -446,7 +450,7 @@
     margin-top: 20%;
     color: var(--main-fontcolor);
     font-family: var(--main-fontfamily);
-    padding-top: 1px;
+    margin-top: 8rem;
   }
 
   .Logo {
