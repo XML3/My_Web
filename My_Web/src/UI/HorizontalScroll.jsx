@@ -1,7 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 import styles from "./HorizontalScroll.module.css";
-import Combo from "../img/one_wave_red.svg";
 
 export const HorizontalScroll = ({ children }) => {
   const [width, setWidth] = useState(0);
