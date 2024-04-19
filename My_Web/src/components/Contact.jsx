@@ -118,7 +118,9 @@ export const ContactForm = () => {
                 </span>
               )}
             </div>
-            <button type="submit">Send Message</button>
+            <button className={ContactCSS.SendButton} type="submit">
+              Send Message
+            </button>
           </form>
         </div>
       </div>
