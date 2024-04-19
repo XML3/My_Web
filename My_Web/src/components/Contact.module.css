@@ -1,25 +1,84 @@
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 300px) {
   .ContactForm {
     grid-column: 1 / -1;
-    grid-row-start: 5 / 6;
+    grid-row-start: 5;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 100px 100px 800px;
+    margin-top: 5rem;
   }
 
   .Waves {
+    grid-column: 1;
+    grid-row: 3 / 4;
     position: relative;
-    width: 15%;
+    width: 80%;
     left: 50%;
+    bottom: 30%;
     transform: translateX(-50%);
     z-index: -1;
     opacity: 0.8;
   }
 
   .HeaderContact {
+    grid-column: 1;
+    grid-row: 1 / 2;
     font-family: var(--main-fontfamily);
     color: var(--main-fontcolor);
-    position: absolute;
-    z-index: 1;
-    right: 53rem;
-    top: 8%;
+    margin-left: 2rem;
+  }
+
+  .ContactMe {
+    grid-column: 1;
+    grid-row: 2 / 3;
+    font-family: var(--main-fontfamily);
+    color: var(--main-fontcolor);
+    font-size: large;
+    margin-left: 2rem;
+  }
+
+  .Form {
+    grid-column: 1;
+    grid-row: 4;
+    right: 1rem;
+    font-family: var(--main-fontfamily);
+    color: var(--main-fontcolor);
+    width: 80%;
+    margin-top: 5rem;
+    margin-left: 2rem;
+  }
+
+  .Form div {
+    margin-bottom: 20px;
+  }
+
+  .Form input,
+  .Form textarea {
+    border-top: none; /*Remove default border*/
+    border-right: none;
+    border-left: none;
+    border-bottom: 1px solid #deb992;
+    background-color: transparent;
+    width: 100%;
+    padding: 1rem;
+    color: var(--main-fontcolor);
+    margin-bottom: 1rem;
+    /* position: relative; */
+  }
+
+  .Form input:focus,
+  .Form textarea:focus {
+    outline: none; /*Remove focus outlive*/
+    border-bottom: 1px solid #0abfbc;
+    background-color: transparent;
+  }
+
+  .ErrorMessage {
+    color: #fc354c;
+  }
+
+  .SendButton {
+    margin-top: 3.5rem;
   }
 }
 
