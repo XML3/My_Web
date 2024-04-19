@@ -35,21 +35,29 @@ export const Content = () => {
           {contentData && contentData.length > 0 ? (
             contentData.map((item) => (
               <div key={item.id} className={ContentCSS.Card}>
-                <a href={item.link} target="_blank" rel="noopener noreferrer">
-                  <img
-                    src={githibIcon}
-                    alt="Github Icon"
-                    className={ContentCSS.githubIcon}
-                  />
-                </a>
-                <h2>{item.title}</h2>
-                <div className={ContentCSS.CardText}>
-                  <p>{item.text}</p>
-                </div>
+                <a
+                  href={item.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={ContentCSS.CardLink}
+                >
+                  <div>
+                    <img
+                      src={githibIcon}
+                      alt="Github Icon"
+                      className={ContentCSS.githubIcon}
+                    />
+                  </div>
 
-                <div className={ContentCSS.TextTool}>
-                  {renderStyledTools(item.tools)}
-                </div>
+                  <h2>{item.title}</h2>
+                  <div className={ContentCSS.CardText}>
+                    <p>{item.text}</p>
+                  </div>
+
+                  <div className={ContentCSS.TextTool}>
+                    {renderStyledTools(item.tools)}
+                  </div>
+                </a>
               </div>
             ))
           ) : (
