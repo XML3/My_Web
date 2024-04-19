@@ -1,9 +1,11 @@
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 300px) {
   .Content {
-    min-height: 30rem;
+    min-height: 80%;
     min-width: 150rem; /*300*/
     padding: 40px;
     margin: 5% 0;
+    position: relative;
+    bottom: 8%;
   }
 
   .ContentCards {
@@ -11,6 +13,11 @@
     gap: 30px;
     color: var(--main-fontcolor);
     font-family: var(--main-fontfamily);
+  }
+
+  .CardLink {
+    text-decoration: none;
+    color: var(--main-fontcolor);
   }
 
   .Cards h2 {
@@ -21,9 +28,10 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
     position: relative;
     width: 10%; /* width connected to HorizonScroll carousel (dragConstraints = -width)*/
-    height: 800px;
+    height: 50%;
     margin-right: 20px;
     padding: 30px;
     border-radius: 20px;
@@ -34,7 +42,7 @@
 
   .githubIcon {
     position: absolute;
-    top: 5px;
+    top: -7px;
     right: 20px;
     z-index: 1;
     width: 30px;
@@ -88,6 +96,14 @@
     color: var(--main-fontcolor);
     font-family: var(--main-fontfamily);
   }
+
+  /* .CardLink {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: var(--main-fontcolor);
+  } */
 
   .Cards h2 {
     font-family: var(--header-fontfamily);
