@@ -8,10 +8,12 @@
 }
 
 /*screed size 300*/
-.Container {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(6 1fr);
+@media screen and (min-width: 300px) {
+  .Container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 800px 1fr 300px 1200px 1200px 300px;
+  }
 }
 
 /*screed size 700*/
