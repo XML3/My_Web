@@ -1,9 +1,9 @@
 import React from "react";
-import { useState } from "react";
+import { useState, forwardRef } from "react";
 import ContactCSS from "../components/Contact.module.css";
 import waves from "../img/one_wave_red_rev.png";
 
-export const ContactForm = () => {
+export const ContactForm = forwardRef((props, ref) => {
   const headerContact = "Want to build a thing?";
   const contactMe = "Contact Me";
 
@@ -48,7 +48,7 @@ export const ContactForm = () => {
 
   return (
     <>
-      <div className={ContactCSS.ContactForm}>
+      <div ref={ref} className={ContactCSS.ContactForm}>
         <img className={ContactCSS.Waves} src={waves} alt="Abstract waves" />
         <div className={ContactCSS.HeaderContact}>
           <h1>{headerContact}</h1>
@@ -126,4 +126,6 @@ export const ContactForm = () => {
       </div>
     </>
   );
-};
+});
+
+ContactForm.displayName = "ContactForm";
