@@ -1,9 +1,9 @@
 import React from "react";
-import { useState, useEffect } from "react";
+import { forwardRef, useState, useEffect } from "react";
 import ContentCSS from "../components/Content.module.css";
 import githibIcon from "../img/github_cyan.svg";
 
-export const Content = () => {
+export const Content = forwardRef((props, ref) => {
   const [contentData, setContentData] = useState([]);
 
   useEffect(() => {
@@ -30,7 +30,7 @@ export const Content = () => {
 
   return (
     <>
-      <div className={ContentCSS.Content}>
+      <div ref={ref} className={ContentCSS.Content}>
         <div className={ContentCSS.ContentCards}>
           {contentData && contentData.length > 0 ? (
             contentData.map((item) => (
@@ -67,4 +67,6 @@ export const Content = () => {
       </div>
     </>
   );
-};
+});
+
+Content.displayName = "Content";
