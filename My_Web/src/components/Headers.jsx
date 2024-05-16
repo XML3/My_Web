@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import xaglyWebLogo from "../img/xagly_web_logo3.png";
+import xaglyWebLogo from "../img/xagly_web_logo_dots2.png";
 import HeadersCSS from "../components/Headers.module.css";
 import waves from "../img/one_wave_combo.svg";
 
-export const Headers = () => {
+export const Headers = ({ aboutRef, projectRef, contactRef }, ref) => {
   const headerOne = "Xagly Montilva";
   const headerTwo = "Full-stack Web Developer";
   const intro = "Strong focus on efficiency and an innate attention to detail.";
@@ -23,6 +23,10 @@ export const Headers = () => {
   //Function to handle hover `Leave`
   const handleMouseLeave = (item) => {
     setHoveredItem({ ...hoveredItem, [item]: false });
+  };
+
+  const scrollToSection = (ref) => {
+    ref.current.scrollIntoView({ behavior: "smooth" });
   };
 
   return (
@@ -49,6 +53,7 @@ export const Headers = () => {
         <nav className={HeadersCSS.Navigation}>
           <a
             href="#"
+            onClick={() => scrollToSection(aboutRef)}
             onMouseEnter={() => handleMouseEnter("about")}
             onMouseLeave={() => handleMouseLeave("about")}
             style={{ fontSize: hoveredItem.about ? "20px" : "17px" }}
@@ -57,6 +62,7 @@ export const Headers = () => {
           </a>
           <a
             href="#"
+            onClick={() => scrollToSection(projectRef)}
             onMouseEnter={() => handleMouseEnter("projects")}
             onMouseLeave={() => handleMouseLeave("projects")}
             style={{ fontSize: hoveredItem.projects ? "20px" : "17px" }}
@@ -65,6 +71,7 @@ export const Headers = () => {
           </a>
           <a
             href="#"
+            onClick={() => scrollToSection(contactRef)}
             onMouseEnter={() => handleMouseEnter("contact")}
             onMouseLeave={() => handleMouseLeave("contact")}
             style={{ fontSize: hoveredItem.contact ? "20px" : "17px" }}
