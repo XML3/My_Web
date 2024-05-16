@@ -1,9 +1,11 @@
-import { useEffect, useState } from "react";
+import { forwardRef, useEffect, useState } from "react";
 import AboutCSS from "../components/About.module.css";
 import AboutImage from "../img/blue_buble.svg";
 
-export const About = () => {
+// prettier does not recognise this code style, but it does work accordingly = solution: About.displayName = "About"; at the end of component
+export const About = forwardRef((props, ref) => {
   const [aboutData, setAboutData] = useState({});
+
   useEffect(() => {
     const fetchAbout = async () => {
       try {
@@ -19,7 +21,7 @@ export const About = () => {
 
   return (
     <>
-      <div className={AboutCSS.AboutContainer}>
+      <div ref={ref} className={AboutCSS.AboutContainer}>
         <div className={AboutCSS.About}>
           <div className={AboutCSS.Section}>
             <h2>{aboutData.title || "About Me"}</h2>
@@ -36,4 +38,5 @@ export const About = () => {
       </div>
     </>
   );
-};
+});
+About.displayName = "About";
