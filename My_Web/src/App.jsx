@@ -1,4 +1,4 @@
-import React from "react";
+import { React, useRef } from "react";
 import "../src/App.css";
 import { Headers } from "./components/Headers";
 import { About } from "./components/About";
@@ -7,16 +7,27 @@ import { Content } from "./components/Content";
 import { ContactForm } from "./components/Contact";
 
 function App() {
+  const aboutRef = useRef(null);
+  const projectRef = useRef(null);
+  const contactRef = useRef(null);
+
   return (
     <>
       <div className="App">
         <div className="Container">
-          <Headers />
-          <About />
+          <Headers
+            aboutRef={aboutRef}
+            projectRef={projectRef}
+            contactRef={contactRef}
+          />
+
+          <About ref={aboutRef} />
+
           <HorizontalScroll>
-            <Content />
+            <Content ref={projectRef} />
           </HorizontalScroll>
-          <ContactForm />
+
+          <ContactForm ref={contactRef} />
         </div>
       </div>
     </>
