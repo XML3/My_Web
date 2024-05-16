@@ -82,25 +82,113 @@
   }
 }
 
+@media screen and (min-width: 700px) {
+  .ContactForm {
+    grid-column: 1 / -1;
+    grid-row-start: 5;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 100px 150px 800px;
+    margin-top: 2rem;
+  }
+
+  .Waves {
+    grid-column: 1;
+    grid-row: 3 / 4;
+    position: relative;
+    width: 90%;
+    bottom: 60%;
+    left: 50%;
+
+    transform: translateX(-50%);
+    z-index: -1;
+    opacity: 0.8;
+  }
+
+  .HeaderContact {
+    grid-column: 1;
+    grid-row: 1 / 2;
+    font-family: var(--main-fontfamily);
+    color: var(--main-fontcolor);
+    margin-left: 2rem;
+  }
+
+  .ContactMe {
+    grid-column: 1;
+    grid-row: 2 / 3;
+    font-family: var(--main-fontfamily);
+    color: var(--main-fontcolor);
+    font-size: large;
+    margin-left: 2rem;
+  }
+
+  .Form {
+    grid-column: 1;
+    grid-row: 4;
+    right: 1rem;
+    font-family: var(--main-fontfamily);
+    color: var(--main-fontcolor);
+    width: 80%;
+    margin-top: 3rem;
+    margin-left: 2rem;
+  }
+
+  .Form div {
+    margin-bottom: 20px;
+  }
+
+  .Form input,
+  .Form textarea {
+    border-top: none; /*Remove default border*/
+    border-right: none;
+    border-left: none;
+    border-bottom: 1px solid #deb992;
+    background-color: transparent;
+    width: 100%;
+    padding: 0.3rem;
+    color: var(--main-fontcolor);
+    margin-bottom: 1rem;
+    /* position: relative; */
+  }
+
+  .Form input:focus,
+  .Form textarea:focus {
+    outline: none; /*Remove focus outlive*/
+    border-bottom: 1px solid #0abfbc;
+    background-color: transparent;
+  }
+
+  .ErrorMessage {
+    color: #fc354c;
+  }
+
+  .SendButton {
+    margin-top: 1.5rem;
+    margin-left: 1rem;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
 @media screen and (min-width: 1200px) {
   .ContactForm {
     grid-column-start: 1;
     grid-column-end: -1;
-    grid-row-start: 5;
-    grid-row-end: -1;
-    display: flex;
-    flex-direction: row;
-    justify-content: start;
-    align-items: center;
+    grid-row: 5;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 250px 50px 200px;
+    margin-top: 2rem;
+    border: 1px solid #213547;
+    margin-left: 2rem;
     position: relative;
     width: 95%;
     height: 90%;
-    left: 2rem;
-    border: 1px solid #213547;
-    padding: 2rem;
   }
 
   .Waves {
+    grid-column: 1 / -1;
+    grid-row: 3;
     position: relative;
     width: 65%;
     left: 50%;
@@ -110,31 +198,33 @@
   }
 
   .HeaderContact {
+    grid-column: 1;
+    grid-row: 1;
     font-family: var(--main-fontfamily);
     color: var(--main-fontcolor);
-    position: absolute;
-    z-index: 1;
-    right: 53rem;
-    top: 8%;
   }
 
   .ContactMe {
+    grid-column: 1 / -1;
+    grid-row: 2;
     font-family: var(--main-fontfamily);
     color: var(--main-fontcolor);
     font-size: large;
-    position: absolute;
+    position: relative;
     z-index: 1;
-    left: 3.7rem;
-    top: 25%;
+    /* left: 3.7rem;
+    top: 25%; */
   }
 
   .Form {
+    grid-column: 2;
+    grid-row: 1;
     position: relative;
     z-index: 1;
-    right: 1rem;
+    left: 1rem;
     font-family: var(--main-fontfamily);
     color: var(--main-fontcolor);
-    width: 30%;
+    width: 80%;
   }
 
   .Form div {
