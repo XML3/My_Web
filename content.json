@@ -27,6 +27,13 @@
       "text": "A simple Front-end React.js project designed to elevate your culinary journey. Explore an array of recipes by effortlessly searching with keywords, along with specific dietary preferences like label, diet labels, cautions, and health labels. Enhancing the user experience, this project incorporates color-coded sections on recipe cards to denote whether the recipe is Vegetarian or Vegan, as well as color labels highlighting cautions and dietary preferences.  A delightful culinary adventure created with an intuitive React.js project, meticulously crafted to cater to dietary needs and preferences. Explore, cook, and enjoy!",
       "tools": "React.js, ChakraUI, JSON",
       "link": "https://github.com/XML3/react-basics-project-starter"
+    },
+    {
+      "id": "5",
+      "title": "Simple Drum Machine",
+      "text": "An interactive drum-machine built using React.js. Featuring two sets of dynamic sound banks, switchable with the click of a button, it offers a versatile musical experience. Whether tapping the drum pads with your mouse or keyboard, this fun project allows you to immerse yourself in the beat and unleash your creativity.",
+      "tools": "React.js, CSS",
+      "link": "https://codepen.io/XML3/pen/vYwOgao?editors=1111"
     }
   ],
   "about": [
