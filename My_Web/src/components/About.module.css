@@ -31,13 +31,14 @@
     font-weight: 400;
   }
 
-  .AboutImage {
+  .AnimateSphereContainer {
     grid-column: 1;
     max-width: 100%;
-    height: auto;
+    height: 100%;
     margin: auto;
     display: flex;
     align-items: center;
+    justify-content: center;
     margin-bottom: 1.5rem;
   }
 }
@@ -64,7 +65,8 @@
     grid-column: 1;
     display: flex;
     align-items: center;
-    padding-left: 4rem;
+    padding-left: 0.5rem;
+    margin-right: 3rem;
   }
 
   .Section h2 {
@@ -79,12 +81,13 @@
     font-weight: 400;
   }
 
-  .AboutImage {
+  .AnimateSphereContainer {
     grid-column: 2;
     max-width: 100%;
     height: auto;
     margin: auto;
     display: flex;
     align-items: center;
+    justify-content: center;
   }
 }
