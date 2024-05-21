@@ -25,6 +25,7 @@ export const Headers = ({ aboutRef, projectRef, contactRef }, ref) => {
     setHoveredItem({ ...hoveredItem, [item]: false });
   };
 
+  //Scroll function to direct users to each section after clicking on nav items
   const scrollToSection = (ref) => {
     ref.current.scrollIntoView({ behavior: "smooth" });
   };
