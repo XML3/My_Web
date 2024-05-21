@@ -88,7 +88,7 @@
 @media screen and (min-width: 1200px) {
   .Content {
     min-height: 30rem;
-    min-width: 150rem; /*300*/
+    min-width: 200rem; /*300*/
     padding: 40px;
     margin: 5% 0;
   }
@@ -154,10 +154,11 @@
     line-height: 1.5;
     background-color: #2b3642;
     margin: 0.5rem;
-    padding: 0.4rem;
+    padding: 0.5rem;
     padding-right: 0.5rem;
     padding-left: 0.5rem;
     border-radius: 25px;
+    margin-top: 7%;
   }
 
   .CardText p {
