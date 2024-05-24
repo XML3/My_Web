@@ -1,233 +1,128 @@
 /*screen size 300*/
 @media screen and (min-width: 300px) {
   .Container {
-    grid-column-start: 1;
-    grid-column-end: -1;
-    grid-row: 1 / 2;
-    display: grid;
-    grid-template-columns: 1fr; /* Two columns: auto for navigation, 1fr for headers */
-    grid-template-rows: auto 1fr;
-    width: 80%;
-    margin: 0 auto; /*Center the container*/
-    height: 95%;
-  }
-
-  .Navigation {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
-    /* justify-content: center; */
-    margin-top: 2rem;
-    margin-bottom: 1rem;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
   }
 
-  .Navigation a {
-    margin-bottom: 0;
-    margin-right: 10px;
-    color: var(--button-fontcolor);
-    font-family: var(--main-fontfamily);
-    text-decoration: none;
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-
-  .Navigation a:last-child {
-    margin-right: 0;
-  }
-
-  .Navigation a:before {
-    content: "";
-    margin-left: 0px;
-  }
-
-  .Navigation a:last-child:before {
-    content: "";
+  .SideLogo {
+    grid-row: 1;
+    width: 100px;
+    height: auto;
+    position: fixed;
+    z-index: 2;
+    left: 20%;
+    top: 2%;
+    transform: translate(-50%, 5%);
   }
 
   /* Middle Section / Header */
   .HeadersContainer {
-    grid-row: 2;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .Cubes {
     display: flex;
-    justify-content: center; /* Center the content horizontally */
+    justify-content: center;
     align-items: center;
-    position: relative;
-    /* right: 5%; */
+    width: 100%;
+    height: 100px;
   }
 
   .Headers {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
     box-shadow: 1px 1px 12px 2px #888888;
-    padding-left: 10px;
-  }
-
-  .Waves {
-    position: absolute;
-    width: 80%;
-    top: 37%; /* Postion in the middle of container*/
-    /* left: 20%; */
-    transform: translateY(-50%);
-    z-index: -1;
+    padding: 10px;
   }
 
   .HeaderOne {
-    grid-row: 2;
-    grid-column: 1 / -1;
     color: var(--main-fontcolor);
     font-family: var(--header-fontfamily);
-    font-size: 30px;
-    text-align: center;
+    font-size: 24px;
+    margin-top: 20px;
     position: relative;
-    top: 50%;
+    z-index: 1;
   }
 
   .HeaderTwo {
-    grid-row: 3;
-    grid-column: 1 / -1;
     color: var(--main-fontcolor);
     font-family: var(--header-fontfamily);
-    margin-top: 15%;
-    text-align: center;
+    margin-top: 10px;
   }
 
   .HeaderTwo h2 {
     font-weight: 400;
-  }
-
-  .Intro {
-    grid-row: 4;
-    grid-column: 1 / -1;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    color: var(--main-fontcolor);
-    font-family: var(--main-fontfamily);
-    text-align: center;
-    font-size: 0.9em;
-  }
-
-  .Logo {
-    width: 150px;
-    height: auto;
-    margin-top: 2rem;
-    margin-left: auto;
-    margin-right: auto;
   }
 }
 
 /* Screen size Larger / min-width 400 px */
 @media screen and (min-width: 400px) {
   .Container {
-    grid-column-start: 1;
-    grid-column-end: -1;
-    grid-row: 1 / 2;
-    display: grid;
-    grid-template-columns: 1fr; /* Two columns: auto for navigation, 1fr for headers */
-    grid-template-rows: auto 1fr;
-    width: 80%;
-    margin: 0 auto; /*Center the container*/
-  }
-
-  .Navigation {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
-    /* justify-content: center; */
-    margin-top: 2rem;
-    margin-bottom: 1rem;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
   }
 
-  .Navigation a {
-    margin-bottom: 0;
-    margin-right: 10px;
-    color: var(--button-fontcolor);
-    font-family: var(--main-fontfamily);
-    text-decoration: none;
-    padding-left: 10px;
-    padding-right: 10px;
+  .SideLogo {
+    grid-row: 1;
+    width: 100px;
+    height: auto;
+    position: fixed;
+    z-index: 2;
+    left: 15%;
+    top: 5%;
+    transform: translate(-50%, -50%);
   }
 
-  .Navigation a:last-child {
-    margin-right: 0;
+  .Cubes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100px;
   }
-
-  .Navigation a:before {
-    content: "";
-    margin-left: 0px;
-  }
-
-  .Navigation a:last-child:before {
-    content: "";
-  }
-
   /* Middle Section / Header */
   .HeadersContainer {
-    grid-row: 2;
-    display: flex;
-    justify-content: center; /* Center the content horizontally */
-    align-items: center;
-    margin-top: 2rem;
-    position: relative;
-    /* right: 5%; */
-  }
-
-  .Headers {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 10px;
-    box-shadow: 1px 1px 12px 2px #888888;
-    padding-left: 10px;
-  }
-
-  .Waves {
-    grid-row: 2;
-    grid-column: 1;
-    padding-left: 7px;
-    justify-content: center;
-    width: 80%;
-    top: 45%;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
   }
 
   .HeaderOne {
-    grid-row: 2;
-    grid-column: 1 / -1;
     color: var(--main-fontcolor);
     font-family: var(--header-fontfamily);
-    font-size: 30px;
-    text-align: center;
+    font-size: 24px;
+    margin-top: 60px;
     position: relative;
-    top: 80%;
+    z-index: 1;
   }
 
   .HeaderTwo {
-    grid-row: 3;
-    grid-column: 1 / -1;
     color: var(--main-fontcolor);
     font-family: var(--header-fontfamily);
-    margin-top: 15%;
-    text-align: center;
+    margin-top: 10px;
   }
 
   .HeaderTwo h2 {
     font-weight: 400;
-  }
-
-  .Intro {
-    grid-row: 4;
-    grid-column: 1 / -1;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    color: var(--main-fontcolor);
-    font-family: var(--main-fontfamily);
-    text-align: center;
-  }
-
-  .Logo {
-    width: 120px;
-    height: auto;
-    margin-top: 2rem;
-    margin-left: auto;
-    margin-right: auto;
   }
 }
 
@@ -236,113 +131,61 @@
   .Container {
     grid-column-start: 1;
     grid-column-end: -1;
-    grid-row: 1 / 2;
-    display: grid;
-    grid-template-columns: 1fr; /* Two columns: auto for navigation, 1fr for headers */
-    grid-template-rows: auto 1fr;
-    width: 80%;
-    margin: 0 auto; /*Center the container*/
-  }
-
-  .Navigation {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 2rem;
-    /* margin-bottom: 1rem; */
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
   }
 
-  .Navigation a {
-    margin-bottom: 0;
-    margin-right: 10px;
-    color: var(--button-fontcolor);
-    font-family: var(--main-fontfamily);
-    text-decoration: none;
-    padding-left: 30px;
-    padding-right: 30px;
+  .SideLogo {
+    grid-row: 1;
+    width: 100px;
+    height: auto;
+    position: fixed;
+    z-index: 2;
+    left: 10%;
+    top: 5%;
+    transform: translate(-50%, -50%);
   }
 
-  .Navigation a:last-child {
-    margin-right: 0;
+  .Cubes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 200px;
   }
-
-  .Navigation a:before {
-    content: "";
-    margin-left: 0px;
-  }
-
-  .Navigation a:last-child:before {
-    content: "";
-  }
-
   /* Middle Section / Header */
   .HeadersContainer {
-    grid-row: 2;
-    display: flex;
-    justify-content: center; /* Center the content horizontally */
-    align-items: center;
-    position: relative;
-    /* right: 5%; */
-  }
-
-  .Headers {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    gap: 10px;
-    box-shadow: 1px 1px 12px 2px #888888;
-    padding-left: 10px;
-  }
-
-  .Waves {
-    grid-row: 2;
-    grid-column: 1;
-    padding-left: 7px;
-    justify-content: center;
-    width: 80%;
-    top: 43%;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
   }
 
   .HeaderOne {
-    grid-row: 2;
-    grid-column: 1 / -1;
     color: var(--main-fontcolor);
     font-family: var(--header-fontfamily);
-    font-size: 30px;
-    text-align: center;
+    font-size: 34px;
+    margin-top: 60px;
     position: relative;
-    top: 15%;
+    bottom: 35%;
+    z-index: 1;
   }
 
   .HeaderTwo {
-    grid-row: 3;
-    grid-column: 1 / -1;
     color: var(--main-fontcolor);
     font-family: var(--header-fontfamily);
-    margin-top: 4%;
-    text-align: center;
+    position: relative;
+    bottom: 25%;
   }
 
   .HeaderTwo h2 {
+    font-size: 30px;
     font-weight: 400;
-  }
-
-  .Intro {
-    grid-row: 4;
-    grid-column: 1 / -1;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    color: var(--main-fontcolor);
-    font-family: var(--main-fontfamily);
-    text-align: center;
-  }
-
-  .Logo {
-    width: 150px;
-    height: auto;
-    margin-top: 3rem;
-    margin-left: auto;
-    margin-right: auto;
   }
 }
 
@@ -351,117 +194,58 @@
   .Container {
     grid-column-start: 1;
     grid-column-end: -1;
-    grid-row: 1 / 2;
-    display: grid;
-    grid-template-columns: 1fr auto 1fr; /* Two columns: auto for navigation, 1fr for headers */
-    grid-template-rows: 1fr, auto, 1fr;
-    width: 95%;
-    height: 100%;
-  }
-
-  .Navigation {
-    grid-column: 1;
     display: flex;
     flex-direction: column;
-    margin-top: 2rem;
-    position: relative;
-    left: 70%;
-    transform: translateX(-20%);
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
   }
 
-  .Navigation a {
-    margin-bottom: 20px;
-    color: var(--button-fontcolor);
-    font-family: var(--main-fontfamily);
-    text-decoration: none;
+  .SideLogo {
+    width: 150px;
+    height: auto;
+    position: fixed;
+    z-index: 2;
+    right: 10%;
+    transform: translateX(-90%);
+    top: 20%;
   }
 
-  .Navigation a:before {
-    content: "├───";
-    margin-left: 10px;
-  }
-
-  .Navigation a:last-child:before {
-    content: "└───";
-  }
-
-  /* Middle Section / Header */
-  .HeadersContainer {
-    grid-column: 2;
-    grid-row: 1;
-    /* height: 700px; */
-    display: flex;
-    justify-content: center; /* Center the content horizontally */
-    /* Center the content vertically */
-    margin-top: 2rem;
-    position: relative;
-    z-index: -1;
-    top: 5rem;
-  }
-
-  .Headers {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(3, 200px);
-    box-shadow: 1px 1px 12px 2px #888888;
-    height: 750px;
-    padding-left: 20px;
-    width: 70%;
-    position: relative;
-    left: 30%;
-    transform: translateX(-50%);
-  }
-  .Waves {
-    grid-row: 1;
-    grid-column: 2;
-    padding-left: 7px;
-    position: relative;
-    top: 25%;
-    width: 65%;
-    left: 45%;
-    transform: translateX(-50%);
-  }
-  .HeaderOne {
-    grid-row: 2;
-    grid-column: 2 / span 5;
-    color: var(--main-fontcolor);
-    font-family: var(--header-fontfamily);
-    font-size: 30px;
+  .Cubes {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    height: 400px;
+  }
+  /* Middle Section / Header */
+  .HeadersContainer {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .HeaderOne {
+    color: var(--main-fontcolor);
+    font-family: var(--header-fontfamily);
+    font-size: 24px;
+    margin-top: 60px;
     position: relative;
-    right: 10%;
+    bottom: 35%;
+    z-index: 1;
   }
 
   .HeaderTwo {
-    grid-row: 3 / span 4;
-    grid-column: 2 / span 4;
     color: var(--main-fontcolor);
     font-family: var(--header-fontfamily);
-    margin-top: 10%;
+    margin-top: 10px;
   }
 
   .HeaderTwo h2 {
     font-weight: 400;
     font-size: calc(0.7em * var(--scale-ratio) * var(--scale-ratio));
-  }
-
-  .Intro {
-    grid-row: 3 / span 2;
-    grid-column: 2 / span 4;
-    margin-top: 20%;
-    color: var(--main-fontcolor);
-    font-family: var(--main-fontfamily);
-    margin-top: 8rem;
-  }
-
-  .Logo {
-    width: 200px;
-    height: auto;
-    margin-top: 2.5rem;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
   }
 }
