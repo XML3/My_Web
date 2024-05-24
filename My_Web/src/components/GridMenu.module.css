@@ -1,0 +1,71 @@
+@media screen and (min-width: 300px) {
+  .GridMenu {
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    z-index: 2;
+    right: 7%;
+    top: 7%;
+    transform: translateY(-50%);
+    color: rgb(252, 53, 76);
+    /* border: 1px solid rgb(252, 53, 76); */
+  }
+
+  .GridMenuClose {
+    width: 25px;
+    height: 25px;
+    position: relative;
+    z-index: 2;
+    right: 90%;
+    top: 10%;
+    transform: translate(-50%, 10%);
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .GridMenu {
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    z-index: 2;
+    right: 7%;
+    top: 7%;
+    transform: translateY(-50%);
+    color: rgb(252, 53, 76);
+    /* border: 1px solid rgb(252, 53, 76); */
+  }
+
+  .GridMenuClose {
+    width: 25px;
+    height: 25px;
+    position: relative;
+    z-index: 2;
+    right: 90%;
+    top: 10%;
+    transform: translate(-50%, 10%);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .GridMenu {
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    z-index: 2;
+    right: 7%;
+    top: 25%;
+    transform: translateY(-50%);
+    color: rgb(252, 53, 76);
+    /* border: 1px solid rgb(252, 53, 76); */
+  }
+
+  .GridMenuClose {
+    width: 40px;
+    height: 40px;
+    position: relative;
+    z-index: 2;
+    top: 20%;
+    left: 70%;
+    transform: translate(-40%, 90%);
+  }
+}
