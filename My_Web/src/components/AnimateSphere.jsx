@@ -15,7 +15,9 @@ export const AnimateSphere = () => {
 
   const setup = (p5, canvasParentRef) => {
     console.log("Setup called");
-    p5.createCanvas(700, 550, p5.WEBGL).parent(canvasParentRef);
+    p5.createCanvas(p5.windowWidth / 2.5, p5.windowHeight / 2, p5.WEBGL).parent(
+      canvasParentRef
+    );
 
     p5.loadImage(Multiwaves, (loadImage) => {
       setImg(loadImage);
@@ -26,7 +28,7 @@ export const AnimateSphere = () => {
     p5.background(5, 22, 34);
 
     //BLUE CUBE
-    // for (let x = -330; x < 330; x += 100) {
+
     p5.push();
     p5.rectMode(p5.CENTER);
     //translate(x, 0, 0);
@@ -39,7 +41,6 @@ export const AnimateSphere = () => {
     p5.strokeWeight(2);
     p5.box(250);
     p5.pop();
-    //}
 
     //Center Sphere
     if (img) {
