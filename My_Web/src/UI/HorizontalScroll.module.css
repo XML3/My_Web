@@ -30,7 +30,7 @@
     grid-row-end: 5;
     cursor: grab;
     overflow: hidden;
-    margin: 10% 2%;
+    margin: 10% 12%;
     background-image: linear-gradient(to right, #0abfbc, #fc354c);
   }
 }
