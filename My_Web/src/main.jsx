@@ -6,6 +6,7 @@ import App from "./App.jsx";
 import { Headers } from "./components/Headers.jsx";
 import { Content } from "./components/Content.jsx";
 import { ContactForm } from "./components/Contact.jsx";
+import { About } from "./components/About.jsx";
 
 const router = createBrowserRouter([
   {
@@ -15,6 +16,10 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Headers />,
+      },
+      {
+        path: "/",
+        element: <About />,
       },
       {
         path: "/",
