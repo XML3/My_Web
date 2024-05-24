@@ -1,0 +1,76 @@
+@media screen and (min-width: 300px) {
+  .Navigation {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: relative;
+    right: 90%;
+    transform: translateX(-100%);
+    top: 2.5vh;
+    height: 12vh;
+    width: 100%;
+  }
+
+  .Navigation a {
+    color: var(--button-fontcolor);
+    font-family: var(--main-fontfamily);
+    text-decoration: none;
+    transition: color 0.2s, background-color 0.2s;
+    font-size: 15px;
+  }
+
+  .Navigation a:before {
+    content: "├───";
+    padding-right: 10px;
+  }
+
+  .Navigation a:last-child:before {
+    content: "└───";
+  }
+
+  .Navigation a:hover {
+    color: rgb(252, 53, 76); /*Change color on hover */
+  }
+
+  .hovered {
+    color: var(--main-fontcolor); /*Change color on hover */
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .Navigation {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: relative;
+    left: 50%;
+    top: 15vh;
+    height: 12vh;
+    width: 100%;
+  }
+
+  .Navigation a {
+    color: var(--button-fontcolor);
+    font-family: var(--main-fontfamily);
+    text-decoration: none;
+    transition: color 0.2s, background-color 0.2s;
+    font-size: 25px;
+  }
+
+  .Navigation a:before {
+    content: "├───";
+    padding-right: 10px;
+  }
+
+  .Navigation a:last-child:before {
+    content: "└───";
+  }
+
+  .Navigation a:hover {
+    color: rgb(252, 53, 76); /*Change color on hover */
+  }
+
+  .hovered {
+    color: var(--main-fontcolor); /*Change color on hover */
+  }
+}
