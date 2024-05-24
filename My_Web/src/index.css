@@ -6,7 +6,7 @@
   --button-fontcolor: rgb(94, 234, 212);
   --header-fontfamily: "Karla", sans-serif;
   --main-fontfamily: "Inconsolata", monospace;
-  --background-color: #051622;
+  --background-color: rgb(5, 22, 34);
   --scale-ratio: 1.618; /* Golden ratio */
   --light-weight: 100;
 }
