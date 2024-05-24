@@ -180,9 +180,9 @@
     grid-template-rows: 250px 50px 200px;
     margin-top: 2rem;
     border: 1px solid #213547;
-    margin-left: 2rem;
+    margin-left: 11rem;
     position: relative;
-    width: 95%;
+    width: 77%;
     height: 90%;
   }
 
@@ -202,6 +202,8 @@
     grid-row: 1;
     font-family: var(--main-fontfamily);
     color: var(--main-fontcolor);
+    font-size: 80px;
+    padding-top: 50px;
   }
 
   .ContactMe {
