@@ -5,6 +5,7 @@ import { About } from "./components/About";
 import { HorizontalScroll } from "./UI/HorizontalScroll";
 import { Content } from "./components/Content";
 import { ContactForm } from "./components/Contact";
+import { GridMenu } from "./components/GridMenu";
 
 function App() {
   const aboutRef = useRef(null);
@@ -16,6 +17,12 @@ function App() {
       <div className="App">
         <div className="Container">
           <Headers
+            aboutRef={aboutRef}
+            projectRef={projectRef}
+            contactRef={contactRef}
+          />
+
+          <GridMenu
             aboutRef={aboutRef}
             projectRef={projectRef}
             contactRef={contactRef}
