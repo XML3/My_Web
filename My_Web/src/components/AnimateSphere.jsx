@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 import Sketch from "react-p5";
 
 export const AnimateSphere = () => {
