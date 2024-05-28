@@ -42,5 +42,17 @@
       "title": "About Me",
       "AboutMe": "Hi, I am a Full-stack Web Developer based out of Amsterdam, Netherlands with a strong focus on efficiency and an innate attention to detail, I posses a natural aptitude for understanding the intricacies of design and code structure.  Committed to continual growth to make a lasting impact on user experience.  Hi, I am a Full-stack Web Developer based out of Amsterdam, Netherlands with a strong focus on efficiency and an innate attention to detail, I posses a natural aptitude for understanding the intricacies of design and code structure.  Committed to continual growth to make a lasting impact on user experience."
     }
+  ],
+  "port": [
+    {
+      "id": "1",
+      "title": "GitHub Portfolio",
+      "text": "A collection of Front-end and Back-end repositories"
+    },
+    {
+      "id": "2",
+      "title": "CodePen Projects",
+      "text": "Interactive creative code projects"
+    }
   ]
 }
