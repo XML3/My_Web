@@ -6,6 +6,7 @@ import { HorizontalScroll } from "./UI/HorizontalScroll";
 import { Content } from "./components/Content";
 import { ContactForm } from "./components/Contact";
 import { GridMenu } from "./components/GridMenu";
+import { PortText } from "./components/PortText";
 
 function App() {
   const aboutRef = useRef(null);
@@ -29,6 +30,8 @@ function App() {
           />
 
           <About ref={aboutRef} />
+
+          <PortText />
 
           <HorizontalScroll>
             <Content ref={projectRef} />
