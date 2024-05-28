@@ -23,7 +23,7 @@ export const AnimateSphere = () => {
     } else if (p5.windowWidth <= 700) {
       canvasWidth = p5.windowWidth - 60;
     } else {
-      canvasWidth = p5.windowWidth / 2.5;
+      canvasWidth = p5.windowWidth / 2.8;
     }
 
     p5.createCanvas(
@@ -65,7 +65,7 @@ export const AnimateSphere = () => {
     } else if (p5.windowWidth <= 700) {
       canvasWidth = p5.windowWidth - 60;
     } else {
-      canvasWidth = p5.windowWidth / 2.5;
+      canvasWidth = p5.windowWidth / 2.8;
     }
     p5.resizeCanvas(canvasWidth, p5.windowHeight / 2);
   };
