@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { NavLinks } from "./NavLinks";
 import { CgMenuGridO, CgCloseO } from "react-icons/cg";
 import GridMenuCSS from "../components/GridMenu.module.css";
+import sideLogo from "../img/webgold_logo.png";
 
 export const GridMenu = ({ aboutRef, projectRef, contactRef }) => {
   const [click, setClick] = useState(false);
@@ -29,18 +30,27 @@ export const GridMenu = ({ aboutRef, projectRef, contactRef }) => {
 
   return (
     <>
-      <nav className={GridMenuCSS.GridMenu}>
-        {click ? GridMenuClose : GridMenuIcon}
-        {click && (
-          <NavLinks
-            isClicked={true}
-            closeMenu={closeMenu}
-            aboutRef={aboutRef}
-            projectRef={projectRef}
-            contactRef={contactRef}
+      <div className={GridMenuCSS.NavBarContainer}>
+        <div>
+          <img
+            className={GridMenuCSS.SideLogo}
+            src={sideLogo}
+            alt="Side logo "
           />
-        )}
-      </nav>
+        </div>
+        <nav className={GridMenuCSS.GridMenu}>
+          {click ? GridMenuClose : GridMenuIcon}
+          {click && (
+            <NavLinks
+              isClicked={true}
+              closeMenu={closeMenu}
+              aboutRef={aboutRef}
+              projectRef={projectRef}
+              contactRef={contactRef}
+            />
+          )}
+        </nav>
+      </div>
     </>
   );
 };
