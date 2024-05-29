@@ -7,6 +7,7 @@ import { Content } from "./components/Content";
 import { ContactForm } from "./components/Contact";
 import { GridMenu } from "./components/GridMenu";
 import { PortText } from "./components/PortText";
+import { Footer } from "./components/Footer";
 
 function App() {
   const aboutRef = useRef(null);
@@ -38,6 +39,8 @@ function App() {
           </HorizontalScroll>
 
           <ContactForm ref={contactRef} />
+
+          <Footer />
         </div>
       </div>
     </>
