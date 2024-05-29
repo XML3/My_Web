@@ -6,6 +6,7 @@
     grid-template-columns: 1fr;
     grid-template-rows: 100px 100px 100px 800px;
     margin-top: 5rem;
+    border-radius: 15px;
   }
 
   .Waves {
@@ -179,22 +180,12 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 250px 50px 200px;
     margin-top: 2rem;
+    background-color: var(--background-color);
     border: 1px solid #213547;
     margin-left: 11rem;
     position: relative;
     width: 77%;
     height: 90%;
-  }
-
-  .Waves {
-    grid-column: 1 / -1;
-    grid-row: 3;
-    position: relative;
-    width: 65%;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: -1;
-    opacity: 0.8;
   }
 
   .HeaderContact {
@@ -214,8 +205,6 @@
     font-size: large;
     position: relative;
     z-index: 1;
-    /* left: 3.7rem;
-    top: 25%; */
   }
 
   .Form {
