@@ -1,7 +1,6 @@
 import React from "react";
 import { useState, forwardRef } from "react";
 import ContactCSS from "../components/Contact.module.css";
-import waves from "../img/one_wave_red_rev.png";
 import { Typewriter } from "../UI/Typewriter";
 
 export const ContactForm = forwardRef((props, ref) => {
@@ -50,7 +49,6 @@ export const ContactForm = forwardRef((props, ref) => {
   return (
     <>
       <div ref={ref} className={ContactCSS.ContactForm}>
-        <img className={ContactCSS.Waves} src={waves} alt="Abstract waves" />
         <div className={ContactCSS.HeaderContact}>
           {/* <h1>{headerContact}</h1> */}
           <Typewriter text={headerContact} delay={100} />
