@@ -1,7 +1,6 @@
 import React from "react";
 import { forwardRef, useState, useEffect } from "react";
 import ContentCSS from "../components/Content.module.css";
-import githibIcon from "../img/github_cyan.svg";
 
 export const Content = forwardRef((props, ref) => {
   const [contentData, setContentData] = useState([]);
@@ -41,13 +40,6 @@ export const Content = forwardRef((props, ref) => {
                   rel="noopener noreferrer"
                   className={ContentCSS.CardLink}
                 >
-                  {/* <div>
-                    <img
-                      src={githibIcon}
-                      alt="Github Icon"
-                      className={ContentCSS.githubIcon}
-                    />
-                  </div> */}
                   <div className={ContentCSS.ImageLink}>
                     <img
                       className={ContentCSS.Image}
