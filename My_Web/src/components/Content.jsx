@@ -41,11 +41,18 @@ export const Content = forwardRef((props, ref) => {
                   rel="noopener noreferrer"
                   className={ContentCSS.CardLink}
                 >
-                  <div>
+                  {/* <div>
                     <img
                       src={githibIcon}
                       alt="Github Icon"
                       className={ContentCSS.githubIcon}
+                    />
+                  </div> */}
+                  <div className={ContentCSS.ImageLink}>
+                    <img
+                      className={ContentCSS.Image}
+                      alt="Logo Icons for each project's hosting sites"
+                      src={item.img}
                     />
                   </div>
 
