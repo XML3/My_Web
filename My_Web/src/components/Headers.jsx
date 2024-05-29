@@ -1,6 +1,6 @@
 import React from "react";
 import HeadersCSS from "../components/Headers.module.css";
-import sideLogo from "../img/new_logo.svg";
+
 import { MovingCubes } from "../components/MovingCubes";
 
 export const Headers = () => {
@@ -22,9 +22,6 @@ export const Headers = () => {
             <h2>{headerTwo}</h2>
           </div>
         </div>
-      </div>
-      <div>
-        <img className={HeadersCSS.SideLogo} src={sideLogo} alt="Side logo " />
       </div>
       {/* </div> */}
     </>
