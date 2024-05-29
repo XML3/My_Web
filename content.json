@@ -2,38 +2,51 @@
   "content": [
     {
       "id": "1",
+      "img": "https://i.ibb.co/q7FY7J3/github-cyan.png",
       "title": "Electronic Music Events - Front-End",
-      "text": "Front-end React.js project, designed to simulate the enhancement of your event experience. Seamlessly search for events by location or name, dive into informative articles, and effortlessly connect via our contact form.  The app allows event creators with intuitive tools to effortlessly manage their events. From creating, editing, to deleting events, we've streamlined the process for smooth event management experience. The project is meant to provide the versatility and convenience for event exploration and organization.",
+      "text": "Front-end React.js project, designed to simulate the enhancement of your event experience. Search events by location or name, dive into articles, and connect via contact form.  It allows event creators with intuitive tools to manage their events. From creating, editing, to deleting events. This App is meant to provide convenience for event exploration and organization.",
       "tools": "React.js, ChakraUI, JSON",
       "link": "https://github.com/XML3/starter-final-project-react"
     },
     {
       "id": "2",
+      "img": "https://i.ibb.co/q7FY7J3/github-cyan.png",
       "title": "Electronic Music Events - Express API",
-      "text": "This Back-end ExpressAPI project is the backbone of the event management system. This project effectively manages the database, enabling seamless posting, editing, and deletion of events.  Additionally, this back-end handles the contact form functionality using nodemailer, facilitating smooth communication between users and event organizers. Furthermore, it seamlessly manages image uploads by users, ensuring they are efficiently hosted on an image hosting site for their respective events.  It coherently integrates with the front-end solution to deliver a comprehensive event management experience.",
-      "tools": "Node.js, Express.js, Prisma - MySQL, Planet Scale DB, Sentry",
+      "text": "This Back-end Express API project is the backbone of the Events management system. It manages the database, enabling posting, editing, and deletion of events.  Additionally, it handles the contact form functionality using nodemailer, facilitating communication between users and App managers. Furthermore, it manages image uploads by event organizers, ensuring they are efficiently hosted on an image hosting site for their respective events.  It integrates with the front-end solution to deliver a comprehensive event management experience.",
+      "tools": "Node/Express.js, Prisma - MySQL, Planet Scale DB, Sentry",
       "link": "https://github.com/XML3/express-events-starter/tree/main/starter"
     },
     {
       "id": "3",
+      "img": "https://i.ibb.co/q7FY7J3/github-cyan.png",
       "title": "Properties - Express API",
-      "text": "Back-end Express API project, aimed at replicating the functionality of a property booking system online. This project enables users and hosts to interact with the platform, allowing them to create, view, update, and delete their personal bookings or properties effortlessly.   Moreover, the API facilitates the rating of properties and the creation of reviews, allowing users to share their experiences and insights. Notably, the system dynamically calculates the average rating for each property, ensuring up-to-date and accurate feedback for users. ",
-      "tools": "Node.js, Express.js, Prisma - MySQL, Planet Scale DB, Sentry",
+      "text": "Back-end Express API project, aimed at replicating the functionality of a property booking system online. This project manages users and hosts interaction with the platform, it handles the create, view, update, and delete sections of the App for personal bookings or properties.   Moreover, the API facilitates the rating of properties and the creation of reviews, allowing users to share their experiences and insights. Notably, the system dynamically calculates the average rating for each property, ensuring up-to-date and accurate feedback for users. ",
+      "tools": "Node/Express.js, Prisma - MySQL, Planet Scale DB, Sentry",
       "link": "https://github.com/XML3/BED-Final-Project"
     },
     {
       "id": "4",
+      "img": "https://i.ibb.co/q7FY7J3/github-cyan.png",
       "title": "Recipes - Front-End",
-      "text": "A simple Front-end React.js project designed to elevate your culinary journey. Explore an array of recipes by effortlessly searching with keywords, along with specific dietary preferences like label, diet labels, cautions, and health labels. Enhancing the user experience, this project incorporates color-coded sections on recipe cards to denote whether the recipe is Vegetarian or Vegan, as well as color labels highlighting cautions and dietary preferences.  A delightful culinary adventure created with an intuitive React.js project, meticulously crafted to cater to dietary needs and preferences. Explore, cook, and enjoy!",
+      "text": "A simple Front-end React.js project designed to elevate your culinary journey. Explores an array of recipes by searching with keywords, along with specific dietary preferences: [label, diet labels, cautions, and health labels]. The project incorporates color-coded sections on recipe cards to denote whether the recipe is Vegetarian or Vegan, as well as color labels highlighting cautions and dietary preferences.  A delightful culinary adventure created with an intuitive React.js project, crafted to cater to dietary needs and preferences.",
       "tools": "React.js, ChakraUI, JSON",
       "link": "https://github.com/XML3/react-basics-project-starter"
     },
     {
       "id": "5",
-      "title": "Simple Drum Machine",
-      "text": "An interactive drum-machine built using React.js. Featuring two sets of dynamic sound banks, switchable with the click of a button, it offers a versatile musical experience. Whether tapping the drum pads with your mouse or keyboard, this fun project allows you to immerse yourself in the beat and unleash your creativity.",
+      "img": "https://i.ibb.co/B4tkJ2f/path1.png",
+      "title": "Sample Drum Machine",
+      "text": "An interactive Sample Drum Machine built with React.js. By featuring two sets of dynamic sound banks, it offers a versatile sound experience. Whether tapping the drum pads with your mouse or with the use of the keyboard, this fun project allows users to immerse themselves in the beat and unleash their creativity.",
       "tools": "React.js, CSS",
       "link": "https://codepen.io/XML3/pen/vYwOgao?editors=1111"
+    },
+    {
+      "id": "6",
+      "img": "https://i.ibb.co/B4tkJ2f/path1.png",
+      "title": "Orbit Control",
+      "text": "A 3D Orbit Control design made with P5.js.  It allows users to control the design to manage intricate patterns on screen with the use of the mouse, whether to zoon in/out with the use of the wheel or spin the 3D design in various directions.",
+      "tools": "P5.js",
+      "link": "https://codepen.io/XML3/pen/LYobbBa"
     }
   ],
   "about": [
@@ -52,7 +65,7 @@
     {
       "id": "2",
       "title": "CodePen Projects",
-      "text": "Interactive creative code projects"
+      "text": "Creative and interactive code projects"
     }
   ]
 }
