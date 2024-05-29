@@ -20,13 +20,6 @@ export const TextAnimation = ({ children, index }) => {
   useEffect(() => {
     if (inView) {
       controls.start("visible");
-      // controls.start({
-      //   x: 30,
-      //   transition: {
-      //     duration: 2,
-      //     delay: 1,
-      //   },
-      // });
     }
   }, [controls, inView]);
 
