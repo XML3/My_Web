@@ -23,8 +23,26 @@
     color: var(--main-fontcolor);
   }
 
+  .ImageLink {
+    position: relative;
+    bottom: 20px;
+    left: 90%;
+    transform: translate(-15%, -10%);
+    margin-top: 1rem;
+  }
+
+  .Image {
+    width: 40px;
+    border-radius: 50%;
+    box-shadow: 3px 3px 6px rgb(94, 234, 212);
+  }
+
   .Cards h2 {
     font-family: var(--header-fontfamily);
+  }
+
+  .CardText p {
+    font-size: 16px;
   }
 
   .Card {
@@ -68,12 +86,12 @@
     display: inline-block;
     margin-bottom: 2rem;
     line-height: 1.5;
-    background-color: #2b3642;
+    /* background-color: #2b3642; */
     margin: 0.5rem;
     padding: 0.4rem;
     padding-right: 0.5rem;
     padding-left: 0.5rem;
-    border-radius: 25px;
+    /* border-radius: 25px; */
   }
 
   .CardText p {
@@ -118,7 +136,7 @@
     justify-content: space-between;
     position: relative;
     width: 50%; /* width connected to HorizonScroll carousel (dragConstraints = -width)*/
-    height: 500px;
+    height: 550px;
     padding: 30px;
     border-radius: 20px;
     border: 2px solid #162737;
@@ -149,14 +167,6 @@
 
   .Tool {
     display: inline-block;
-    margin-bottom: 2rem;
-    line-height: 1.5;
-    background-color: #2b3642;
-    margin: 0.5rem;
-    padding: 0.5rem;
-    padding-right: 0.5rem;
-    padding-left: 0.5rem;
-    border-radius: 25px;
     margin-top: 7%;
   }
 
