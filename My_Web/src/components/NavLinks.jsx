@@ -2,13 +2,13 @@ import React, { useState, forwardRef } from "react";
 import NavLinksCSS from "../components/NavLinks.module.css";
 
 export const NavLinks = forwardRef(
-  ({ aboutRef, projectRef, contactRef, closeMenu }, ref) => {
+  ({ aboutRef, projectRef, skillsRef, contactRef, closeMenu }, ref) => {
     //State to track hover status of navigation items
     const [hoveredItem, setHoveredItem] = useState({
       about: false,
       projects: false,
+      skills: false,
       contact: false,
-      github: false,
     });
 
     //Function to handle hover / object spread syntax to copy object and set it to true
@@ -55,6 +55,16 @@ export const NavLinks = forwardRef(
             className={hoveredItem.projects ? NavLinksCSS.hovered : ""}
           >
             Projects
+          </a>
+          <a
+            href="#"
+            onClick={() => handleClick(skillsRef)}
+            onMouseEnter={() => handleMouseEnter("skills")}
+            onMouseLeave={() => handleMouseLeave("skills")}
+            // style={{ fontSize: hoveredItem.projects ? "20px" : "17px" }}
+            className={hoveredItem.projects ? NavLinksCSS.hovered : ""}
+          >
+            Skills
           </a>
           <a
             href="#"
