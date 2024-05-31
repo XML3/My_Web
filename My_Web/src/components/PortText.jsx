@@ -26,7 +26,7 @@ export const PortText = () => {
             data.map((item, index) => (
               <TextAnimation key={item.id} index={index}>
                 <div className={PortTextCSS.Card}>
-                  <h1>{item.title}</h1>
+                  <h2>{item.title}</h2>
                   <p>{item.text}</p>
                 </div>
               </TextAnimation>
