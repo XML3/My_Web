@@ -13,47 +13,70 @@
 
 body {
   background-color: var(--background-color);
+  font-size: 1rem;
 }
 
-/*screen size 320 */
-h1 {
-  font-size: calc(0.5em * var(--scale-ratio) * var(--scale-ratio));
+@media screen and (min-width: 300px) {
+  /*screen size 300 */
+  h1 {
+    font-size: calc(0.7rem * var(--scale-ratio) * var(--scale-ratio));
+  }
+
+  h2 {
+    font-size: calc(0.7rem * var(--scale-ratio));
+  }
+
+  h3 {
+    font-size: calc(0.4rem * var(--scale-ratio) * var(--scale-ratio));
+    line-height: 1.3;
+  }
+
+  p {
+    font-size: calc(0.5rem * var(--scale-ratio));
+    line-height: 1.3;
+  }
 }
 
-h2 {
-  font-size: calc(0.7em * var(--scale-ratio));
-}
+@media screen and (min-width: 400px) {
+  /*screen size 400 */
+  h1 {
+    font-size: calc(0.8rem * var(--scale-ratio) * var(--scale-ratio));
+  }
 
-h3 {
-  font-size: calc(0.6em * var(--scale-ratio));
-  line-height: 1.3;
-  font-weight: 100;
-}
+  h2 {
+    font-size: calc(0.7rem * var(--scale-ratio));
+  }
 
-p {
-  font-size: calc(0.5em * var(--scale-ratio));
-  line-height: 1.3;
-}
+  h3 {
+    font-size: calc(0.6rem * var(--scale-ratio));
+    line-height: 1.3;
+    font-weight: 100;
+  }
 
+  p {
+    font-size: calc(0.5rem * var(--scale-ratio));
+    line-height: 1.3;
+  }
+}
 /*screen size 700 */
 @media screen and (min-width: 700px) {
   h1 {
-    font-size: calc(0.8em * var(--scale-ratio) * var(--scale-ratio));
+    font-size: calc(1.2rem * var(--scale-ratio) * var(--scale-ratio));
     line-height: 1.1;
     font-weight: 300;
   }
 
   h2 {
-    font-size: calc(0.7em * var(--scale-ratio));
+    font-size: calc(1rem * var(--scale-ratio));
   }
 
   h3 {
-    font-size: calc(0.6em * var(--scale-ratio));
+    font-size: calc(0.8rem * var(--scale-ratio));
     font-weight: 100;
   }
 
   p {
-    font-size: calc(0.5em * var(--scale-ratio));
+    font-size: calc(0.6rem * var(--scale-ratio));
     font-weight: 100;
     line-height: 1;
   }
@@ -63,19 +86,21 @@ p {
 @media screen and (min-width: 1200px) {
   h1 {
     font-size: calc(
-      0.8em * var(--scale-ratio) * var(--scale-ratio) * var(--scale-ratio)
+      1rem * var(--scale-ratio) * var(--scale-ratio) * var(--scale-ratio)
     );
     line-height: 1.1;
-    font-weight: 400;
+  }
+
+  h2 {
+    font-size: calc(1.5rem * var(--scale-ratio));
   }
 
   h3 {
-    font-size: calc(0.7em * var(--scale-ratio));
-    font-weight: 100;
+    font-size: calc(1rem * var(--scale-ratio));
   }
 
   p {
-    font-size: calc(0.6em * var(--scale-ratio));
+    font-size: calc(0.7rem * var(--scale-ratio));
     font-weight: 100;
     line-height: 1.2;
   }
