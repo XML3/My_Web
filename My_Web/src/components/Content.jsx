@@ -48,7 +48,7 @@ export const Content = forwardRef((props, ref) => {
                     />
                   </div>
 
-                  <h2>{item.title}</h2>
+                  <h3>{item.title}</h3>
                   <div className={ContentCSS.CardText}>
                     <p>{item.text}</p>
                   </div>
