@@ -49,79 +49,80 @@ export const ContactForm = forwardRef((props, ref) => {
   return (
     <>
       <div ref={ref} className={ContactCSS.ContactForm}>
-        <div className={ContactCSS.HeaderContact}>
-          {/* <h1>{headerContact}</h1> */}
-          <Typewriter text={headerContact} delay={100} />
-        </div>
-        <div className={ContactCSS.ContactMe}>
-          <h2>{contactMe}</h2>
-        </div>
-        <div className={ContactCSS.Form}>
-          <form onSubmit={handleSubmit}>
-            {/* First Name Section  */}
-            <div>
-              <label htmlFor="firstName">First Name</label>
-              <input
-                type="text"
-                id="firstName"
-                value={firstName}
-                onChange={(e) => setFirstName(e.target.value)}
-              />
-              {isFirstNameError && (
-                <span className={ContactCSS.ErrorMessage}>
-                  {" "}
-                  Please enter a valid First Name
-                </span>
-              )}
-            </div>
-            {/* Last Name Section  */}
-            <div>
-              <label htmlFor="lastName">Last Name</label>
-              <input
-                type="text"
-                id="lastName"
-                value={lastName}
-                onChange={(e) => setLastName(e.target.value)}
-              />
-              {isLastNameError && (
-                <span className={ContactCSS.ErrorMessage}>
-                  Please enter a valid Last Name
-                </span>
-              )}
-            </div>
-            {/* Email Section  */}
-            <div>
-              <label htmlFor="email">Email</label>
-              <input
-                type="email"
-                id="email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-              />
-              {isEmailError && (
-                <span className={ContactCSS.ErrorMessage}>
-                  Please enter a valid email address
-                </span>
-              )}
-            </div>
-            {/* Message Section  */}
-            <div>
-              <label htmlFor="message">Message</label>
-              <textarea
-                id="message"
-                value={message}
-                onChange={(e) => setMessage(e.target.value)}
-              />
-              {isMessageError && (
-                <span className={ContactCSS.ErrorMessage}>
-                  Please enter a valid message
-                </span>
-              )}
-            </div>
-            <button className={ContactCSS.SendButton} type="submit">
-              Send Message
-            </button>
-          </form>
+        <div className={ContactCSS.SecondContainer}>
+          <div className={ContactCSS.HeaderContact}>
+            <Typewriter text={headerContact} delay={100} />
+          </div>
+          <div className={ContactCSS.ContactMe}>
+            <h2>{contactMe}</h2>
+          </div>
+          <div className={ContactCSS.Form}>
+            <form onSubmit={handleSubmit}>
+              {/* First Name Section  */}
+              <div>
+                <label htmlFor="firstName">First Name</label>
+                <input
+                  type="text"
+                  id="firstName"
+                  value={firstName}
+                  onChange={(e) => setFirstName(e.target.value)}
+                />
+                {isFirstNameError && (
+                  <span className={ContactCSS.ErrorMessage}>
+                    {" "}
+                    Please enter a valid First Name
+                  </span>
+                )}
+              </div>
+              {/* Last Name Section  */}
+              <div>
+                <label htmlFor="lastName">Last Name</label>
+                <input
+                  type="text"
+                  id="lastName"
+                  value={lastName}
+                  onChange={(e) => setLastName(e.target.value)}
+                />
+                {isLastNameError && (
+                  <span className={ContactCSS.ErrorMessage}>
+                    Please enter a valid Last Name
+                  </span>
+                )}
+              </div>
+              {/* Email Section  */}
+              <div>
+                <label htmlFor="email">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                />
+                {isEmailError && (
+                  <span className={ContactCSS.ErrorMessage}>
+                    Please enter a valid email address
+                  </span>
+                )}
+              </div>
+              {/* Message Section  */}
+              <div>
+                <label htmlFor="message">Message</label>
+                <textarea
+                  id="message"
+                  value={message}
+                  onChange={(e) => setMessage(e.target.value)}
+                />
+                {isMessageError && (
+                  <span className={ContactCSS.ErrorMessage}>
+                    Please enter a valid message
+                  </span>
+                )}
+              </div>
+              <button className={ContactCSS.SendButton} type="submit">
+                Send Message
+              </button>
+            </form>
+          </div>
         </div>
       </div>
     </>
