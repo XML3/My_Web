@@ -13,15 +13,15 @@
       "img": "https://i.ibb.co/q7FY7J3/github-cyan.png",
       "title": "Electronic Music Events - Express API",
       "text": "This Back-end Express API project is the backbone of the Events management system. It manages the database, enabling posting, editing, and deletion of events.  Additionally, it handles the contact form functionality using nodemailer, facilitating communication between users and App managers. Furthermore, it manages image uploads by event organizers, ensuring they are efficiently hosted on an image hosting site for their respective events.  It integrates with the front-end solution to deliver a comprehensive event management experience.",
-      "tools": "Node/Express.js, Prisma - MySQL, Planet Scale DB, Sentry",
+      "tools": "Node/Express.js, Prisma[MySQ]L, Sentry",
       "link": "https://github.com/XML3/express-events-starter/tree/main/starter"
     },
     {
       "id": "3",
       "img": "https://i.ibb.co/q7FY7J3/github-cyan.png",
       "title": "Properties - Express API",
-      "text": "Back-end Express API project, aimed at replicating the functionality of a property booking system online. This project manages users and hosts interaction with the platform, it handles the create, view, update, and delete sections of the App for personal bookings or properties.   Moreover, the API facilitates the rating of properties and the creation of reviews, allowing users to share their experiences and insights. Notably, the system dynamically calculates the average rating for each property, ensuring up-to-date and accurate feedback for users. ",
-      "tools": "Node/Express.js, Prisma - MySQL, Planet Scale DB, Sentry",
+      "text": "Back-end Express API project, aimed at replicating the functionality of a property booking system online. It manages users and hosts interaction with the platform to handle the create, view, update, and delete sections of the App for personal bookings or properties with an integrated secure authentication and authorization in order to verify user's identity and grant appropiate permissions and access.  Moreover, the API facilitates the rating of properties and the creation of reviews, allowing users to share their experiences and insights. Notably, the system dynamically calculates the average rating for each property, ensuring up-to-date and accurate feedback for users. ",
+      "tools": "Node/Express.js, Prisma[MySQL], Sentry, AuthO",
       "link": "https://github.com/XML3/BED-Final-Project"
     },
     {
@@ -34,7 +34,7 @@
     },
     {
       "id": "5",
-      "img": "https://i.ibb.co/B4tkJ2f/path1.png",
+      "img": "https://i.ibb.co/Rc1H1sb/twocolor-pencode.png",
       "title": "Sample Drum Machine",
       "text": "An interactive Sample Drum Machine built with React.js. By featuring two sets of dynamic sound banks, it offers a versatile sound experience. Whether tapping the drum pads with your mouse or with the use of the keyboard, this fun project allows users to immerse themselves in the beat and unleash their creativity.",
       "tools": "React.js, CSS",
@@ -42,7 +42,7 @@
     },
     {
       "id": "6",
-      "img": "https://i.ibb.co/B4tkJ2f/path1.png",
+      "img": "https://i.ibb.co/Rc1H1sb/twocolor-pencode.png",
       "title": "Orbit Control",
       "text": "A 3D Orbit Control design made with P5.js.  It allows users to control the design to manage intricate patterns on screen with the use of the mouse, whether to zoon in/out with the use of the wheel or spin the 3D design in various directions.",
       "tools": "P5.js",
@@ -53,7 +53,7 @@
     {
       "id": "1",
       "title": "About Me",
-      "AboutMe": "Hi, I am a Full-stack Web Developer based out of Amsterdam, Netherlands with a strong focus on efficiency and an innate attention to detail, I posses a natural aptitude for understanding the intricacies of design and code structure.  Committed to continual growth to make a lasting impact on user experience.  Hi, I am a Full-stack Web Developer based out of Amsterdam, Netherlands with a strong focus on efficiency and an innate attention to detail, I posses a natural aptitude for understanding the intricacies of design and code structure.  Committed to continual growth to make a lasting impact on user experience."
+      "AboutMe": "Hi, I am a Full-stack Web Developer with great passin for all things web development and creative, with strong focus on efficiency and an innate attention to detail. Committed to continual growth to make a lasting impact on user experience and design. "
     }
   ],
   "port": [
@@ -66,6 +66,48 @@
       "id": "2",
       "title": "CodePen Projects",
       "text": "Creative and interactive code projects"
+    }
+  ],
+  "skills": [
+    {
+      "id": "1",
+      "title": "HTML5",
+      "logo": "https://i.ibb.co/VWqNJBN/html-logo.png"
+    },
+    {
+      "id": "2",
+      "title": "CSS",
+      "logo": "https://i.ibb.co/jV66jNm/css-logo.png"
+    },
+    {
+      "id": "3",
+      "title": "ChakraUI",
+      "logo": "https://i.ibb.co/rtN2TKx/chakra-logo.png"
+    },
+    {
+      "id": "4",
+      "title": "JavaScript",
+      "logo": "https://i.ibb.co/4tksVgB/js-logo.png"
+    },
+    {
+      "id": "5",
+      "title": "React",
+      "logo": "https://i.ibb.co/vHzrMTg/react-logo.png"
+    },
+    {
+      "id": "6",
+      "title": "Node.js",
+      "logo": "https://i.ibb.co/qW54Tsy/node-logo.png"
+    },
+    {
+      "id": "7",
+      "title": "MySQL",
+      "logo": "https://i.ibb.co/fDNQYbp/mysql-logo.png"
+    },
+    {
+      "id": "8",
+      "title": "Prisma",
+      "logo": "https://i.ibb.co/XLjmQvT/prisma-logo.png"
     }
   ]
 }
