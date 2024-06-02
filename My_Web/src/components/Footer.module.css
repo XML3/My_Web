@@ -8,16 +8,27 @@
   }
 
   .Footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
+    position: relative;
+    left: 55%;
+    top: 30%;
+    transform: translate(-45%, -50%);
   }
 
   .Footer p {
     color: var(--main-fontcolor);
     font-family: var(--main-fontfamily);
-    font-size: 14px;
+    font-size: 15px;
+  }
+
+  .Logo {
+    position: relative;
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%, -70%);
+  }
+  .RedLogo {
+    width: 25px;
+    height: 25px;
   }
 }
 
@@ -30,16 +41,27 @@
   }
 
   .Footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
+    position: relative;
+    left: 100%;
+    top: 30%;
+    transform: translate(-40%, -50%);
   }
 
   .Footer p {
     color: var(--main-fontcolor);
     font-family: var(--main-fontfamily);
     font-size: 14px;
+  }
+
+  .Logo {
+    position: relative;
+    left: 96%;
+    top: 30%;
+    transform: translate(-50%, -70%);
+  }
+  .RedLogo {
+    width: 30px;
+    height: 30px;
   }
 }
 
@@ -52,15 +74,26 @@
   }
 
   .Footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
+    position: relative;
+    left: 97%;
+    top: 50%;
+    transform: translate(-20%, -50%);
   }
 
   .Footer p {
     font-size: 16px;
     color: var(--main-fontcolor);
     font-family: var(--main-fontfamily);
+  }
+
+  .Logo {
+    position: relative;
+    left: 98%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .RedLogo {
+    width: 30px;
+    height: 30px;
   }
 }
