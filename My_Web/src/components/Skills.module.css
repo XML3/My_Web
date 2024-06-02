@@ -11,6 +11,7 @@
     color: var(--main-fontcolor);
     font-family: var(--header-fontfamily);
     font-weight: 700;
+    text-align: center;
   }
 
   .SecondContainer {
@@ -25,35 +26,44 @@
 
   .DarkContainer {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    align-content: space-evenly;
-
+    align-items: center;
+    flex-wrap: wrap;
     width: 95%;
     height: 95%;
     position: relative;
     top: 2%;
     background-color: var(--background-color);
     border-radius: 15px;
+    padding: 10px;
   }
 
   .DarkContainer h2 {
     color: var(--main-fontcolor);
     font-family: var(--main-fontfamily);
     font-weight: 300;
+    text-align: center;
   }
 
   .Skills {
-    width: 80px;
-    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    height: 20%;
     border: 1px solid #fc354c;
+    border-radius: 15px;
     padding: 10px;
+    margin: 0.3rem;
   }
+
   .Logos {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    align-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
   }
 
   .Logo {
@@ -64,15 +74,19 @@
   .Titles h3 {
     color: #fc354c;
     font-family: var(--main-fontfamily);
-    margin-top: 2rem;
+    margin-top: 10px;
+    text-align: center;
   }
+
+  .BottomSection {
+    margin-top: auto;
+  }
+
   .BottomSection h3 {
     color: var(--main-fontcolor);
     font-family: var(--main-fontfamily);
     font-weight: 100;
-    /* /* display: flex; */
-    justify-content: center;
-    align-content: flex-end;
+    text-align: center;
   }
 }
 
@@ -82,35 +96,88 @@
     grid-row: 5;
     width: 100;
     height: 100%;
-    background-color: red;
-    border-radius: 15px;
-  }
-
-  .SecondContainer {
-    position: relative;
-    top: 10%;
-    transform: translateY(-10%);
-    width: auto;
-    height: 85%;
-    background-color: rgb(213, 209, 191);
+    background-color: transparent;
   }
   .MainHeader h1 {
     position: relative;
     color: var(--main-fontcolor);
     font-family: var(--header-fontfamily);
     font-weight: 700;
-    margin-left: 2rem;
+    text-align: center;
+  }
+
+  .SecondContainer {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    height: 85%;
+    background-color: rgb(213, 209, 191);
+    border-radius: 15px;
   }
 
   .DarkContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
     width: 95%;
-    height: 40%;
+    height: 95%;
     position: relative;
-    top: 6%;
-    left: 2%;
-    margin-bottom: 2rem;
+    top: 2%;
     background-color: var(--background-color);
     border-radius: 15px;
+    padding: 10px;
+  }
+
+  .DarkContainer h2 {
+    color: var(--main-fontcolor);
+    font-family: var(--main-fontfamily);
+    font-weight: 300;
+    text-align: center;
+  }
+
+  .Skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    height: 20%;
+    border: 1px solid #fc354c;
+    border-radius: 15px;
+    padding: 10px;
+    margin: 0.3rem;
+  }
+
+  .Logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+
+  .Logo {
+    width: 40px;
+    height: 40px;
+  }
+
+  .Titles h3 {
+    color: #fc354c;
+    font-family: var(--main-fontfamily);
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  .BottomSection {
+    margin-top: auto;
+  }
+  .BottomSection h3 {
+    color: var(--main-fontcolor);
+    font-family: var(--main-fontfamily);
+    font-weight: 100;
+    text-align: center;
   }
 }
 
@@ -121,36 +188,65 @@
     width: 100;
     height: 100%;
     background-color: transparent;
-    border-radius: 15px;
-  }
-
-  .SecondContainer {
-    position: relative;
-    top: 10%;
-    left: 50%;
-    transform: translate(-50%, -10%);
-    width: 95%;
-    height: 85%;
-    background-color: rgb(213, 209, 191);
-    border-radius: 15px;
   }
   .MainHeader h1 {
     position: relative;
     color: var(--main-fontcolor);
     font-family: var(--header-fontfamily);
     font-weight: 700;
-    margin-left: 2rem;
+    text-align: center;
+  }
+
+  .SecondContainer {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    height: 85%;
+    background-color: rgb(213, 209, 191);
+    border-radius: 15px;
   }
 
   .DarkContainer {
-    width: 45%;
-    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 95%;
+    height: 95%;
     position: relative;
-    top: 50%;
-    right: 5%;
-    transform: translateY(-50%);
+    top: 2%;
     background-color: var(--background-color);
     border-radius: 15px;
+    padding: 10px;
+  }
+
+  .DarkContainer h2 {
+    color: var(--main-fontcolor);
+    font-family: var(--main-fontfamily);
+    font-weight: 300;
+    text-align: center;
+  }
+
+  .Skills {
+    width: 40%;
+    height: 20%;
+    border: 1px solid #fc354c;
+    border-radius: 15px;
+    padding: 10px;
+    margin: 0.3rem;
+  }
+
+  .Logo {
+    width: 50px;
+    height: 50px;
+  }
+
+  .Titles h3 {
+    color: #fc354c;
+    font-family: var(--main-fontfamily);
+    margin-top: 10px;
+    text-align: center;
   }
 }
 
@@ -159,11 +255,11 @@
     grid-column: 1 / -1;
     grid-row: 5;
     position: relative;
-    padding: 0 1rem;
+    padding: 0;
     width: 100%;
     height: 100%;
     background-color: transparent;
-    margin: auto;
+    margin: 0;
   }
 
   .SecondContainer {
@@ -173,30 +269,64 @@
     top: 20%;
     left: 50%;
     transform: translate(-50%, -30%);
-    /* margin: auto; */
-    /* padding: 2%; */
     border-radius: 15px;
     background-color: rgb(213, 209, 191);
     padding: 0 5rem;
   }
+
   .MainHeader h1 {
     position: relative;
-    top: 10%;
-    transform: translateY(-70%);
     color: var(--main-fontcolor);
     font-family: var(--header-fontfamily);
     font-weight: 700;
-    margin-left: 12rem;
+    text-align: left;
+    margin-left: 250px;
   }
 
   .DarkContainer {
-    width: 50%;
-    height: 70%;
+    display: grid;
+    grid-template-columns: repeat(4, 150px);
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    height: 95%;
     position: relative;
-    top: 50%;
-    right: 20%;
-    transform: translate(-15%, -50%);
     background-color: var(--background-color);
     border-radius: 15px;
+    padding: 10rem;
+  }
+
+  .Skills {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    padding: 1rem;
+  }
+
+  .Logo {
+    width: 50px;
+    height: 50px;
+  }
+
+  .Titles h3 {
+    color: #fc354c;
+    font-size: 24px;
+    font-family: var(--main-fontfamily);
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  .BottomSection {
+    margin-top: auto;
+    grid-column: 1/ -1;
+    text-align: center;
+  }
+
+  .BottomSection h3 {
+    color: var(--main-fontcolor);
+    font-size: 24px;
+    font-family: var(--main-fontfamily);
+    font-weight: 100;
   }
 }
