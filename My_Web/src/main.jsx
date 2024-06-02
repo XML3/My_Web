@@ -7,6 +7,7 @@ import { Headers } from "./components/Headers.jsx";
 import { Content } from "./components/Content.jsx";
 import { ContactForm } from "./components/Contact.jsx";
 import { About } from "./components/About.jsx";
+import { Skills } from "./components/Skills.jsx";
 
 const router = createBrowserRouter([
   {
@@ -24,6 +25,10 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Content />,
+      },
+      {
+        path: "/",
+        element: <Skills />,
       },
       {
         path: "/",
