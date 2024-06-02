@@ -44,7 +44,7 @@
       "id": "6",
       "img": "https://i.ibb.co/Rc1H1sb/twocolor-pencode.png",
       "title": "Orbit Control",
-      "text": "A 3D Orbit Control design made with P5.js.  It allows users to control the design to manage intricate patterns on screen with the use of the mouse, whether to zoon in/out with the use of the wheel or spin the 3D design in various directions.",
+      "text": "A 3D Orbit Control design made with P5.js.  It allows users to control the design to manage intricate patterns on screen with the use of the mouse, whether to zoon in/out with the use of the wheel or spin the 3D design in various directions.  This iteractive project can also be found on this website on the 'About Me' section.",
       "tools": "P5.js",
       "link": "https://codepen.io/XML3/pen/LYobbBa"
     }
@@ -53,7 +53,7 @@
     {
       "id": "1",
       "title": "About Me",
-      "AboutMe": "Hi, I am a Full-stack Web Developer with great passin for all things web development and creative, with strong focus on efficiency and an innate attention to detail. Committed to continual growth to make a lasting impact on user experience and design. "
+      "AboutMe": "As a full-stack web developer with a passion for web development and all things creative, I bring a unique blend of skills and experiences to the table. My early education in music, specializing in percussion, and with experience as a competitive Snare line player, has allowed me to develop a keen eye for detail, a strong focus on efficiency and a strong commitment to creativity and continuous growth to create personal and business websites that showcase a unique voice and values, ultimately to help establish a strong online presence.  When I am not busy, I enjoy producing electronic music, experimenting with new recipes, and cycling."
     }
   ],
   "port": [
@@ -72,12 +72,12 @@
     {
       "id": "1",
       "title": "HTML5",
-      "logo": "https://i.ibb.co/VWqNJBN/html-logo.png"
+      "logo": "https://i.ibb.co/kqtwCdL/html-logo-800.png"
     },
     {
       "id": "2",
       "title": "CSS",
-      "logo": "https://i.ibb.co/jV66jNm/css-logo.png"
+      "logo": "https://i.ibb.co/Nn7dWx2/css-logo.png"
     },
     {
       "id": "3",
@@ -97,7 +97,7 @@
     {
       "id": "6",
       "title": "Node.js",
-      "logo": "https://i.ibb.co/qW54Tsy/node-logo.png"
+      "logo": "https://i.ibb.co/hZMHKZb/new-node-logo.png"
     },
     {
       "id": "7",
