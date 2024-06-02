@@ -31,7 +31,6 @@
   }
 
   .HeaderOne {
-    margin-top: 20px;
     position: relative;
     z-index: 1;
   }
@@ -85,7 +84,7 @@
   }
 
   .HeaderOne {
-    margin-top: 60px;
+    /* margin-top: 60px; */
     position: relative;
     z-index: 1;
   }
@@ -141,9 +140,8 @@
     color: var(--main-fontcolor);
     font-family: var(--header-fontfamily);
     font-size: 34px;
-    margin-top: 55px;
     position: relative;
-    top: 60%;
+    top: 30%;
     z-index: 1;
   }
 
@@ -155,8 +153,7 @@
   }
 
   .HeaderTwo h2 {
-    font-size: 30px;
-    font-weight: 400;
+    font-weight: 300;
   }
 }
 
@@ -173,9 +170,6 @@
     height: 100%;
     margin: 0;
     padding: 0;
-    /* background-color: transparent; */
-    /* position: fixed;
-    z-index: -1; */
   }
 
   .Cubes {
@@ -200,9 +194,8 @@
   }
 
   .HeaderOne {
-    margin-top: 60px;
     position: relative;
-    bottom: 35%;
+    top: 75%;
     z-index: 1;
   }
 
@@ -214,7 +207,8 @@
   .HeaderTwo {
     color: var(--main-fontcolor);
     font-family: var(--header-fontfamily);
-    margin-top: 10px;
+    position: relative;
+    top: 75%;
   }
 
   .HeaderTwo h2 {
