@@ -1,5 +1,6 @@
 import { forwardRef, useState, useEffect } from "react";
 import React from "react";
+import { motion } from "framer-motion";
 import SkillsCSS from "../components/Skills.module.css";
 
 export const Skills = forwardRef((props, ref) => {
@@ -7,6 +8,23 @@ export const Skills = forwardRef((props, ref) => {
   const underTitle = "Object Relational Mapping";
 
   const [skillsData, setSkillsData] = useState([]);
+
+  const container = {
+    hidden: { opacity: 0, scale: 0 },
+    visible: {
+      opacity: 1,
+      scale: 1,
+      transition: {
+        delayChildren: 0.3,
+        staggerChildren: 0.2,
+      },
+    },
+  };
+
+  const boxes = {
+    hidden: { y: 20, opacity: 0 },
+    visible: { y: 0, opacity: 1 },
+  };
 
   useEffect(() => {
     const fetchSkills = async () => {
@@ -27,30 +45,44 @@ export const Skills = forwardRef((props, ref) => {
         <div className={SkillsCSS.MainHeader}>
           <h1>{headTitle}</h1>
         </div>
+
         <div className={SkillsCSS.SecondContainer}>
-          <div className={SkillsCSS.DarkContainer}>
-            {skillsData && skillsData.length > 0 ? (
+          <motion.div
+            className={SkillsCSS.DarkContainer}
+            variants={container}
+            initial="hidden"
+            animate={skillsData.length > 0 ? "visible" : "hidden"}
+          >
+            {/* <div className={SkillsCSS.DarkContainer}> */}
+            {skillsData.length > 0 ? (
               skillsData.map((item) => (
-                <div key={item.id} className={SkillsCSS.Skills}>
+                <motion.div
+                  key={item.id}
+                  className={SkillsCSS.Skills}
+                  variants={boxes}
+                  // custom={index}
+                >
                   <div className={SkillsCSS.Logos}>
                     <img
                       className={SkillsCSS.Logo}
-                      alt="Logos for HTML, CSS, JS, React, MySQl, Node.js, and Prisma"
+                      alt={`Logo for ${item.title}`}
                       src={item.logo}
                     />
                   </div>
                   <div className={SkillsCSS.Titles}>
                     <h3>{item.title}</h3>
                   </div>
-                </div>
+                </motion.div>
               ))
             ) : (
               <p>No content available</p>
             )}
+
             <div className={SkillsCSS.BottomSection}>
               <h3>{underTitle}</h3>
             </div>
-          </div>
+            {/* </div> */}
+          </motion.div>
         </div>
       </div>
     </>
