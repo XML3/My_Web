@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
@@ -16,12 +16,20 @@ const rightVariants = {
 export const TextAnimation = ({ children, index }) => {
   const controls = useAnimation();
   const [ref, inView] = useInView();
+  const [isAniumating, setIsAnimating] = useState(false);
 
   useEffect(() => {
-    if (inView) {
+    // if (inView) {
+    //   controls.start("visible");
+    // }
+    if (inView && !isAniumating) {
       controls.start("visible");
+      setIsAnimating(true);
+    } else if (!inView && isAniumating) {
+      controls.start("hidden");
+      setIsAnimating(false);
     }
-  }, [controls, inView]);
+  }, [controls, inView, isAniumating]);
 
   return (
     <>
