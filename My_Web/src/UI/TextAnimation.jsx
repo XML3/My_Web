@@ -19,9 +19,6 @@ export const TextAnimation = ({ children, index }) => {
   const [isAniumating, setIsAnimating] = useState(false);
 
   useEffect(() => {
-    // if (inView) {
-    //   controls.start("visible");
-    // }
     if (inView && !isAniumating) {
       controls.start("visible");
       setIsAnimating(true);
