@@ -30,6 +30,6 @@
   .Container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr 1fr 500px 1fr 900px 1fr 200px;
+    grid-template-rows: 1fr 1fr 500px 1fr 1fr 1fr 200px;
   }
 }
