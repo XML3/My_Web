@@ -75,9 +75,9 @@
 
   .Footer {
     position: relative;
-    left: 97%;
+    left: 85%;
     top: 50%;
-    transform: translate(-20%, -50%);
+    text-align: center;
   }
 
   .Footer p {
@@ -88,9 +88,8 @@
 
   .Logo {
     position: relative;
-    left: 98%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+    top: 10%;
+    text-align: center;
   }
   .RedLogo {
     width: 30px;
