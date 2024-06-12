@@ -1,9 +1,11 @@
 import React from "react";
 import { forwardRef, useState, useEffect } from "react";
 import ContentCSS from "../components/Content.module.css";
+import arrow from "../img/back_arrow.png";
 
 export const Content = forwardRef((props, ref) => {
   const [contentData, setContentData] = useState([]);
+  const [flip, setFlip] = useState([]);
 
   useEffect(() => {
     const fetchContent = async () => {
@@ -11,12 +13,17 @@ export const Content = forwardRef((props, ref) => {
         const response = await fetch("http://localhost:3000/content");
         const jsonData = await response.json();
         setContentData(jsonData);
+        setFlip(new Array(jsonData.length).fill(false));
       } catch (error) {
         console.error("Error fetching data from content:", error);
       }
     };
     fetchContent();
   }, []);
+  //handle flipped cards state
+  const handleFlip = (index) => {
+    setFlip((prev) => prev.map((item, idx) => (idx === index ? !item : item)));
+  };
 
   //Map thought tools in order to style each indivual one
   const renderStyledTools = (tools) => {
@@ -32,31 +39,66 @@ export const Content = forwardRef((props, ref) => {
       <div ref={ref} className={ContentCSS.Content}>
         <div className={ContentCSS.ContentCards}>
           {contentData && contentData.length > 0 ? (
-            contentData.map((item) => (
-              <div key={item.id} className={ContentCSS.Card}>
-                <a
-                  href={item.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className={ContentCSS.CardLink}
-                >
-                  <div className={ContentCSS.ImageLink}>
+            contentData.map((item, index) => (
+              <div
+                key={item.id}
+                className={`${ContentCSS.Card} ${
+                  flip[index] ? ContentCSS.Flip : ""
+                }`}
+              >
+                <div className={ContentCSS.FlipCardInner}>
+                  <div className={ContentCSS.FlipCardFront}>
                     <img
-                      className={ContentCSS.Image}
-                      alt="Logo Icons for each project's hosting sites"
-                      src={item.img}
+                      className={ContentCSS.ProjectImage}
+                      alt="project's images"
+                      src={item.front}
                     />
+
+                    <button
+                      className={ContentCSS.FlipButtonFront}
+                      onClick={() => handleFlip(index)}
+                    >
+                      Read More
+                    </button>
                   </div>
 
-                  <h3>{item.title}</h3>
-                  <div className={ContentCSS.CardText}>
-                    <p>{item.text}</p>
-                  </div>
+                  <div className={ContentCSS.FlipCardBack}>
+                    <a
+                      href={item.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className={ContentCSS.CardLink}
+                    >
+                      {/* Red Link SVG */}
+                      <img
+                        className={ContentCSS.LinkImage}
+                        alt="link svg"
+                        src={item.img}
+                      />
+                    </a>
 
-                  <div className={ContentCSS.TextTool}>
-                    {renderStyledTools(item.tools)}
+                    <h3>{item.title}</h3>
+                    <div className={ContentCSS.CardText}>
+                      <p>{item.text}</p>
+                    </div>
+
+                    <div className={ContentCSS.TextTool}>
+                      {renderStyledTools(item.tools)}
+                    </div>
+                    {/* </a> */}
+
+                    <button
+                      className={ContentCSS.FlipButtonBack}
+                      onClick={() => handleFlip(index)}
+                    >
+                      <img
+                        className={ContentCSS.Arrow}
+                        src={arrow}
+                        alt="back arrow svg"
+                      />
+                    </button>
                   </div>
-                </a>
+                </div>
               </div>
             ))
           ) : (
