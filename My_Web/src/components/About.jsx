@@ -8,7 +8,6 @@ export const About = forwardRef((props, ref) => {
 
   useEffect(() => {
     const fetchAbout = async () => {
-      console.log("About component mounted");
       try {
         const response = await fetch("http://localhost:3000/about");
         const aboutData = await response.json();
