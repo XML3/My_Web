@@ -1,6 +1,6 @@
 import React from "react";
 import FooterCSS from "../components/Footer.module.css";
-import RedLogo from "../img/web_red_logo.png";
+import RedLogo from "../assets/img/web_red_logo.png";
 
 export const Footer = () => {
   const copyright = "© Copyright 2024 by Xagly Montilva";
