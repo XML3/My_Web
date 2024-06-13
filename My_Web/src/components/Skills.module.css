@@ -286,7 +286,7 @@
   .DarkContainer {
     display: grid;
     grid-template-columns: repeat(4, 150px);
-    gap: 1rem;
+    gap: 1.5rem;
     justify-content: center;
     align-items: center;
     width: 95%;
