@@ -4,16 +4,7 @@ import Sketch from "react-p5";
 export const AnimateSphere = () => {
   let r = 200;
 
-  useEffect(() => {
-    console.log("AnimateSphere component mounted");
-    return () => {
-      console.log("AnimateSphere component unmounted");
-    };
-  }, []);
-
   const setup = (p5, canvasParentRef) => {
-    console.log("Setup called");
-
     //Set canvas size based on screen width
     let canvasWidth;
     if (p5.windowWidth <= 300) {
