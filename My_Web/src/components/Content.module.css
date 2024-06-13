@@ -1,6 +1,6 @@
 @media screen and (min-width: 300px) {
   .Content {
-    min-height: 80%;
+    min-height: 100%;
     min-width: 80rem;
     padding: 20px;
     margin: 5% 0;
@@ -18,7 +18,7 @@
   .Card h3 {
     font-family: var(--header-fontfamily);
     font-weight: 300;
-    font-size: 16px;
+    font-size: 18px;
   }
 
   .Card {
@@ -39,13 +39,14 @@
   .Card:hover {
     background-color: #162737;
   }
+
   .FlipCardInner {
     position: relative;
     width: 100%;
-    height: 300px;
+    height: 600px;
     text-align: center;
     transform-style: preserve-3d;
-    transition: transform 0.6;
+    transition: transform 0.6s;
   }
 
   .FlipCardInner .FlipCardBack {
@@ -79,28 +80,35 @@
     padding: 5px, 10px;
     cursor: pointer;
     border-radius: 25px;
-    font-size: 12px;
+    font-size: 16px;
   }
 
   .FlipButtonBack {
     margin-top: 20px;
     border-radius: 25px;
     cursor: pointer;
-    padding: 1px 15px;
+    padding: 1px 20px;
   }
 
+  /* Back Arrow */
   .FlipButtonBack .Arrow {
-    width: 10px;
-    height: 10px;
+    width: 20px;
+    height: 20px;
+  }
+
+  /* Back of Card Header and Link Arrow SVG */
+  .BackHeader {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
   }
 
   /* RED LINK SVG */
   .LinkImage {
-    width: 20px;
-    height: 20px;
+    width: 25px;
+    height: 25px;
     position: relative;
-    left: 50%;
-    top: 15%;
+    left: 55%;
   }
 
   .LinkImage:hover {
@@ -108,7 +116,7 @@
   }
 
   .TextTool {
-    font-size: 7px;
+    font-size: 11px;
     color: var(--button-fontcolor);
   }
 
@@ -124,7 +132,7 @@
     flex-wrap: wrap;
     line-height: 1.5;
     padding-top: 2px;
-    font-size: 7.5px;
+    font-size: 11.5px;
   }
 }
 
@@ -143,12 +151,6 @@
     gap: 30px;
     color: var(--main-fontcolor);
     font-family: var(--main-fontfamily);
-  }
-
-  .Image {
-    width: 40px;
-    border-radius: 50%;
-    box-shadow: 3px 3px 6px rgb(94, 234, 212);
   }
 
   .Card h3 {
@@ -179,10 +181,10 @@
   .FlipCardInner {
     position: relative;
     width: 100%;
-    height: 700px;
+    height: 635px;
     text-align: center;
     transform-style: preserve-3d;
-    transition: transform 0.6;
+    transition: transform 0.6s;
   }
 
   .FlipCardFront,
@@ -208,10 +210,13 @@
   }
 
   .FlipButtonFront {
+    position: relative;
+    top: 30%;
     margin-top: 30px;
-    padding: 10px, 20px;
+    padding: 10px 25px;
     cursor: pointer;
     border-radius: 25px;
+    font-size: 20px;
   }
 
   .FlipButtonBack {
@@ -221,18 +226,18 @@
     padding: 5px 30px;
   }
 
+  /* Back Arrow */
   .FlipButtonBack .Arrow {
-    width: 20px;
-    height: 20px;
+    width: 17px;
+    height: 17px;
   }
 
   /* RED LINK SVG */
   .LinkImage {
-    width: 35px;
-    height: 35px;
+    width: 20px;
+    height: 20px;
     position: relative;
-    left: 50%;
-    top: -2%;
+    left: 55%;
   }
 
   .LinkImage:hover {
@@ -240,7 +245,7 @@
   }
 
   .TextTool {
-    font-size: 16px;
+    font-size: 14px;
     color: var(--button-fontcolor);
   }
 
@@ -255,7 +260,8 @@
     flex-direction: column;
     flex-wrap: wrap;
     line-height: 1.5;
-    padding-top: 20px;
+    padding-top: 1px;
+    font-size: 16px;
   }
 }
 
@@ -280,7 +286,7 @@
     height: 100%;
     text-align: center;
     transform-style: preserve-3d;
-    transition: transform 0.6;
+    transition: transform 0.6s;
   }
 
   .FlipCardFront,
@@ -306,15 +312,18 @@
   }
 
   .FlipButtonFront {
+    position: relative;
+    top: 10%;
+    transform: translateY(-90%);
     margin-top: 30px;
     padding: 10px, 20px;
     cursor: pointer;
     border-radius: 25px;
-    font-size: 18px;
+    font-size: 20px;
   }
 
   .FlipButtonBack {
-    margin-top: 30px;
+    margin-top: 40px;
     border-radius: 25px;
     cursor: pointer;
     padding: 5px 30px;
@@ -328,7 +337,7 @@
   .Card h3 {
     font-family: var(--header-fontfamily);
     font-weight: 400;
-    font-size: 24px;
+    font-size: 28px;
   }
 
   /* BLUE Cards */
@@ -350,13 +359,16 @@
     background-color: #162737;
   }
 
-  /* RED LINK SVG */
+  /* Back of Card Header and Link Arrow SVG */
+  .BackHeader {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+  }
+  /* RED Arrow LINK SVG */
   .LinkImage {
-    width: 35px;
-    height: 35px;
-    position: relative;
-    left: 50%;
-    top: -2%;
+    width: 30px;
+    height: 30px;
   }
 
   .LinkImage:hover {
