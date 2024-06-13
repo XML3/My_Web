@@ -1,7 +1,7 @@
 import React from "react";
 import { forwardRef, useState, useEffect } from "react";
 import ContentCSS from "../components/Content.module.css";
-import arrow from "../img/back_arrow.png";
+import arrow from "../assets/img/back_arrow.png";
 
 export const Content = forwardRef((props, ref) => {
   const [contentData, setContentData] = useState([]);
@@ -63,21 +63,24 @@ export const Content = forwardRef((props, ref) => {
                   </div>
 
                   <div className={ContentCSS.FlipCardBack}>
-                    <a
-                      href={item.link}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className={ContentCSS.CardLink}
-                    >
-                      {/* Red Link SVG */}
-                      <img
-                        className={ContentCSS.LinkImage}
-                        alt="link svg"
-                        src={item.img}
-                      />
-                    </a>
+                    {/* Header with Link */}
+                    <div className={ContentCSS.BackHeader}>
+                      <h3>{item.title}</h3>
+                      <a
+                        href={item.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className={ContentCSS.CardLink}
+                      >
+                        {/* Red Link SVG */}
+                        <img
+                          className={ContentCSS.LinkImage}
+                          alt="link svg"
+                          src={item.img}
+                        />
+                      </a>
+                    </div>
 
-                    <h3>{item.title}</h3>
                     <div className={ContentCSS.CardText}>
                       <p>{item.text}</p>
                     </div>
