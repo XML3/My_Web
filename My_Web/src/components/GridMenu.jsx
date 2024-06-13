@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { NavLinks } from "./NavLinks";
 import { CgMenuGridO, CgCloseO } from "react-icons/cg";
 import GridMenuCSS from "../components/GridMenu.module.css";
-import sideLogo from "../img/webgold_logo.png";
+import sideLogo from "../assets/img/webgold_logo.png";
 
 export const GridMenu = ({ aboutRef, projectRef, contactRef }) => {
   const [click, setClick] = useState(false);
