@@ -6,7 +6,7 @@
       "title": "Electronic Music Events - Front-End",
       "text": "Front-end React.js project, designed to simulate an event management system. It allows users to search events by location or name, dive into articles, and connect via contact form.  It also allows event organizers with intuitive tools to manage their events. From creating, editing, to deleting their events. This App is meant to provide convenience for event exploration and organization.",
       "tools": "React.js, ChakraUI, JSON",
-      "link": "https://github.com/XML3/starter-final-project-react",
+      "link": "https://eventsmanagementapp.netlify.app",
       "front": "https://i.ibb.co/Q8kP2RR/evets-management21.png"
     },
     {
@@ -15,7 +15,7 @@
       "title": "Electronic Music Events - Express API",
       "text": "This Back-end Express API project is the backbone of the Events management system. It manages the database, enabling posting, editing, and deletion of events.  Additionally, it handles the contact form functionality using nodemailer, facilitating communication between users and App managers. Furthermore, it manages image uploads by event organizers, ensuring they are efficiently hosted on an image hosting site for their respective events.  It integrates with the front-end solution to deliver a comprehensive event management experience.",
       "tools": "Node/Express.js, Prisma[MySQL], Sentry",
-      "link": "https://github.com/XML3/express-events-starter/tree/main/starter",
+      "link": "https://github.com/XML3/BED-Express-Event-API",
       "front": "https://i.ibb.co/82R0Gmm/Events-red-be.png"
     },
     {
