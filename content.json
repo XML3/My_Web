@@ -3,14 +3,23 @@
     {
       "id": "1",
       "img": "https://i.ibb.co/5BLLmnS/link-img.png",
+      "title": "Recipes - Front-End",
+      "text": "A simple Front-end React.js project designed to elevate your culinary journey. Explores an array of recipes by searching with keywords, along with specific dietary preferences: [label, diet labels, cautions, and health labels]. The project incorporates color-coded sections on recipe cards to denote whether the recipe is Vegetarian or Vegan, as well as color labels highlighting cautions and dietary preferences.  A delightful culinary adventure created with an intuitive React.js project, crafted to cater to dietary needs and preferences.",
+      "tools": "React.js, ChakraUI, JSON",
+      "link": "https://tastyrecipechecker.netlify.app/",
+      "front": "https://i.ibb.co/G0yX4FX/recipe-checker2.png"
+    },
+    {
+      "id": "2",
+      "img": "https://i.ibb.co/5BLLmnS/link-img.png",
       "title": "Electronic Music Events - Front-End",
       "text": "Front-end React.js project, designed to simulate an event management system. It allows users to search events by location or name, dive into articles, and connect via contact form.  It also allows event organizers with intuitive tools to manage their events. From creating, editing, to deleting their events. Note: The porfolio deployment for this project is protected with authorization token, therefore features will not be available for testing.",
       "tools": "React.js, ChakraUI, JSON",
       "link": "https://eventsmanagementapp.netlify.app",
-      "front": "https://i.ibb.co/Q8kP2RR/evets-management21.png"
+      "front": "https://i.ibb.co/8KjXRmJ/evets-management34.png"
     },
     {
-      "id": "2",
+      "id": "3",
       "img": "https://i.ibb.co/5BLLmnS/link-img.png",
       "title": "Electronic Music Events - Express API",
       "text": "This Back-end Express API project is the backbone of the Events management system. It manages the database, enabling posting, editing, and deletion of events.  Additionally, it handles the contact form functionality using nodemailer, facilitating communication between users and App managers. Furthermore, it manages image uploads by event organizers, ensuring they are efficiently hosted on an image hosting site for their respective events.  It integrates with the front-end solution to deliver a comprehensive event management experience.",
@@ -19,7 +28,7 @@
       "front": "https://i.ibb.co/82R0Gmm/Events-red-be.png"
     },
     {
-      "id": "3",
+      "id": "4",
       "img": "https://i.ibb.co/5BLLmnS/link-img.png",
       "title": "Properties - Express API",
       "text": "Back-end Express API project, aimed at replicating the functionality of a property booking system online. It manages users and hosts interaction with the platform to handle the create, view, update, and delete sections of the App for personal bookings or properties with an integrated secure authentication and authorization in order to verify user's identity and grant appropiate permissions and access.  Moreover, the API facilitates the rating of properties and the creation of reviews, allowing users to share their experiences and insights. Notably, the system dynamically calculates the average rating for each property, ensuring up-to-date and accurate feedback for users. ",
@@ -27,15 +36,7 @@
       "link": "https://github.com/XML3/BED-Final-Project",
       "front": "https://i.ibb.co/vJPG2ss/bookings-api-green.png"
     },
-    {
-      "id": "4",
-      "img": "https://i.ibb.co/5BLLmnS/link-img.png",
-      "title": "Recipes - Front-End",
-      "text": "A simple Front-end React.js project designed to elevate your culinary journey. Explores an array of recipes by searching with keywords, along with specific dietary preferences: [label, diet labels, cautions, and health labels]. The project incorporates color-coded sections on recipe cards to denote whether the recipe is Vegetarian or Vegan, as well as color labels highlighting cautions and dietary preferences.  A delightful culinary adventure created with an intuitive React.js project, crafted to cater to dietary needs and preferences.",
-      "tools": "React.js, ChakraUI, JSON",
-      "link": "https://clever-salamander-ee39c7.netlify.app/",
-      "front": "https://i.ibb.co/G0yX4FX/recipe-checker2.png"
-    },
+
     {
       "id": "5",
       "img": "https://i.ibb.co/5BLLmnS/link-img.png",
