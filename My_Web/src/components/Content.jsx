@@ -1,7 +1,7 @@
 import React from "react";
 import { forwardRef, useState, useEffect } from "react";
 import ContentCSS from "../components/Content.module.css";
-import arrow from "../assets/img/back_arrow.png";
+import arrow from "/img/back_arrow.png";
 
 export const Content = forwardRef((props, ref) => {
   const [contentData, setContentData] = useState([]);
