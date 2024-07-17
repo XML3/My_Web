@@ -4,7 +4,7 @@ import { CgMenuGridO, CgCloseO } from "react-icons/cg";
 import GridMenuCSS from "../components/GridMenu.module.css";
 import sideLogo from "/img/webgold_logo.png";
 
-export const GridMenu = ({ aboutRef, projectRef, contactRef }) => {
+export const GridMenu = ({ aboutRef, projectRef, contactRef, skillsRef }) => {
   const [click, setClick] = useState(false);
 
   // Nav Grid Icon / Open Menu on Click
@@ -46,6 +46,7 @@ export const GridMenu = ({ aboutRef, projectRef, contactRef }) => {
               closeMenu={closeMenu}
               aboutRef={aboutRef}
               projectRef={projectRef}
+              skillsRef={skillsRef}
               contactRef={contactRef}
             />
           )}
