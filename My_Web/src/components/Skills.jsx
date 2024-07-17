@@ -3,6 +3,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import SkillsCSS from "../components/Skills.module.css";
 import { useInView } from "react-intersection-observer";
+import { API_URL } from "../UI/constants";
 
 export const Skills = forwardRef((props, ref) => {
   const headTitle = "Skills";
@@ -16,7 +17,7 @@ export const Skills = forwardRef((props, ref) => {
   useEffect(() => {
     const fetchSkills = async () => {
       try {
-        const response = await fetch("http://localhost:3000/skills");
+        const response = await fetch(`${API_URL}/skills`);
         const jsonData = await response.json();
         setSkillsData(jsonData);
       } catch (error) {

@@ -2,6 +2,7 @@ import React from "react";
 import { useState, forwardRef } from "react";
 import ContactCSS from "../components/Contact.module.css";
 import { Typewriter } from "../UI/Typewriter";
+import { API_URL } from "../UI/constants";
 
 export const ContactForm = forwardRef((props, ref) => {
   const headerContact = "Want to build a thing?";
@@ -29,7 +30,7 @@ export const ContactForm = forwardRef((props, ref) => {
     }
 
     try {
-      const response = await fetch("http://localhost:3000/send", {
+      const response = await fetch(`${API_URL}/send`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

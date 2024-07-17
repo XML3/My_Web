@@ -2,6 +2,7 @@ import React from "react";
 import { forwardRef, useState, useEffect } from "react";
 import ContentCSS from "../components/Content.module.css";
 import arrow from "/img/back_arrow.png";
+import { API_URL } from "../UI/constants";
 
 export const Content = forwardRef((props, ref) => {
   const [contentData, setContentData] = useState([]);
@@ -10,7 +11,7 @@ export const Content = forwardRef((props, ref) => {
   useEffect(() => {
     const fetchContent = async () => {
       try {
-        const response = await fetch("http://localhost:3000/content");
+        const response = await fetch(`${API_URL}/content`);
         const jsonData = await response.json();
         setContentData(jsonData);
         setFlip(new Array(jsonData.length).fill(false));

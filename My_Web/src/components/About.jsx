@@ -1,6 +1,7 @@
 import { forwardRef, useEffect, useState } from "react";
 import AboutCSS from "../components/About.module.css";
 import { AnimateSphere } from "./AnimateSphere";
+import { API_URL } from "../UI/constants";
 
 // prettier does not recognise this code style, but it does work accordingly = solution: About.displayName = "About"; at the end of component
 export const About = forwardRef((props, ref) => {
@@ -9,7 +10,7 @@ export const About = forwardRef((props, ref) => {
   useEffect(() => {
     const fetchAbout = async () => {
       try {
-        const response = await fetch("http://localhost:3000/about");
+        const response = await fetch(`${API_URL}/about`);
         const aboutData = await response.json();
         setAboutData(aboutData[0]);
       } catch (error) {

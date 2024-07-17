@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import PortTextCSS from "../components/PortText.module.css";
 import { TextAnimation } from "../UI/TextAnimation";
+import { API_URL } from "../UI/constants";
 
 export const PortText = () => {
   const [data, setData] = useState([]);
@@ -8,7 +9,7 @@ export const PortText = () => {
   useEffect(() => {
     const fetchPort = async () => {
       try {
-        const response = await fetch("http://localhost:3000/port");
+        const response = await fetch(`${API_URL}/port`);
         const jsonData = await response.json();
         setData(jsonData);
       } catch (error) {
