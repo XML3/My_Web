@@ -1,10 +1,13 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import { useState, forwardRef } from "react";
 import ContactCSS from "../components/Contact.module.css";
 import { Typewriter } from "../UI/Typewriter";
-import { API_URL } from "../UI/constants";
+import { API_URL, APP_ROUTE } from "../UI/constants";
 
 export const ContactForm = forwardRef((props, ref) => {
+  const navigate = useNavigate();
+
   const headerContact = "Want to build a thing?";
   const contactMe = "Contact Me";
 
@@ -30,7 +33,7 @@ export const ContactForm = forwardRef((props, ref) => {
     }
 
     try {
-      const response = await fetch(`${API_URL}/send`, {
+      const response = await fetch(`${API_URL}/contact`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -42,6 +45,13 @@ export const ContactForm = forwardRef((props, ref) => {
           message,
         }),
       });
+
+      if (response.ok) {
+        console.log("Your form has been successfully submitted!");
+        navigate(APP_ROUTE.HEADERS);
+      } else {
+        console.error("An error has occurred, the form failed to submit");
+      }
     } catch (error) {
       console.error("Error:", error);
     }
