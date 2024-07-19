@@ -1,7 +1,7 @@
 [build]
   command = "npm run build"
   publish = "dist"  # Update this to match the actual directory where Vite outputs the build artifacts
-    base = "MY_WEB/My_Web"
+  
 
 [build.environment]
   NODE_VERSION = "14"
