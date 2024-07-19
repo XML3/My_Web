@@ -47,13 +47,21 @@ export const ContactForm = forwardRef((props, ref) => {
       });
 
       if (response.ok) {
-        console.log("Your form has been successfully submitted!");
+        window.alert("Your form has been successfully submitted!");
+
+        //Reset Form Fields
+        setFirstName("");
+        setLastName("");
+        setEmail("");
+        setMessage("");
+        setIsSubmitted(false);
+
         navigate(APP_ROUTE.HEADERS);
       } else {
-        console.error("An error has occurred, the form failed to submit");
+        window.alert("An error has occurred, the form failed to submit");
       }
     } catch (error) {
-      console.error("Error:", error);
+      window.alert("Error:" + error.message);
     }
   };
 
