@@ -1,6 +1,6 @@
 [build]
   command = "npm run build"
-  publish = "starter/dist"  # Update this to match the actual directory where Vite outputs the build artifacts
+  publish = "dist"  # Update this to match the actual directory where Vite outputs the build artifacts
     base = "starter"  
 
 [build.environment]
