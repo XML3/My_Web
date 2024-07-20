@@ -39,6 +39,17 @@
     align-items: center;
     justify-content: center;
   }
+
+   .CanvasContainer {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+  }
+}
 }
 
 @media screen and (min-width: 700px) {
@@ -79,6 +90,16 @@
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+
+    .CanvasContainer {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
   }
 }
 
@@ -122,5 +143,15 @@
     align-items: center;
     justify-content: center;
     margin-left: 2rem; /* Small margin between About and AnimatedSphere */
+  }
+
+    .CanvasContainer {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
   }
 }
