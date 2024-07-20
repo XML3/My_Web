@@ -4,11 +4,16 @@ import Sketch from "react-p5";
 export const MovingCubes = () => {
   const [angle, setAngle] = useState(0);
   const angleRef = useRef(angle);
+  // angleRef.current = angle;
   const resizeTimeoutRef = useRef(null);
 
   useEffect(() => {
     const updateAngle = () => {
-      setAngle(angleRef.current + 0.01);
+      setAngle((prevAngle) => {
+        const newAngle = prevAngle + 0.01;
+        angleRef.current = newAngle;
+        return newAngle;
+      });
       requestAnimationFrame(updateAngle);
     };
     requestAnimationFrame(updateAngle);
@@ -25,7 +30,7 @@ export const MovingCubes = () => {
   };
 
   const draw = (p5) => {
-    console.log("Canvas size:", p5.width, p5.height); ////remove after test
+    console.log("Canvas size:", p5.width, p5.height); ////remove after
     p5.background(5, 22, 34);
 
     // Base resolution dimensions for consistency
@@ -88,16 +93,23 @@ export const MovingCubes = () => {
     // setAngle(angle + 0.02);
   };
 
+  // const windowResized = (p5) => {
+  //   p5.resizeCanvas(p5.windowWidth * 0.9, p5.windowHeight * 0.7);
+  // };
+
   const windowResized = (p5) => {
     if (resizeTimeoutRef.current) {
       clearTimeout(resizeTimeoutRef.current);
     }
 
     resizeTimeoutRef.current = setTimeout(() => {
-      console.log(
-        `Resizing canvas to: ${p5.windowWidth * 0.9} x ${p5.windowHeight * 0.7}`
-      );
-      p5.resizeCanvas(p5.windowWidth * 0.9, p5.windowHeight * 0.7);
+      // Update only if the size is different
+      const newWidth = p5.windowWidth * 0.9;
+      const newHeight = p5.windowHeight * 0.7;
+      if (p5.width !== newWidth || p5.height !== newHeight) {
+        console.log(`Resizing canvas to: ${newWidth} x ${newHeight}`);
+        p5.resizeCanvas(newWidth, newHeight);
+      }
     }, 200);
   };
 
