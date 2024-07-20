@@ -1,6 +1,14 @@
 import React, { useState, useRef, useEffect } from "react";
 import Sketch from "react-p5";
 
+const debounce = (func, wait) => {
+  let timeout;
+  return function (...args) {
+    clearTimeout(timeout);
+    timeout = setTimeout(() => func.apply(this, args), wait);
+  };
+};
+
 export const MovingCubes = () => {
   const [angle, setAngle] = useState(0);
   const angleRef = useRef(angle);
@@ -97,20 +105,20 @@ export const MovingCubes = () => {
   //   p5.resizeCanvas(p5.windowWidth * 0.9, p5.windowHeight * 0.7);
   // };
 
-  const windowResized = (p5) => {
-    if (resizeTimeoutRef.current) {
-      clearTimeout(resizeTimeoutRef.current);
-    }
+  // Debounced resize handler
+  const debouncedResize = debounce((p5) => {
+    const newWidth = p5.windowWidth * 0.9;
+    const newHeight = p5.windowHeight * 0.7;
 
-    resizeTimeoutRef.current = setTimeout(() => {
-      // Update only if the size is different
-      const newWidth = p5.windowWidth * 0.9;
-      const newHeight = p5.windowHeight * 0.7;
-      if (p5.width !== newWidth || p5.height !== newHeight) {
-        console.log(`Resizing canvas to: ${newWidth} x ${newHeight}`);
-        p5.resizeCanvas(newWidth, newHeight);
-      }
-    }, 200);
+    // Only resize if the new size is different from the current size
+    if (p5.width !== newWidth || p5.height !== newHeight) {
+      console.log(`Resizing canvas to: ${newWidth} x ${newHeight}`);
+      p5.resizeCanvas(newWidth, newHeight);
+    }
+  }, 200);
+
+  const windowResized = (p5) => {
+    debouncedResize(p5);
   };
 
   return <Sketch setup={setup} draw={draw} windowResized={windowResized} />;
