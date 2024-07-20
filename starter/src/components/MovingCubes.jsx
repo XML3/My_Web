@@ -1,6 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import Sketch from "react-p5";
 
+// Debounce function to limit resize handling frequency
 const debounce = (func, wait) => {
   let timeout;
   return function (...args) {
@@ -12,8 +13,7 @@ const debounce = (func, wait) => {
 export const MovingCubes = () => {
   const [angle, setAngle] = useState(0);
   const angleRef = useRef(angle);
-  // angleRef.current = angle;
-  const resizeTimeoutRef = useRef(null);
+  const canvasRef = useRef(null);
 
   useEffect(() => {
     const updateAngle = () => {
@@ -29,16 +29,15 @@ export const MovingCubes = () => {
 
   const setup = (p5, canvasParentRef) => {
     p5.pixelDensity(1);
-
-    p5.createCanvas(
-      p5.windowWidth * 0.9,
-      p5.windowHeight * 0.7,
-      p5.WEBGL
-    ).parent(canvasParentRef);
+    const canvas = p5
+      .createCanvas(p5.windowWidth * 0.9, p5.windowHeight * 0.7, p5.WEBGL)
+      .parent(canvasParentRef);
+    canvasRef.current = canvas;
   };
 
   const draw = (p5) => {
-    console.log("Canvas size:", p5.width, p5.height); ////remove after
+    // Log canvas size to debug resizing issues
+    console.log("Canvas size:", p5.width, p5.height);
     p5.background(5, 22, 34);
 
     // Base resolution dimensions for consistency
@@ -50,13 +49,11 @@ export const MovingCubes = () => {
     const heightScale = p5.height / baseHeight;
     const scaleFactor = Math.min(widthScale, heightScale);
 
-    // Define the number of cubes, box size, and spacing based on the base resolution and scale factor
-    // const numCubes = Math.floor((baseWidth - 50) / 100);
-    const boxSize = 150 * scaleFactor; // Base box size is 80
-    const spacing = 200 * scaleFactor; // Base spacing is 120
+    // Define box size and spacing based on scale factor
+    const boxSize = 150 * scaleFactor;
+    const spacing = 200 * scaleFactor;
 
-    //First row
-    // for (let x = -330; x < 330; x += 100) {
+    // Draw the first row of cubes
     const numCubesTopRow = 7;
     for (
       let i = -Math.floor(numCubesTopRow / 2);
@@ -66,19 +63,17 @@ export const MovingCubes = () => {
       p5.push();
       p5.rectMode(p5.CENTER);
       p5.translate((i * spacing) / 1.5, 0, 0);
-      p5.rotateY(angleRef.current); //changed from angle to angleRef
+      p5.rotateY(angleRef.current);
       p5.rotateX(angleRef.current * 1.5);
       p5.rotateZ(angleRef.current * 1.2);
       p5.noFill();
-      //p5.stroke(94, 234, 212);
       p5.stroke(252, 53, 76);
       p5.strokeWeight(1);
       p5.box(boxSize);
       p5.pop();
     }
 
-    //Second row of cubes
-    // for (let x = -133; x < 133; x += 80) {
+    // Draw the second row of cubes
     const numCubesBottomRow = 4;
     for (
       let i = -Math.floor(numCubesBottomRow / 2);
@@ -88,32 +83,29 @@ export const MovingCubes = () => {
       p5.push();
       p5.rectMode(p5.CENTER);
       p5.translate((i * spacing) / 2, spacing / 2, 0);
-      p5.rotateY(angleRef.current); // chagned from angle to angleRef.current
+      p5.rotateY(angleRef.current);
       p5.rotateX(angleRef.current * 1.5);
       p5.rotateZ(angleRef.current * 1.2);
       p5.noFill();
-      //p5.stroke(94, 234, 212);
       p5.stroke(252, 53, 76);
       p5.strokeWeight(1);
-      p5.box(boxSize * 1);
+      p5.box(boxSize);
       p5.pop();
     }
-    // setAngle(angle + 0.02);
   };
-
-  // const windowResized = (p5) => {
-  //   p5.resizeCanvas(p5.windowWidth * 0.9, p5.windowHeight * 0.7);
-  // };
 
   // Debounced resize handler
   const debouncedResize = debounce((p5) => {
-    const newWidth = p5.windowWidth * 0.9;
-    const newHeight = p5.windowHeight * 0.7;
+    const canvas = canvasRef.current;
+    if (canvas) {
+      const newWidth = p5.windowWidth * 0.9;
+      const newHeight = p5.windowHeight * 0.7;
 
-    // Only resize if the new size is different from the current size
-    if (p5.width !== newWidth || p5.height !== newHeight) {
-      console.log(`Resizing canvas to: ${newWidth} x ${newHeight}`);
-      p5.resizeCanvas(newWidth, newHeight);
+      // Only resize if the new size is different from the current size
+      if (canvas.width !== newWidth || canvas.height !== newHeight) {
+        console.log(`Resizing canvas to: ${newWidth} x ${newHeight}`);
+        canvas.resizeCanvas(newWidth, newHeight);
+      }
     }
   }, 200);
 
