@@ -1,7 +1,7 @@
-import React, { useState, useRef, useEffect } from "react";
+import React, { useRef, useEffect } from "react";
 import Sketch from "react-p5";
 
-// Debounce function to limit resize handling frequency
+// Function to debounce calls to the resize handler
 const debounce = (func, wait) => {
   let timeout;
   return function (...args) {
@@ -11,44 +11,46 @@ const debounce = (func, wait) => {
 };
 
 export const MovingCubes = () => {
-  const [angle, setAngle] = useState(0);
-  const angleRef = useRef(angle);
+  const angleRef = useRef(0);
   const canvasRef = useRef(null);
 
-  useEffect(() => {
-    const updateAngle = () => {
-      setAngle((prevAngle) => {
-        const newAngle = prevAngle + 0.01;
-        angleRef.current = newAngle;
-        return newAngle;
-      });
-      requestAnimationFrame(updateAngle);
-    };
+  // Function to update angle for animation
+  const updateAngle = () => {
+    angleRef.current += 0.01;
     requestAnimationFrame(updateAngle);
+  };
+
+  useEffect(() => {
+    // Start angle update loop
+    updateAngle();
   }, []);
 
+  // Setup function for p5.js
   const setup = (p5, canvasParentRef) => {
     p5.pixelDensity(1);
-    const canvas = p5
-      .createCanvas(p5.windowWidth * 0.9, p5.windowHeight * 0.7, p5.WEBGL)
-      .parent(canvasParentRef);
+    const canvas = p5.createCanvas(
+      p5.windowWidth * 0.9,
+      p5.windowHeight * 0.7,
+      p5.WEBGL
+    );
+    canvas.parent(canvasParentRef);
     canvasRef.current = canvas;
   };
 
+  // Draw function for p5.js
   const draw = (p5) => {
-    console.log("Canvas size:", p5.width, p5.height); // Remove this line when done debugging
     p5.background(5, 22, 34);
 
-    // Base resolution dimensions for consistency
+    // Base resolution dimensions
     const baseWidth = 1200;
     const baseHeight = 800;
 
-    // Scaling factors based on the current canvas size compared to the base resolution
+    // Scaling factors based on canvas size
     const widthScale = p5.width / baseWidth;
     const heightScale = p5.height / baseHeight;
     const scaleFactor = Math.min(widthScale, heightScale);
 
-    // Define box size and spacing based on scale factor
+    // Box size and spacing
     const boxSize = 150 * scaleFactor;
     const spacing = 200 * scaleFactor;
 
@@ -93,15 +95,15 @@ export const MovingCubes = () => {
     }
   };
 
-  // Debounced resize handler
+  // Resize handler with debounce
   const debouncedResize = debounce((p5) => {
     const newWidth = p5.windowWidth * 0.9;
     const newHeight = p5.windowHeight * 0.7;
-    const canvas = canvasRef.current;
-
-    // Only resize if the new size is different from the current size
-    if (canvas && (canvas.width !== newWidth || canvas.height !== newHeight)) {
-      console.log(`Resizing canvas to: ${newWidth} x ${newHeight}`);
+    if (
+      canvasRef.current &&
+      (canvasRef.current.width !== newWidth ||
+        canvasRef.current.height !== newHeight)
+    ) {
       p5.resizeCanvas(newWidth, newHeight);
     }
   }, 200);
