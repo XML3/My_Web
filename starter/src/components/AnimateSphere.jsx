@@ -5,6 +5,7 @@ export const AnimateSphere = () => {
   let r = 200;
 
   const setup = (p5, canvasParentRef) => {
+    p5.pixelDensity(1);
     //Set canvas size based on screen width
     let canvasWidth;
     if (p5.windowWidth <= 300) {
