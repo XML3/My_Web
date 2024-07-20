@@ -1,8 +1,18 @@
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import Sketch from "react-p5";
 
 export const MovingCubes = () => {
   const [angle, setAngle] = useState(0);
+  const angleRef = useRef(angle);
+  angleRef.current = angle;
+
+  useEffect(() => {
+    const updateAngle = () => {
+      setAngle(angleRef.current + 0.01);
+      requestAnimationFrame(updateAngle);
+    };
+    requestAnimationFrame(updateAngle);
+  }, []);
 
   const setup = (p5, canvasParentRef) => {
     p5.pixelDensity(1);
@@ -42,9 +52,9 @@ export const MovingCubes = () => {
       p5.push();
       p5.rectMode(p5.CENTER);
       p5.translate((i * spacing) / 1.5, 0, 0);
-      p5.rotateY(angle);
-      p5.rotateX(angle * 1.5);
-      p5.rotateZ(angle * 1.2);
+      p5.rotateY(angleRef.current); //changed from angle to angleRef
+      p5.rotateX(angleRef.current * 1.5);
+      p5.rotateZ(angleRef.current * 1.2);
       p5.noFill();
       //p5.stroke(94, 234, 212);
       p5.stroke(252, 53, 76);
@@ -64,9 +74,9 @@ export const MovingCubes = () => {
       p5.push();
       p5.rectMode(p5.CENTER);
       p5.translate((i * spacing) / 2, spacing / 2, 0);
-      p5.rotateY(angle);
-      p5.rotateX(angle * 1.5);
-      p5.rotateZ(angle * 1.2);
+      p5.rotateY(angleRef.current); // chagned from angle to angleRef.current
+      p5.rotateX(angleRef.curren * 1.5);
+      p5.rotateZ(angleRef.current * 1.2);
       p5.noFill();
       //p5.stroke(94, 234, 212);
       p5.stroke(252, 53, 76);
@@ -74,7 +84,7 @@ export const MovingCubes = () => {
       p5.box(boxSize * 1);
       p5.pop();
     }
-    setAngle(angle + 0.02);
+    // setAngle(angle + 0.02);
   };
 
   const windowResized = (p5) => {
