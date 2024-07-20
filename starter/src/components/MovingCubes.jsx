@@ -51,8 +51,8 @@ export const MovingCubes = () => {
     ) {
       p5.push();
       p5.rectMode(p5.CENTER);
-      // p5.translate((i * spacing) / 1.5, 0, 0);
-      p5.translate(i * spacing, -spacing / 2, 0);
+      p5.translate((i * spacing) / 1.5, 0, 0);
+      // p5.translate(i * spacing, -spacing / 2, 0);
       p5.rotateY(angleRef.current); //changed from angle to angleRef
       p5.rotateX(angleRef.current * 1.5);
       p5.rotateZ(angleRef.current * 1.2);
@@ -74,8 +74,8 @@ export const MovingCubes = () => {
     ) {
       p5.push();
       p5.rectMode(p5.CENTER);
-      // p5.translate((i * spacing) / 2, spacing / 2, 0);
-      p5.translate(i * spacing, spacing / 2, 0);
+      p5.translate((i * spacing) / 2, spacing / 2, 0);
+      // p5.translate(i * spacing, spacing / 2, 0);
       p5.rotateY(angleRef.current); // chagned from angle to angleRef.current
       p5.rotateX(angleRef.current * 1.5);
       p5.rotateZ(angleRef.current * 1.2);
