@@ -4,14 +4,14 @@ import Sketch from "react-p5";
 export const MovingCubes = () => {
   const [angle, setAngle] = useState(0);
   const angleRef = useRef(angle);
-  angleRef.current = angle;
+  const resizeTimeoutRef = useRef(null);
 
   useEffect(() => {
-    // const updateAngle = () => {
-    //   setAngle(angleRef.current + 0.01);
-    //   requestAnimationFrame(updateAngle);
-    // };
-    // requestAnimationFrame(updateAngle);
+    const updateAngle = () => {
+      setAngle(angleRef.current + 0.01);
+      requestAnimationFrame(updateAngle);
+    };
+    requestAnimationFrame(updateAngle);
   }, []);
 
   const setup = (p5, canvasParentRef) => {
@@ -89,7 +89,16 @@ export const MovingCubes = () => {
   };
 
   const windowResized = (p5) => {
-    p5.resizeCanvas(p5.windowWidth * 0.9, p5.windowHeight * 0.7);
+    if (resizeTimeoutRef.current) {
+      clearTimeout(resizeTimeoutRef.current);
+    }
+
+    resizeTimeoutRef.current = setTimeout(() => {
+      console.log(
+        `Resizing canvas to: ${p5.windowWidth * 0.9} x ${p5.windowHeight * 0.7}`
+      );
+      p5.resizeCanvas(p5.windowWidth * 0.9, p5.windowHeight * 0.7);
+    }, 200);
   };
 
   return <Sketch setup={setup} draw={draw} windowResized={windowResized} />;
