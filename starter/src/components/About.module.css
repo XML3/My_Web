@@ -54,9 +54,8 @@
     position: relative;
     overflow: hidden;
     padding: 0 1rem;
-   
+  }
 }
-
 @media screen and (min-width: 700px) {
   .AboutContainer {
     grid-column: 1 / -1;
