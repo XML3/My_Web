@@ -9,11 +9,13 @@
     background-color: rgb(213, 209, 191);
     border-radius: 15px;
     margin-top: 2rem;
+    overflow: hidden;
   }
 
   .About {
     display: flex;
     padding-left: 1rem;
+    flex-direction: column;
   }
 
   .Section h2 {
@@ -27,7 +29,8 @@
     font-family: var(--main-fontfamily);
     line-height: 1.5;
     font-weight: 400;
-    /* font-size: 20px; */
+    margin: 0;
+    overflow: hidden;
   }
 
   .AnimateSphereContainer {
@@ -38,6 +41,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
+    overflow: hidden;
   }
 
   .CanvasContainer {
