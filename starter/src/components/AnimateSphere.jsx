@@ -18,7 +18,7 @@ export const AnimateSphere = () => {
     p5.background("#051622");
 
     p5.orbitControl(2, 2); // Reduced from 4 / 4
-    p5.frameRate(p5.windowWidth <= 400 ? 20 : 30); // Dynamically adjust frame rate
+    p5.frameRate(p5.windowWidth <= 400 ? 15 : 30); // Dynamically adjust frame rate
 
     const pointStep = p5.windowWidth <= 400 ? 8 : p5.windowWidth <= 700 ? 6 : 3; // Adjust point step dynamically
 
