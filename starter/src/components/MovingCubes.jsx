@@ -36,8 +36,7 @@ export const MovingCubes = () => {
   };
 
   const draw = (p5) => {
-    // Log canvas size to debug resizing issues
-    console.log("Canvas size:", p5.width, p5.height);
+    console.log("Canvas size:", p5.width, p5.height); // Remove this line when done debugging
     p5.background(5, 22, 34);
 
     // Base resolution dimensions for consistency
@@ -96,16 +95,14 @@ export const MovingCubes = () => {
 
   // Debounced resize handler
   const debouncedResize = debounce((p5) => {
+    const newWidth = p5.windowWidth * 0.9;
+    const newHeight = p5.windowHeight * 0.7;
     const canvas = canvasRef.current;
-    if (canvas) {
-      const newWidth = p5.windowWidth * 0.9;
-      const newHeight = p5.windowHeight * 0.7;
 
-      // Only resize if the new size is different from the current size
-      if (canvas.width !== newWidth || canvas.height !== newHeight) {
-        console.log(`Resizing canvas to: ${newWidth} x ${newHeight}`);
-        canvas.resizeCanvas(newWidth, newHeight);
-      }
+    // Only resize if the new size is different from the current size
+    if (canvas && (canvas.width !== newWidth || canvas.height !== newHeight)) {
+      console.log(`Resizing canvas to: ${newWidth} x ${newHeight}`);
+      p5.resizeCanvas(newWidth, newHeight);
     }
   }, 200);
 
