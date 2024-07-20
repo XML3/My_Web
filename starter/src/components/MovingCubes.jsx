@@ -1,7 +1,6 @@
-import React, { useRef, useEffect } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import Sketch from "react-p5";
 
-// Function to debounce calls to the resize handler
 const debounce = (func, wait) => {
   let timeout;
   return function (...args) {
@@ -11,50 +10,43 @@ const debounce = (func, wait) => {
 };
 
 export const MovingCubes = () => {
-  const angleRef = useRef(0);
-  const canvasRef = useRef(null);
-
-  // Function to update angle for animation
-  const updateAngle = () => {
-    angleRef.current += 0.01;
-    requestAnimationFrame(updateAngle);
-  };
+  const [angle, setAngle] = useState(0);
+  const angleRef = useRef(angle);
 
   useEffect(() => {
-    // Start angle update loop
-    updateAngle();
+    const updateAngle = () => {
+      setAngle((prevAngle) => {
+        const newAngle = prevAngle + 0.01;
+        angleRef.current = newAngle;
+        return newAngle;
+      });
+      requestAnimationFrame(updateAngle);
+    };
+    requestAnimationFrame(updateAngle);
   }, []);
 
-  // Setup function for p5.js
   const setup = (p5, canvasParentRef) => {
     p5.pixelDensity(1);
-    const canvas = p5.createCanvas(
+    p5.createCanvas(
       p5.windowWidth * 0.9,
       p5.windowHeight * 0.7,
       p5.WEBGL
-    );
-    canvas.parent(canvasParentRef);
-    canvasRef.current = canvas;
+    ).parent(canvasParentRef);
   };
 
-  // Draw function for p5.js
   const draw = (p5) => {
     p5.background(5, 22, 34);
 
-    // Base resolution dimensions
     const baseWidth = 1200;
     const baseHeight = 800;
 
-    // Scaling factors based on canvas size
     const widthScale = p5.width / baseWidth;
     const heightScale = p5.height / baseHeight;
     const scaleFactor = Math.min(widthScale, heightScale);
 
-    // Box size and spacing
     const boxSize = 150 * scaleFactor;
     const spacing = 200 * scaleFactor;
 
-    // Draw the first row of cubes
     const numCubesTopRow = 7;
     for (
       let i = -Math.floor(numCubesTopRow / 2);
@@ -74,7 +66,6 @@ export const MovingCubes = () => {
       p5.pop();
     }
 
-    // Draw the second row of cubes
     const numCubesBottomRow = 4;
     for (
       let i = -Math.floor(numCubesBottomRow / 2);
@@ -90,20 +81,17 @@ export const MovingCubes = () => {
       p5.noFill();
       p5.stroke(252, 53, 76);
       p5.strokeWeight(1);
-      p5.box(boxSize);
+      p5.box(boxSize * 1);
       p5.pop();
     }
   };
 
-  // Resize handler with debounce
   const debouncedResize = debounce((p5) => {
     const newWidth = p5.windowWidth * 0.9;
     const newHeight = p5.windowHeight * 0.7;
-    if (
-      canvasRef.current &&
-      (canvasRef.current.width !== newWidth ||
-        canvasRef.current.height !== newHeight)
-    ) {
+
+    if (p5.width !== newWidth || p5.height !== newHeight) {
+      console.log(`Resizing canvas to: ${newWidth} x ${newHeight}`);
       p5.resizeCanvas(newWidth, newHeight);
     }
   }, 200);
