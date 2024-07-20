@@ -6,19 +6,19 @@ export const AnimateSphere = () => {
 
   const setup = (p5, canvasParentRef) => {
     p5.pixelDensity(1);
-    setCanvasSize(p5, canvasParentRef);
     p5.colorMode(p5.HSB);
     p5.angleMode(p5.DEGREES);
     p5.stroke(199, 89, 88);
     p5.strokeWeight(0.5);
     p5.noFill();
+    setCanvasSize(p5, canvasParentRef);
   };
 
   const draw = (p5) => {
     p5.background("#051622");
 
     p5.orbitControl(2, 2); // Reduced from 4 / 4
-    p5.frameRate(p5.windowWidth <= 400 ? 15 : 30); // Dynamically adjust frame rate
+    p5.frameRate(p5.windowWidth <= 400 ? 15 : 30); // adjust frame rate
 
     const pointStep = p5.windowWidth <= 400 ? 8 : p5.windowWidth <= 700 ? 6 : 3; // Adjust point step dynamically
 
@@ -42,12 +42,14 @@ export const AnimateSphere = () => {
     if (p5.windowWidth <= 400) canvasWidth = p5.windowWidth - 40;
     if (p5.windowWidth <= 300) canvasWidth = p5.windowWidth - 20;
 
+    let canvasHeight = p5.windowHeight / 2; //consistent height for canvas
+
     if (canvasParentRef) {
-      p5.createCanvas(canvasWidth, p5.windowHeight / 2, p5.WEBGL).parent(
+      p5.createCanvas(canvasWidth, canvasHeight, p5.WEBGL).parent(
         canvasParentRef
       );
     } else {
-      p5.resizeCanvas(canvasWidth, p5.windowHeight / 2);
+      p5.resizeCanvas(canvasWidth, canvasHeight);
     }
   };
 
