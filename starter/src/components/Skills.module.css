@@ -1,6 +1,6 @@
 @media screen and (min-width: 300px) {
   .SkillsMainContainer {
-    grid-column: 1;
+    grid-column: 1 / -1;
     grid-row: 5;
     width: 100;
     height: 100%;
