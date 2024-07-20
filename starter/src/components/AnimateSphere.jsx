@@ -38,7 +38,7 @@ export const AnimateSphere = () => {
 
   const setCanvasSize = (p5, canvasParentRef = null) => {
     let canvasWidth = p5.windowWidth * 0.9;
-    let canvasHeight = p5.windowHeight * 0.5;
+    let canvasHeight = 400;
 
     if (canvasParentRef) {
       p5.createCanvas(canvasWidth, canvasHeight, p5.WEBGL).parent(
