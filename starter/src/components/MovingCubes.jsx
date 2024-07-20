@@ -7,11 +7,11 @@ export const MovingCubes = () => {
   angleRef.current = angle;
 
   useEffect(() => {
-    const updateAngle = () => {
-      setAngle(angleRef.current + 0.01);
-      requestAnimationFrame(updateAngle);
-    };
-    requestAnimationFrame(updateAngle);
+    // const updateAngle = () => {
+    //   setAngle(angleRef.current + 0.01);
+    //   requestAnimationFrame(updateAngle);
+    // };
+    // requestAnimationFrame(updateAngle);
   }, []);
 
   const setup = (p5, canvasParentRef) => {
@@ -25,6 +25,7 @@ export const MovingCubes = () => {
   };
 
   const draw = (p5) => {
+    console.log("Canvas size:", p5.width, p5.height); ////remove after test
     p5.background(5, 22, 34);
 
     // Base resolution dimensions for consistency
