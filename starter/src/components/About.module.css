@@ -40,7 +40,7 @@
     justify-content: center;
   }
 
-   .CanvasContainer {
+  .CanvasContainer {
     width: 100%;
     height: auto;
     display: flex;
@@ -49,7 +49,6 @@
     position: relative;
     overflow: hidden;
   }
-}
 }
 
 @media screen and (min-width: 700px) {
@@ -92,7 +91,7 @@
     justify-content: center;
   }
 
-    .CanvasContainer {
+  .CanvasContainer {
     width: 100%;
     height: auto;
     display: flex;
@@ -145,7 +144,7 @@
     margin-left: 2rem; /* Small margin between About and AnimatedSphere */
   }
 
-    .CanvasContainer {
+  .CanvasContainer {
     width: 100%;
     height: auto;
     display: flex;
