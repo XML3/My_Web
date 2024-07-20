@@ -36,13 +36,19 @@ export const AnimateSphere = () => {
     setCanvasSize(p5);
   };
 
-  const setCanvasSize = (p5, canvasParentRef) => {
+  const setCanvasSize = (p5, canvasParentRef = null) => {
     let canvasWidth = p5.windowWidth / 2.8;
     if (p5.windowWidth <= 700) canvasWidth = p5.windowWidth - 60;
     if (p5.windowWidth <= 400) canvasWidth = p5.windowWidth - 40;
     if (p5.windowWidth <= 300) canvasWidth = p5.windowWidth - 20;
 
-    p5.resizeCanvas(canvasWidth, p5.windowHeight / 2);
+    if (canvasParentRef) {
+      p5.createCanvas(canvasWidth, p5.windowHeight / 2, p5.WEBGL).parent(
+        canvasParentRef
+      );
+    } else {
+      p5.resizeCanvas(canvasWidth, p5.windowHeight / 2);
+    }
   };
 
   return <Sketch setup={setup} draw={draw} windowResized={windowResized} />;
