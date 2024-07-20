@@ -33,10 +33,10 @@ export const About = forwardRef((props, ref) => {
         </div>
 
         {/* P5 js component */}
-        <div
-          className={`${AboutCSS.AnimateSphereContainer} ${AboutCSS.CanvasContainer}`}
-        >
-          <AnimateSphere />
+        <div className={AboutCSS.AnimateSphereContainer}>
+          <div className={AboutCSS.CanvasContainer}>
+            <AnimateSphere />
+          </div>
         </div>
       </div>
     </>
