@@ -5,6 +5,8 @@ export const MovingCubes = () => {
   const [angle, setAngle] = useState(0);
 
   const setup = (p5, canvasParentRef) => {
+    p5.pixelDensity(1);
+
     p5.createCanvas(
       p5.windowWidth * 0.9,
       p5.windowHeight * 0.7,
