@@ -4,8 +4,8 @@
     grid-row: 2 / 3;
     position: relative;
     padding: 0 1rem;
-    /* width: auto;
-    height: auto; */
+    width: auto;
+    height: auto;
     background-color: rgb(213, 209, 191);
     border-radius: 15px;
     margin-top: 2rem;
@@ -34,10 +34,10 @@
   }
 
   .AnimateSphereContainer {
-    /* grid-column: 1;
+    grid-column: 1;
     max-width: 100%;
     height: auto;
-    margin: auto; */
+    margin: auto;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -54,8 +54,8 @@
     position: relative;
     overflow: hidden;
     padding: 0 1rem;
-    /* box-sizing: border-box;
-    margin: 0 auto; */
+    box-sizing: border-box;
+    margin: 0 auto;
   }
 }
 
