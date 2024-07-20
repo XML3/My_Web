@@ -17,12 +17,11 @@ export const MovingCubes = () => {
   const setup = (p5, canvasParentRef) => {
     p5.pixelDensity(1);
 
-    const canvasWidth = p5.windowWidth * 0.9;
-    const canvasHeight = p5.windowHeight * 0.7;
-
-    p5.createCanvas(canvasWidth, canvasHeight, p5.WEBGL).parent(
-      canvasParentRef
-    );
+    p5.createCanvas(
+      p5.windowWidth * 0.9,
+      p5.windowHeight * 0.7,
+      p5.WEBGL
+    ).parent(canvasParentRef);
   };
 
   const draw = (p5) => {
@@ -89,9 +88,7 @@ export const MovingCubes = () => {
   };
 
   const windowResized = (p5) => {
-    const canvasWidth = p5.windowWidth * 0.9;
-    const canvasHeight = p5.windowHeight * 0.7;
-    p5.resizeCanvas(canvasWidth, canvasHeight);
+    p5.resizeCanvas(p5.windowWidth * 0.9, p5.windowHeight * 0.7);
   };
 
   return <Sketch setup={setup} draw={draw} windowResized={windowResized} />;
