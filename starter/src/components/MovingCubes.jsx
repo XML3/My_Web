@@ -1,6 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import Sketch from "react-p5";
 
+//Limit the rate, call after delay has passed.  Better performace for resizing events
 const debounce = (func, wait) => {
   let timeout;
   return function (...args) {
@@ -13,6 +14,7 @@ export const MovingCubes = () => {
   const [angle, setAngle] = useState(0);
   const angleRef = useRef(angle);
 
+  //continuesly update the angle state of the rotating cubes... increments
   useEffect(() => {
     const updateAngle = () => {
       setAngle((prevAngle) => {
@@ -27,15 +29,14 @@ export const MovingCubes = () => {
 
   const setup = (p5, canvasParentRef) => {
     p5.pixelDensity(1);
+    const isMobile = p5.windowWidth <= 768;
+    const canvasWidth = isMobile
+      ? Math.min(p5.windowWidth * 0.9, 400)
+      : Math.min(p5.windowWidth * 0.9, 1200);
 
-    const canvasWidth = Math.min(
-      p5.windowWidth * 0.9,
-      p5.windowWidth > 1200 ? p5.windowWidth * 0.9 : 1200
-    );
-    const canvasHeight = Math.min(
-      p5.windowHeight * 0.7,
-      p5.windowHeight > 800 ? p5.windowHeight * 0.7 : 800
-    );
+    const canvasHeight = isMobile
+      ? Math.min(p5.windowHeight * 0.7, 300)
+      : Math.min(p5.windowHeight * 0.7, 800);
 
     p5.createCanvas(canvasWidth, canvasHeight, p5.WEBGL).parent(
       canvasParentRef
@@ -95,14 +96,14 @@ export const MovingCubes = () => {
   };
 
   const debouncedResize = debounce((p5) => {
-    const newWidth = Math.min(
-      p5.windowWidth * 0.9,
-      p5.windowWidth > 1200 ? p5.windowWidth * 0.9 : 1200
-    );
-    const newHeight = Math.min(
-      p5.windowHeight * 0.7,
-      p5.windowHeight > 800 ? p5.windowHeight * 0.7 : 800
-    );
+    const isMobile = p5.windowWidth <= 768;
+    const newWidth = isMobile
+      ? Math.min(p5.windowWidth * 0.9, 400)
+      : Math.min(p5.windowWidth * 0.9, 1200);
+
+    const newHeight = isMobile
+      ? Math.min(p5.windowHeight * 0.7, 300)
+      : Math.min(p5.windowHeight * 0.7, 800);
 
     if (p5.width !== newWidth || p5.height !== newHeight) {
       console.log(`Resizing canvas to: ${newWidth} x ${newHeight}`);
