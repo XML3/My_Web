@@ -27,11 +27,13 @@ export const MovingCubes = () => {
 
   const setup = (p5, canvasParentRef) => {
     p5.pixelDensity(1);
-    p5.createCanvas(
-      p5.windowWidth * 0.9,
-      p5.windowHeight * 0.7,
-      p5.WEBGL
-    ).parent(canvasParentRef);
+
+    const canvasWidth = Math.min(p5.windowWidth * 0.9, 700);
+    const canvasHeight = Math.min(p5.windowHeight * 0.7, 400);
+
+    p5.createCanvas(canvasWidth, canvasHeight, p5.WEBGL).parent(
+      canvasParentRef
+    );
   };
 
   const draw = (p5) => {
@@ -87,8 +89,8 @@ export const MovingCubes = () => {
   };
 
   const debouncedResize = debounce((p5) => {
-    const newWidth = p5.windowWidth * 0.9;
-    const newHeight = p5.windowHeight * 0.7;
+    const newWidth = Math.min(p5.windowWidth * 0.9, 700);
+    const newHeight = Math.min(p5.windowHeight * 0.7, 400);
 
     if (p5.width !== newWidth || p5.height !== newHeight) {
       console.log(`Resizing canvas to: ${newWidth} x ${newHeight}`);
