@@ -43,13 +43,13 @@ export const MovingCubes = () => {
     let canvasWidth, canvasHeight;
 
     if (p5.windowWidth >= 1200) {
-      canvasWidth = 1500;
+      canvasWidth = 1700;
       canvasHeight = 800;
     } else if (p5.windowWidth <= 768) {
       canvasWidth = Math.min(p5.windowWidth * 0.9, 320);
       canvasHeight = Math.min(p5.windowHeight * 0.7, 300);
     } else {
-      canvasWidth = Math.min(p5.windowWidth * 0.9, 1500);
+      canvasWidth = Math.min(p5.windowWidth * 0.9, 1700);
       canvasHeight = Math.min(p5.windowHeight * 0.7, 800);
     }
 
@@ -124,13 +124,13 @@ export const MovingCubes = () => {
     let newWidth, newHeight;
 
     if (p5.windowWidth >= 1200) {
-      newWidth = 1500;
+      newWidth = 1700;
       newHeight = 800;
     } else if (p5.windowWidth <= 768) {
       newWidth = Math.min(p5.windowWidth * 0.9, 320);
       newHeight = Math.min(p5.windowHeight * 0.7, 300);
     } else {
-      newWidth = Math.min(p5.windowWidth * 0.9, 1500);
+      newWidth = Math.min(p5.windowWidth * 0.9, 1700);
       newHeight = Math.min(p5.windowHeight * 0.7, 800);
     }
 
