@@ -1,7 +1,7 @@
 @media screen and (min-width: 300px) {
   .Content {
     min-height: 100%;
-    min-width: 120rem; /*from 80rem*/
+    min-width: 122rem; /*from 80rem*/
     padding: 20px;
     margin: 0% 0;
     position: relative;
@@ -134,7 +134,7 @@
     flex-wrap: wrap;
     line-height: 1.5;
     padding-top: 2px;
-    font-size: 13px;
+    font-size: 14px;
   }
 }
 
