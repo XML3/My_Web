@@ -2,17 +2,20 @@
   .FooterConteiner {
     grid-column: 1;
     grid-row: -1;
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     height: auto;
   }
 
-  .Footer {
+  /* .Footer {
+
     position: relative;
     left: 55%;
     top: 90%;
     transform: translate(-45%, -50%);
-  }
+  } */
 
   .Footer p {
     color: var(--main-fontcolor);
@@ -20,12 +23,12 @@
     font-size: 15px;
   }
 
-  .Logo {
+  /* .Logo {
     position: relative;
-    left: 50%;
+    left: 0%;
     top: 30%;
     transform: translate(-50%, -50%);
-  }
+  } */
   .RedLogo {
     width: 40px;
     height: 40px;
