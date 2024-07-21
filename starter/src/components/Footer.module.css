@@ -9,7 +9,7 @@
   .Footer {
     position: relative;
     text-align: center;
-    top: 40%;
+    bottom: 40%;
   }
 
   .Footer p {
