@@ -127,7 +127,7 @@
 
   .About {
     grid-column: 1 / 2;
-    padding: 1rem;
+    padding: 3rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
