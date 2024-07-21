@@ -3,19 +3,19 @@
     grid-column: 1;
     grid-row: -1;
     display: flex;
-    justify-content: center;
-    align-items: center;
     width: 100%;
     height: auto;
   }
 
-  /* .Footer {
+  .Footer {
+    justify-content: center;
+    align-items: center;
 
-    position: relative;
+    /* position: relative;
     left: 55%;
     top: 90%;
-    transform: translate(-45%, -50%);
-  } */
+    transform: translate(-45%, -50%); */
+  }
 
   .Footer p {
     color: var(--main-fontcolor);
@@ -23,12 +23,15 @@
     font-size: 15px;
   }
 
-  /* .Logo {
+  .Logo {
+    justify-content: center;
+    align-items: center;
     position: relative;
-    left: 0%;
+    /* left: 0%; */
     top: 30%;
-    transform: translate(-50%, -50%);
-  } */
+    transform: translate(-50%);
+  }
+
   .RedLogo {
     width: 40px;
     height: 40px;
