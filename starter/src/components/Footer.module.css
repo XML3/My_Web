@@ -8,9 +8,9 @@
 
   .Footer {
     position: relative;
-    left: 5%;
+    left: 50%;
     top: 50%;
-    transform: translate(-5%, -50%);
+    transform: translate(-50%, -50%);
   }
 
   .Footer p {
@@ -21,9 +21,9 @@
 
   .Logo {
     position: relative;
-    left: 5%;
+    left: 50%;
     top: 70%;
-    transform: translate(-5%, -50%);
+    transform: translate(-50%, -50%);
   }
   .RedLogo {
     width: 40px;
@@ -41,7 +41,7 @@
 
   .Footer {
     position: relative;
-    left: 100%;
+    left: 70%;
     top: 30%;
     transform: translate(-40%, -50%);
   }
@@ -54,7 +54,7 @@
 
   .Logo {
     position: relative;
-    left: 96%;
+    left: 76%;
     top: 30%;
     transform: translate(-50%, -70%);
   }
@@ -65,7 +65,7 @@
 }
 
 @media screen and (min-width: 1200px) {
-  .FooterConteiner {
+  .FooterContainer {
     grid-column: 1 / -1;
     grid-row: -1;
     width: 100%;
