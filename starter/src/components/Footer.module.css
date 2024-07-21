@@ -9,7 +9,7 @@
   .Footer {
     position: relative;
     text-align: center;
-    top: 20%;
+    top: 1%;
   }
 
   .Footer p {
@@ -21,7 +21,7 @@
   .Logo {
     position: relative;
     text-align: center;
-    top: 30%;
+    top: 5%;
   }
   .RedLogo {
     width: 40px;
@@ -40,7 +40,7 @@
   .Footer {
     position: relative;
     text-align: center;
-    top: 20%;
+    top: 1%;
   }
 
   .Footer p {
@@ -52,7 +52,7 @@
   .Logo {
     position: relative;
     text-align: center;
-    top: 30%;
+    top: 5%;
   }
   .RedLogo {
     width: 30px;
@@ -70,7 +70,7 @@
 
   .Footer {
     position: relative;
-    top: 20%;
+    top: 1%;
     text-align: center;
   }
 
@@ -82,7 +82,7 @@
 
   .Logo {
     position: relative;
-    top: 30%;
+    top: 5%;
     text-align: center;
   }
   .RedLogo {
