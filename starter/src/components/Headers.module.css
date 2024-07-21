@@ -185,14 +185,13 @@
     top: 43%;
     transform: translateY(-52%);
   }
-  /* Middle Section / Header */
+  /* Middle Section / Header with Text*/
   .HeadersContainer {
     width: 100%;
     text-align: center;
     margin-top: 20px;
     position: relative;
     bottom: 25%;
-    background-color: aqua; /*test*/
   }
 
   .HeaderOne {
