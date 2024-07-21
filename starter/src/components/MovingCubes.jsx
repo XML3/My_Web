@@ -27,17 +27,42 @@ export const MovingCubes = () => {
     requestAnimationFrame(updateAngle);
   }, []);
 
+  // const setup = (p5, canvasParentRef) => {
+  //   p5.pixelDensity(1);
+  //   const isMobile = p5.windowWidth <= 768;
+  //   const canvasWidth = isMobile
+  //     ? Math.min(p5.windowWidth * 0.9, 400)
+  //     : Math.min(p5.windowWidth * 0.9, 1200);
+
+  //   const canvasHeight = isMobile
+  //     ? Math.min(p5.windowHeight * 0.7, 300)
+  //     : Math.min(p5.windowHeight * 0.7, 800);
+
+  //   p5.createCanvas(canvasWidth, canvasHeight, p5.WEBGL).parent(
+  //     canvasParentRef
+  //   );
+  // };
+
   const setup = (p5, canvasParentRef) => {
     p5.pixelDensity(1);
-    const isMobile = p5.windowWidth <= 768;
-    const canvasWidth = isMobile
-      ? Math.min(p5.windowWidth * 0.9, 400)
-      : Math.min(p5.windowWidth * 0.9, 1200);
 
-    const canvasHeight = isMobile
-      ? Math.min(p5.windowHeight * 0.7, 300)
-      : Math.min(p5.windowHeight * 0.7, 800);
-
+    let canvasWidth, canvasHeight;
+    if (p5.windowWidth <= 300) {
+      canvasWidth = 300;
+      canvasHeight = 300;
+    } else if (p5.windowWidth <= 400) {
+      canvasWidth = 400;
+      canvasHeight = 300;
+    } else if (p5.windowWidth <= 700) {
+      canvasWidth = 700;
+      canvasHeight = 500;
+    } else if (p5.windowWidth <= 1200) {
+      canvasWidth = 900;
+      canvasHeight = 600;
+    } else {
+      canvasWidth = 1200;
+      canvasHeight = 800;
+    }
     p5.createCanvas(canvasWidth, canvasHeight, p5.WEBGL).parent(
       canvasParentRef
     );
@@ -96,14 +121,32 @@ export const MovingCubes = () => {
   };
 
   const debouncedResize = debounce((p5) => {
-    const isMobile = p5.windowWidth <= 768;
-    const newWidth = isMobile
-      ? Math.min(p5.windowWidth * 0.9, 400)
-      : Math.min(p5.windowWidth * 0.9, 1200);
+    // const isMobile = p5.windowWidth <= 768;
+    // const newWidth = isMobile
+    //   ? Math.min(p5.windowWidth * 0.9, 400)
+    //   : Math.min(p5.windowWidth * 0.9, 1200);
 
-    const newHeight = isMobile
-      ? Math.min(p5.windowHeight * 0.7, 300)
-      : Math.min(p5.windowHeight * 0.7, 800);
+    // const newHeight = isMobile
+    //   ? Math.min(p5.windowHeight * 0.7, 300)
+    //   : Math.min(p5.windowHeight * 0.7, 800);
+
+    let newWidth, newHeight;
+    if (p5.windowWidth <= 300) {
+      newWidth = 300;
+      newHeight = 300;
+    } else if (p5.windowWidth <= 400) {
+      newWidth = 400;
+      newHeight = 300;
+    } else if (p5.windowWidth <= 700) {
+      newWidth = 700;
+      newHeight = 500;
+    } else if (p5.windowWidth <= 1200) {
+      newWidth = 900;
+      newHeight = 600;
+    } else {
+      newWidth = 1200;
+      newHeight = 800;
+    }
 
     if (p5.width !== newWidth || p5.height !== newHeight) {
       console.log(`Resizing canvas to: ${newWidth} x ${newHeight}`);
