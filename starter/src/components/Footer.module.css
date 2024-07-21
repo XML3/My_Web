@@ -1,5 +1,5 @@
 @media screen and (min-width: 300px) {
-  .FooterConteiner {
+  .FooterContainer {
     grid-column: 1;
     grid-row: -1;
     display: flex;
@@ -36,7 +36,7 @@
 }
 
 @media screen and (min-width: 700px) {
-  .FooterConteiner {
+  .FooterContainer {
     grid-column: 1 / -1;
     grid-row: -1;
     width: 100%;
