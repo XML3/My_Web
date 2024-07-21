@@ -27,17 +27,7 @@ export const MovingCubes = () => {
     requestAnimationFrame(updateAngle);
   }, []);
 
-  // const setup = (p5, canvasParentRef) => {
-  //   p5.pixelDensity(1);
-  //   const isMobile = p5.windowWidth <= 768;
-  //   const canvasWidth = isMobile
-  //     ? Math.min(p5.windowWidth * 0.9, 400)
-  //     : Math.min(p5.windowWidth * 0.9, 1200);
-
-  //   const canvasHeight = isMobile
-  //     ? Math.min(p5.windowHeight * 0.7, 300)
-  //     : Math.min(p5.windowHeight * 0.7, 800);
-
+  //Note to self: regular conditioanl statements do not work. Math.min() is the only approach to stop the continues resizing loop on Moblie devices
   const setup = (p5, canvasParentRef) => {
     p5.pixelDensity(1);
     let canvasWidth, canvasHeight;
@@ -109,16 +99,6 @@ export const MovingCubes = () => {
       p5.pop();
     }
   };
-
-  // const debouncedResize = debounce((p5) => {
-  //   const isMobile = p5.windowWidth <= 768;
-  //   const newWidth = isMobile
-  //     ? Math.min(p5.windowWidth * 0.9, 400)
-  //     : Math.min(p5.windowWidth * 0.9, 1200);
-
-  //   const newHeight = isMobile
-  //     ? Math.min(p5.windowHeight * 0.7, 300)
-  //     : Math.min(p5.windowHeight * 0.7, 800);
 
   const debouncedResize = debounce((p5) => {
     let newWidth, newHeight;
