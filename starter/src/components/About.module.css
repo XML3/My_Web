@@ -153,6 +153,7 @@
     align-items: center;
     justify-content: center;
     margin-left: 2rem; /* Small margin between About and AnimatedSphere */
+    margin-right: 2rem;
   }
 
   .CanvasContainer {
@@ -163,7 +164,7 @@
     justify-content: center;
     position: relative;
     overflow: hidden;
-    padding-right: 3rem;
+    padding: 0 3rem;
     box-sizing: border-box;
     margin: 0 auto;
   }
