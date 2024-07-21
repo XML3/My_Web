@@ -45,24 +45,28 @@ export const MovingCubes = () => {
 
   const setup = (p5, canvasParentRef) => {
     p5.pixelDensity(1);
+    const windowWidth = p5.windowWidth;
+    const windowHeight = p5.windowHeight;
 
     let canvasWidth, canvasHeight;
-    if (p5.windowWidth <= 300) {
+
+    if (windowWidth <= 300) {
       canvasWidth = 300;
       canvasHeight = 300;
-    } else if (p5.windowWidth <= 400) {
+    } else if (windowWidth <= 400) {
       canvasWidth = 400;
       canvasHeight = 300;
-    } else if (p5.windowWidth <= 700) {
+    } else if (windowWidth <= 700) {
       canvasWidth = 700;
       canvasHeight = 500;
-    } else if (p5.windowWidth <= 1200) {
-      canvasWidth = 900;
-      canvasHeight = 600;
+    } else if (windowWidth < 1200) {
+      canvasWidth = windowWidth * 0.9;
+      canvasHeight = windowHeight * 0.7;
     } else {
       canvasWidth = 1200;
       canvasHeight = 800;
     }
+
     p5.createCanvas(canvasWidth, canvasHeight, p5.WEBGL).parent(
       canvasParentRef
     );
@@ -120,29 +124,34 @@ export const MovingCubes = () => {
     }
   };
 
-  const debouncedResize = debounce((p5) => {
-    // const isMobile = p5.windowWidth <= 768;
-    // const newWidth = isMobile
-    //   ? Math.min(p5.windowWidth * 0.9, 400)
-    //   : Math.min(p5.windowWidth * 0.9, 1200);
+  // const debouncedResize = debounce((p5) => {
+  //   const isMobile = p5.windowWidth <= 768;
+  //   const newWidth = isMobile
+  //     ? Math.min(p5.windowWidth * 0.9, 400)
+  //     : Math.min(p5.windowWidth * 0.9, 1200);
 
-    // const newHeight = isMobile
-    //   ? Math.min(p5.windowHeight * 0.7, 300)
-    //   : Math.min(p5.windowHeight * 0.7, 800);
+  //   const newHeight = isMobile
+  //     ? Math.min(p5.windowHeight * 0.7, 300)
+  //     : Math.min(p5.windowHeight * 0.7, 800);
+
+  const debouncedResize = debounce((p5) => {
+    const windowWidth = p5.windowWidth;
+    const windowHeight = p5.windowHeight;
 
     let newWidth, newHeight;
-    if (p5.windowWidth <= 300) {
+
+    if (windowWidth <= 300) {
       newWidth = 300;
       newHeight = 300;
-    } else if (p5.windowWidth <= 400) {
+    } else if (windowWidth <= 400) {
       newWidth = 400;
       newHeight = 300;
-    } else if (p5.windowWidth <= 700) {
+    } else if (windowWidth <= 700) {
       newWidth = 700;
       newHeight = 500;
-    } else if (p5.windowWidth <= 1200) {
-      newWidth = 900;
-      newHeight = 600;
+    } else if (windowWidth < 1200) {
+      newWidth = windowWidth * 0.9;
+      newHeight = windowHeight * 0.7;
     } else {
       newWidth = 1200;
       newHeight = 800;
