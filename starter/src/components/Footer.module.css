@@ -1,5 +1,5 @@
 @media screen and (min-width: 300px) {
-  .FooterContainer {
+  .FooterConteiner {
     grid-column: 1;
     grid-row: -1;
     display: flex;
@@ -12,22 +12,23 @@
   }
 
   .Footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
+    position: relative;
+    left: 55%;
+    top: 90%;
+    transform: translate(-55%, -50%);
   }
 
   .Footer p {
     color: var(--main-fontcolor);
     font-family: var(--main-fontfamily);
     font-size: 15px;
-    margin: 5px 0 0 0;
   }
 
   .Logo {
-    margin-bottom: 5px;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
   }
   .RedLogo {
     width: 40px;
@@ -36,7 +37,7 @@
 }
 
 @media screen and (min-width: 700px) {
-  .FooterContainer {
+  .FooterConteiner {
     grid-column: 1 / -1;
     grid-row: -1;
     width: 100%;
