@@ -1,16 +1,16 @@
 @media screen and (min-width: 300px) {
-  /* .FooterContainer {
+  .FooterContainer {
     grid-column: 1;
     grid-row: -1;
     width: 100%;
     height: auto;
-  } */
+  }
 
   .Footer {
     position: relative;
-    left: 55%;
+    left: 5%;
     top: 50%;
-    transform: translate(-55%, -50%);
+    transform: translate(-5%, -50%);
   }
 
   .Footer p {
@@ -21,9 +21,9 @@
 
   .Logo {
     position: relative;
-    left: 50%;
+    left: 5%;
     top: 70%;
-    transform: translate(-50%, -50%);
+    transform: translate(-5%, -50%);
   }
   .RedLogo {
     width: 40px;
@@ -65,12 +65,12 @@
 }
 
 @media screen and (min-width: 1200px) {
-  /* .FooterConteiner {
+  .FooterConteiner {
     grid-column: 1 / -1;
     grid-row: -1;
     width: 100%;
     height: auto;
-  } */
+  }
 
   .Footer {
     position: relative;
