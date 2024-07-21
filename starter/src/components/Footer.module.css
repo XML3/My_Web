@@ -10,7 +10,7 @@
   .Footer {
     position: relative;
     left: 55%;
-    top: 10%;
+    top: 70%;
     transform: translate(-45%, -50%);
   }
 
@@ -24,7 +24,7 @@
     position: relative;
     left: 50%;
     top: 30%;
-    transform: translate(-50%, -70%);
+    transform: translate(-50%, -50%);
   }
   .RedLogo {
     width: 25px;
