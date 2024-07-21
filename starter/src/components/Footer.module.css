@@ -8,9 +8,8 @@
 
   .Footer {
     position: relative;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+    left: 5%;
+    top: 20%;
   }
 
   .Footer p {
@@ -21,9 +20,8 @@
 
   .Logo {
     position: relative;
-    left: 50%;
-    top: 70%;
-    transform: translate(-50%, -50%);
+    left: 5%;
+    top: 20%;
   }
   .RedLogo {
     width: 40px;
@@ -41,9 +39,8 @@
 
   .Footer {
     position: relative;
-    left: 70%;
+    left: 7%;
     top: 30%;
-    transform: translate(-40%, -50%);
   }
 
   .Footer p {
@@ -54,9 +51,8 @@
 
   .Logo {
     position: relative;
-    left: 76%;
-    top: 30%;
-    transform: translate(-50%, -70%);
+    left: 6%;
+    top: 20%;
   }
   .RedLogo {
     width: 30px;
@@ -74,7 +70,7 @@
 
   .Footer {
     position: relative;
-    left: 85%;
+    left: 5%;
     top: 50%;
     text-align: center;
   }
