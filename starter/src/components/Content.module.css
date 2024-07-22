@@ -56,16 +56,14 @@
     height: 600px;
   }
 
-  /*Firefox specific style*/
-  @-moz-document url-prefix() {
-    .FlipCardFront,
-    .FlipCardBack {
-      position: absolute;
-      width: 100%;
-      height: auto;
-      backface-visibility: hidden;
-      -webkit-backface-visibility: hidden; /*web browser compatible  Safari and Chrome*/
-    }
+  .FlipCardFront,
+  .FlipCardBack {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden; /*web browser compatible  Safari and Chrome*/
+    overflow: hidden;
   }
 
   .FlipCardFront .ProjectImage {
@@ -195,16 +193,13 @@
     transition: transform 0.6s;
   }
 
-  /*Firefox specific style*/
-  @-moz-document url-prefix() {
-    .FlipCardFront,
-    .FlipCardBack {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      backface-visibility: hidden;
-      -webkit-backface-visibility: hidden; /*web browser compatible - firefox*/
-    }
+  .FlipCardFront,
+  .FlipCardBack {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden; /*web browser compatible - firefox*/
   }
 
   .FlipCardFront .ProjectImage {
@@ -302,16 +297,13 @@
     transition: transform 0.6s;
   }
 
-  /*Firefox specific style*/
-  @-moz-document url-prefix() {
-    .FlipCardFront,
-    .FlipCardBack {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      backface-visibility: hidden;
-      -webkit-backface-visibility: hidden; /*web browser compatible - firefox*/
-    }
+  .FlipCardFront,
+  .FlipCardBack {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden; /*web browser compatible - firefox*/
   }
 
   .FlipCardFront .ProjectImage {
