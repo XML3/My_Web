@@ -147,7 +147,7 @@
 @media screen and (min-width: 400px) {
   .Content {
     min-height: 100%;
-    min-width: 190rem; /*300*/
+    min-width: 200rem; /*300*/
     padding: 40px;
     margin: 5% 0;
     position: relative;
@@ -172,7 +172,7 @@
     justify-content: space-between;
     align-items: center;
     position: relative;
-    width: 5%; /* width connected to HorizonScroll carousel (dragConstraints = -width)*/
+    width: 15%; /* width connected to HorizonScroll carousel (dragConstraints = -width)*/
     height: 50%;
     margin-right: 20px;
     padding: 30px;
