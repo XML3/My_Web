@@ -319,6 +319,8 @@
   .FlipCardBack {
     transform: rotateY(180deg);
     -webkit-transform: rotateY(180deg); /*Firefox */
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden; /*web browser compatible - firefox*/
   }
 
   .Flip .FlipCardInner {
