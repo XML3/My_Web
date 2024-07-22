@@ -62,8 +62,7 @@
     width: 100%;
     height: auto;
     backface-visibility: hidden;
-    -webkit-backface-visibility: hidden; /*web browser compatible  Safari and Chrome*/
-    overflow: hidden;
+    overflow: auto;
   }
 
   .FlipCardFront .ProjectImage {
@@ -199,7 +198,7 @@
     width: 100%;
     height: 100%;
     backface-visibility: hidden;
-    -webkit-backface-visibility: hidden; /*web browser compatible - firefox*/
+    overflow: auto;
   }
 
   .FlipCardFront .ProjectImage {
@@ -303,7 +302,7 @@
     width: 100%;
     height: 100%;
     backface-visibility: hidden;
-    -webkit-backface-visibility: hidden; /*web browser compatible - firefox*/
+    overflow: auto;
   }
 
   .FlipCardFront .ProjectImage {
@@ -363,6 +362,7 @@
     border: 2px solid #162737;
     background-color: var(--background-color);
     transition: background-color 0.3s;
+    overflow: hidden;
   }
 
   .Card:hover {
