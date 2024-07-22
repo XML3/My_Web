@@ -145,22 +145,9 @@
 }
 
 @media screen and (min-width: 400px) {
-  /*Chrome browsers*/
-  @media screen and (-webkit-min-device-pixel-ratio: 0) and (min-resolution: 0.001dpcm) {
-    .Content {
-      min-height: 100%;
-      -webkit-min-width: 130rem;
-      min-width: 130rem; /*300*/
-      padding: 40px;
-      margin: 5% 0;
-      position: relative;
-      bottom: 8%;
-    }
-  }
-
-  /*toher browsers*/
   .Content {
     min-height: 100%;
+    -webkit-min-width: 150rem;
     min-width: 150rem; /*300*/
     padding: 40px;
     margin: 5% 0;
@@ -194,18 +181,6 @@
     border: 2px solid #162737;
     background-color: var(--background-color);
     transition: background-color 0.3s;
-  }
-
-  @media screen and (-webkit-min-device-pixel-ratio: 0) and (min-resolution: 0.001dpcm) {
-    .FlipCardInner {
-      position: relative;
-      width: 100%;
-      height: 600px;
-      text-align: center;
-      -webkit-transform-style: preserve-3d;
-      transform-style: preserve-3d;
-      transition: transform 0.6s;
-    }
   }
 
   .FlipCardInner {
