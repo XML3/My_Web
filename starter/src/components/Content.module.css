@@ -319,15 +319,11 @@
   .FlipCardBack {
     transform: rotateY(180deg);
     -webkit-transform: rotateY(180deg); /*Firefox */
-    backface-visibility: hidden;
-    -webkit-backface-visibility: hidden; /*web browser compatible - firefox*/
   }
 
   .Flip .FlipCardInner {
     transform: rotateY(180deg);
     -webkit-transform: rotateY(180deg); /*Firefox */
-    backface-visibility: hidden;
-    -webkit-backface-visibility: hidden; /*web browser compatible - firefox*/
   }
 
   .FlipButtonFront {
@@ -372,6 +368,8 @@
     border: 2px solid #162737;
     background-color: var(--background-color);
     transition: background-color 0.3s;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden; /*web browser compatible - firefox*/
   }
 
   /* .Card:hover {
