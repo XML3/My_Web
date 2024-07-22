@@ -83,6 +83,7 @@ export const ContactForm = forwardRef((props, ref) => {
                 <input
                   type="text"
                   id="firstName"
+                  required
                   value={firstName}
                   onChange={(e) => setFirstName(e.target.value)}
                 />
@@ -99,6 +100,7 @@ export const ContactForm = forwardRef((props, ref) => {
                 <input
                   type="text"
                   id="lastName"
+                  required
                   value={lastName}
                   onChange={(e) => setLastName(e.target.value)}
                 />
@@ -114,6 +116,7 @@ export const ContactForm = forwardRef((props, ref) => {
                 <input
                   type="email"
                   id="email"
+                  required
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                 />
@@ -128,6 +131,7 @@ export const ContactForm = forwardRef((props, ref) => {
                 <label htmlFor="message">Message</label>
                 <textarea
                   id="message"
+                  required
                   value={message}
                   onChange={(e) => setMessage(e.target.value)}
                 />
