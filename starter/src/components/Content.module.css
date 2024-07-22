@@ -147,8 +147,8 @@
 @media screen and (min-width: 400px) {
   .Content {
     min-height: 100%;
-    -webkit-min-width: 140rem;
-    min-width: 140rem; /*300*/
+    -webkit-min-width: 150rem;
+    min-width: 150rem; /*300*/
     padding: 40px;
     margin: 5% 0;
     position: relative;
