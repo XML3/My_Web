@@ -149,8 +149,8 @@
   @media screen and (-webkit-min-device-pixel-ratio: 0) and (min-resolution: 0.001dpcm) {
     .Content {
       min-height: 100%;
-      -webkit-min-width: 140rem;
-      min-width: 140rem; /*300*/
+      -webkit-min-width: 130rem;
+      min-width: 130rem; /*300*/
       padding: 40px;
       margin: 5% 0;
       position: relative;
