@@ -72,8 +72,8 @@
   .FlipCardBack {
     -webkit-transform: rotateY(180deg); /*Firefox */
     transform: rotateY(180deg);
-    /* background-color: var(--background-color);
-    object-fit: cover;  */
+    background-color: var(--background-color);
+    object-fit: cover;
   }
 
   .Flip .FlipCardInner {
@@ -208,8 +208,8 @@
 
   .FlipCardBack {
     transform: rotateY(180deg);
-    /* background-color: var(--background-color);
-    object-fit: cover;  */
+    background-color: var(--background-color);
+    object-fit: cover;
   }
 
   .Flip .FlipCardInner {
@@ -275,7 +275,7 @@
 @media screen and (min-width: 1200px) {
   .Content {
     min-height: 30rem;
-    min-width: 200rem;
+    min-width: 210rem;
     padding: 40px;
     margin: 5% 0;
   }
@@ -294,7 +294,7 @@
     justify-content: space-between;
     position: relative;
     width: 55%; /* width connected to HorizonScroll carousel (dragConstraints = -width)*/
-    height: 550px;
+    height: 600px;
     padding: 30px;
     border-radius: 20px;
     border: 2px solid #162737;
@@ -337,8 +337,8 @@
   .FlipCardBack {
     transform: rotateY(180deg);
     -webkit-transform: rotateY(180deg); /*Firefox */
-    /* background-color: var(--background-color);
-    object-fit: cover;  */
+    background-color: var(--background-color);
+    object-fit: cover;
   }
 
   .Flip .FlipCardInner {
