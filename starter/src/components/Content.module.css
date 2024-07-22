@@ -73,12 +73,12 @@
     -webkit-transform: rotateY(180deg); /*Firefox */
     transform: rotateY(180deg);
     background-color: var(--background-color);
+    object-fit: cover; /*across web browsers*/
   }
 
   .Flip .FlipCardInner {
     -webkit-transform: rotateY(180deg); /*Firefox */
     transform: rotateY(180deg);
-    z-index: 2;
   }
 
   .FlipButtonFront {
@@ -208,11 +208,11 @@
   .FlipCardBack {
     transform: rotateY(180deg);
     background-color: var(--background-color);
+    object-fit: cover; /*across web browsers*/
   }
 
   .Flip .FlipCardInner {
     transform: rotateY(180deg);
-    z-index: 2;
   }
 
   .FlipButtonFront {
@@ -330,19 +330,18 @@
     width: 100%;
     height: auto;
     object-fit: cover; /*across web browsers*/
-    z-index: 1; /*testing*/
   }
 
   .FlipCardBack {
     transform: rotateY(180deg);
     -webkit-transform: rotateY(180deg); /*Firefox */
     background-color: var(--background-color);
+    object-fit: cover; /*across web browsers*/
   }
 
   .Flip .FlipCardInner {
     transform: rotateY(180deg);
     -webkit-transform: rotateY(180deg); /*Firefox */
-    z-index: 2;
   }
 
   .FlipButtonFront {
