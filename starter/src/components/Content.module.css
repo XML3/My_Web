@@ -401,5 +401,6 @@
     font-size: 16px;
     line-height: 1.5;
     padding-top: 10px;
+    overflow: auto;
   }
 }
