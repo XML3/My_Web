@@ -36,7 +36,7 @@ export const PortText = () => {
                     className={PortTextCSS.Link}
                   >
                     {/*githun and codepen logos*/}
-                    <image
+                    <img
                       className={PortTextCSS.Logo}
                       src={item.image}
                       alt={`logo for ${item.title}`}
