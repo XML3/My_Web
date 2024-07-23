@@ -26,6 +26,15 @@
     margin-top: 25px;
     padding: 10px 10px 10px 20px;
   }
+
+  .Logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 20px;
+    height: 20px;
+  }
 }
 
 @media screen and (min-width: 400px) {
@@ -54,6 +63,15 @@
     left: 15px;
     margin-top: 50px;
     padding: 10px 10px 10px 20px;
+  }
+
+  .Logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 25px;
+    height: 25px;
   }
 }
 
@@ -99,6 +117,15 @@
     /* font-size: 18px; */
     font-weight: 400;
   }
+
+  .Logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -130,5 +157,14 @@
 
   .Card p {
     font-weight: 400;
+  }
+
+  .Logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 40px;
+    height: 40px;
   }
 }
