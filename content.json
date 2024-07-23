@@ -67,12 +67,16 @@
     {
       "id": "1",
       "title": "GitHub Portfolio",
-      "text": "A collection of Front-end and Back-end repositories"
+      "text": "A collection of Front-end and Back-end repositories",
+      "image": "https://i.ibb.co/YTG6GmZ/github-port.png",
+      "link": "https://github.com/XML3"
     },
     {
       "id": "2",
       "title": "CodePen Projects",
-      "text": "Creative and interactive code projects"
+      "text": "Creative and interactive code projects",
+      "image": "https://i.ibb.co/kxw718z/darkblue-pen.png",
+      "link": "https://codepen.io/XML3"
     }
   ],
   "skills": [
