@@ -27,13 +27,28 @@
     padding: 10px 10px 10px 20px;
   }
 
-  .Logo {
+  .Link {
     display: flex;
     justify-content: center;
-    align-items: center;
-    text-align: center;
-    width: 20px;
-    height: 20px;
+    width: 100%;
+    height: 100%;
+  }
+
+  .Logo {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    bottom: 5px;
+    border-radius: 50%;
+    box-shadow: rgba(5, 22, 34, 0.4) 5px 5px, rgba(5, 22, 34, 0.3) 10px 10px,
+      rgba(5, 22, 34, 0.2) 15px 15px, rgba(5, 22, 34, 0.1) 20px 20px,
+      rgba(5, 22, 34, 0.05) 25px 25px;
+    transition: box-shadow 0.3s ease;
+  }
+
+  .Logo:hover {
+    width: 40px;
+    height: 40px;
   }
 }
 
@@ -66,12 +81,15 @@
   }
 
   .Logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    width: 25px;
-    height: 25px;
+    position: relative;
+    bottom: 5px;
+    width: 30px;
+    height: 30px;
+  }
+
+  .Logo:hover {
+    width: 40px;
+    height: 40px;
   }
 }
 
@@ -119,12 +137,13 @@
   }
 
   .Logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
+  }
+
+  .Logo:hover {
+    width: 50px;
+    height: 50px;
   }
 }
 
@@ -158,13 +177,21 @@
   .Card p {
     font-weight: 400;
   }
-
-  .Logo {
+  .Link {
     display: flex;
     justify-content: center;
-    align-items: center;
-    text-align: center;
-    width: 40px;
-    height: 40px;
+    width: 100%;
+    height: 100%;
+  }
+
+  .Logo {
+    position: relative;
+    top: 5%;
+    width: 60px;
+    height: 60px;
+  }
+  .Logo:hover {
+    width: 70px;
+    height: 70px;
   }
 }
