@@ -29,6 +29,19 @@ export const PortText = () => {
                 <div className={PortTextCSS.Card}>
                   <h2>{item.title}</h2>
                   <p>{item.text}</p>
+                  <a
+                    href={item.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={PortTextCSS.Link}
+                  >
+                    {/*githun and codepen logos*/}
+                    <image
+                      className={PortTextCSS.Logo}
+                      src={item.image}
+                      alt={`logo for ${item.title}`}
+                    />
+                  </a>
                 </div>
               </TextAnimation>
             ))
