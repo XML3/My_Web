@@ -76,7 +76,7 @@ export const Content = forwardRef((props, ref) => {
                         {/* Red Link SVG */}
                         <img
                           className={ContentCSS.LinkImage}
-                          alt="link svg"
+                          alt="link arrow svg"
                           src={item.img}
                         />
                       </a>
