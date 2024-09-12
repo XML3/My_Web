@@ -87,19 +87,21 @@
     margin-top: 30px;
     padding: 5px, 10px;
     cursor: pointer;
-    border-radius: 25px;
+    border-radius: 10px;
     font-size: 16px;
   }
 
   .FlipButtonBack {
     margin-top: 20px;
-    border-radius: 25px;
+    border-radius: 10px;
     cursor: pointer;
     padding: 1px 20px;
   }
 
   /* Back Arrow */
   .FlipButtonBack .Arrow {
+    display: flex;
+    align-content: center;
     width: 20px;
     height: 20px;
   }
@@ -227,19 +229,21 @@
     margin-top: 30px;
     padding: 10px 25px;
     cursor: pointer;
-    border-radius: 25px;
+    border-radius: 10px;
     font-size: 20px;
   }
 
   .FlipButtonBack {
     margin-top: 20px;
-    border-radius: 25px;
+    border-radius: 10px;
     cursor: pointer;
     padding: 5px 30px;
   }
 
   /* Back Arrow */
   .FlipButtonBack .Arrow {
+    display: flex;
+    align-content: center;
     width: 17px;
     height: 17px;
   }
@@ -361,18 +365,20 @@
     margin-top: 30px;
     padding: 10px, 20px;
     cursor: pointer;
-    border-radius: 25px;
+    border-radius: 10px;
     font-size: 20px;
   }
 
   .FlipButtonBack {
     margin-top: 40px;
-    border-radius: 25px;
+    border-radius: 10px;
     cursor: pointer;
     padding: 5px 30px;
   }
 
   .FlipButtonBack .Arrow {
+    display: flex;
+    align-content: center;
     width: 20px;
     height: 20px;
   }
