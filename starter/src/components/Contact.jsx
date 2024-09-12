@@ -70,7 +70,7 @@ export const ContactForm = forwardRef((props, ref) => {
       <div ref={ref} className={ContactCSS.ContactForm}>
         <div className={ContactCSS.SecondContainer}>
           <div className={ContactCSS.HeaderContact}>
-            <Typewriter text={headerContact} delay={100} />
+            <Typewriter text={headerContact} delay={30} />
           </div>
           <div className={ContactCSS.ContactMe}>
             <h2>{contactMe}</h2>
