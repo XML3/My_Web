@@ -4,37 +4,37 @@
       "id": "1",
       "img": "https://i.ibb.co/5BLLmnS/link-img.png",
       "title": "Recipes - Front-End",
-      "text": "A simple Front-end React.js project designed to elevate your culinary journey. Explores an array of recipes by searching with keywords, along with specific dietary preferences: [label, diet labels, cautions, and health labels]. The project incorporates color-coded sections on recipe cards to denote whether the recipe is Vegetarian or Vegan, as well as color labels highlighting cautions and dietary preferences.  A delightful culinary adventure created with an intuitive React.js project, crafted to cater to dietary needs and preferences.",
-      "tools": "React.js, ChakraUI, JSON",
+      "text": "A simple Front-end React.js project which explores an array of recipes by searching with keywords, along with specific dietary preferences: [label, diet labels, cautions, and health labels]. The project incorporates color-coded sections on recipe cards to denote whether the recipe is Vegetarian or Vegan, as well as color labels highlighting cautions and dietary preferences.  A delightful culinary adventure, crafted to cater to dietary needs and preferences.",
+      "tools": "React.js, ChakraUI",
       "link": "https://tastyrecipechecker.netlify.app/",
-      "front": "https://i.ibb.co/G0yX4FX/recipe-checker2.png"
+      "front": "https://i.ibb.co/zfS4GkH/recipe-checker-331.png"
     },
     {
       "id": "2",
       "img": "https://i.ibb.co/5BLLmnS/link-img.png",
-      "title": "Electronic Music Events - Front-End",
-      "text": "Front-end React.js project, designed to simulate an event management system. It allows users to search events by location or name, dive into articles, and connect via contact form.  It also allows event organizers with intuitive tools to manage their events. From creating, editing, to deleting their events. Note: The porfolio deployment for this project is protected with authorization token, therefore features will not be available for testing.",
-      "tools": "React.js, ChakraUI, JSON",
+      "title": "Events Management - Front-End",
+      "text": "Front-end React.js project, designed to simulate an event management system. It allows users to search events by location, name, or category, dive into articles, and connect via contact form.  It also allows event organizers with intuitive tools to manage their events. From creating, editing, to deleting their events.",
+      "tools": "React.js, ChakraUI",
       "link": "https://eventsmanagementapp.netlify.app",
-      "front": "https://i.ibb.co/8KjXRmJ/evets-management34.png"
+      "front": "https://i.ibb.co/F6jvdh2/evets-management-333.png"
     },
     {
       "id": "3",
       "img": "https://i.ibb.co/5BLLmnS/link-img.png",
-      "title": "Electronic Music Events - Express API",
+      "title": "Events Management - Express API",
       "text": "This Back-end Express API project is the backbone of the Events management system. It manages the database, enabling posting, editing, and deletion of events.  Additionally, it handles the contact form functionality using nodemailer, facilitating communication between users and App managers. Furthermore, it manages image uploads by event organizers, ensuring they are efficiently hosted on an image hosting site for their respective events.  It integrates with the front-end solution to deliver a comprehensive event management experience.",
-      "tools": "Node/Express.js, Prisma[MySQL], Sentry",
+      "tools": "Node/Express.js, Prisma[PostgreSQL], Sentry, AuthO",
       "link": "https://github.com/XML3/BED-Express-Event-API",
-      "front": "https://i.ibb.co/82R0Gmm/Events-red-be.png"
+      "front": "https://i.ibb.co/7tnhv2s/events-management-331.png"
     },
     {
       "id": "4",
       "img": "https://i.ibb.co/5BLLmnS/link-img.png",
-      "title": "Properties - Express API",
-      "text": "Back-end Express API project, aimed at replicating the functionality of a property booking system online. It manages users and hosts interaction with the platform to handle the create, view, update, and delete sections of the App for personal bookings or properties with an integrated secure authentication and authorization in order to verify user's identity and grant appropiate permissions and access.  Moreover, the API facilitates the rating of properties and the creation of reviews, allowing users to share their experiences and insights. Notably, the system dynamically calculates the average rating for each property, ensuring up-to-date and accurate feedback for users. ",
+      "title": "Bookings Express API",
+      "text": "Back-end Express API project, with the functionality of a property booking system online. It manages users and hosts interaction with the platform to handle the create, view, update, and delete sections of the App for personal bookings or properties with an integrated secure authentication and authorization in order to verify user's identity and grant appropiate permissions and access.  Moreover, the API facilitates the rating of properties and the creation of reviews, allowing users to share their experiences and insights. Notably, the system dynamically calculates the average rating for each property, ensuring up-to-date and accurate feedback for users. ",
       "tools": "Node/Express.js, Prisma[MySQL], Sentry, AuthO",
       "link": "https://github.com/XML3/BED-Final-Project",
-      "front": "https://i.ibb.co/vJPG2ss/bookings-api-green.png"
+      "front": "https://i.ibb.co/R7T5ksg/bookings-api.png"
     },
 
     {
@@ -44,7 +44,7 @@
       "text": "An interactive Sample Drum Machine built with React.js. By featuring two sets of dynamic sound banks, it offers a versatile sound experience. Whether tapping the drum pads with your mouse or with the use of the keyboard, this fun project allows users to immerse themselves in the beat and unleash their creativity.",
       "tools": "React.js, CSS",
       "link": "https://codepen.io/XML3/pen/vYwOgao?editors=1111",
-      "front": "https://i.ibb.co/kXT32yg/drum-machine.png"
+      "front": "https://i.ibb.co/6RWHKBZ/drum-machine-33.png"
     },
     {
       "id": "6",
@@ -53,14 +53,15 @@
       "text": "A 3D Orbit Control design made with P5.js.  It allows users to control the design to manage intricate patterns on screen with the use of the mouse, whether to zoon in/out with the use of the wheel or spin the 3D design in various directions.  This iteractive project can also be found on this website on the 'About Me' section.",
       "tools": "P5.js",
       "link": "https://codepen.io/XML3/pen/LYobbBa",
-      "front": "https://i.ibb.co/9TDnNH0/p5.png"
+      "front": "https://i.ibb.co/BwNH2RM/orbit-control-331.png"
     }
   ],
+
   "about": [
     {
       "id": "1",
       "title": "About Me",
-      "AboutMe": "As a full-stack web developer with a passion for web development and all things creative, I bring a unique blend of skills and experiences to the table. My early education in music, specializing in percussion, and with experience as a competitive Snare line player, has allowed me to develop a keen eye for detail, a strong focus on efficiency and a strong commitment to creativity and continuous growth to create personal and business websites that showcase a unique voice and values, ultimately to help establish a strong online presence.  When I am not busy, I enjoy producing electronic music, experimenting with new recipes, and cycling."
+      "AboutMe": "Hi! I am Xagly a Full-stack Web Developer with a passion for web development and all things creative. In addition to my web development stack, I decided to start a new journey in order to improve the user experience through research and design. Therefore, I am currently working on the Google UX Design Professional Certificate in order to create digital products that are not only enjoyable, useful and visually appealing, but also ensure an equitable user experience.  When I am not busy, I enjoy producing electronic music, experimenting with new cooking recipes, and cycling to keep fit."
     }
   ],
   "port": [
