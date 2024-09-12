@@ -129,6 +129,7 @@
     /* height: 200px; */
     position: fixed;
     z-index: -1;
+    background-color: #fc354c;
   }
   /* Middle Section / Header */
   .HeadersContainer {
