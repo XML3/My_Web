@@ -35,7 +35,6 @@ export const NavLinks = forwardRef(
     return (
       <>
         {/* navigation */}
-
         <nav className={NavLinksCSS.Navigation}>
           <div
             onClick={(e) => handleClick(e, aboutRef)}
