@@ -9,7 +9,8 @@ export const GridMenu = ({ aboutRef, projectRef, contactRef, skillsRef }) => {
 
   const topRef = useRef(null);
   //Function to scroll to the top of the page (logo)
-  const scrollToTop = () => {
+  const scrollToTop = (e) => {
+    e.preventDefault();
     topRef.current.scrollIntoView({ behavior: "smooth" });
   };
 
@@ -36,15 +37,16 @@ export const GridMenu = ({ aboutRef, projectRef, contactRef, skillsRef }) => {
 
   return (
     <>
-    <div ref={topRef}></div>
+      <div ref={topRef}></div>
       <div className={GridMenuCSS.NavBarContainer}>
         <div>
-          <img
-            className={GridMenuCSS.SideLogo}
-            src={sideLogo}
-            alt="Side logo"
-            onClick={scrollToTop}
-          />
+          <a href="#" onClick={scrollToTop}>
+            <img
+              className={GridMenuCSS.SideLogo}
+              src={sideLogo}
+              alt="Side logo"
+            />
+          </a>
         </div>
         <nav className={GridMenuCSS.GridMenu}>
           {click ? GridMenuClose : GridMenuIcon}
