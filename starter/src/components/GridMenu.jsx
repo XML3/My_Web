@@ -40,13 +40,13 @@ export const GridMenu = ({ aboutRef, projectRef, contactRef, skillsRef }) => {
       <div ref={topRef}></div>
       <div className={GridMenuCSS.NavBarContainer}>
         <div>
-          <a href="#" onClick={scrollToTop}>
+          <link href="#" onClick={scrollToTop}>
             <img
               className={GridMenuCSS.SideLogo}
               src={sideLogo}
               alt="Side logo"
             />
-          </a>
+          </link>
         </div>
         <nav className={GridMenuCSS.GridMenu}>
           {click ? GridMenuClose : GridMenuIcon}
