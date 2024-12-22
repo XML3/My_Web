@@ -11,7 +11,7 @@
     width: 100%;
   }
 
-  .Navigation a {
+  .Navigation div {
     color: var(--button-fontcolor);
     font-family: var(--main-fontfamily);
     text-decoration: none;
@@ -19,16 +19,16 @@
     font-size: 15px;
   }
 
-  .Navigation a:before {
+  .Navigation div:before {
     content: "├───";
     padding-right: 10px;
   }
 
-  .Navigation a:last-child:before {
+  .Navigation div:last-child:before {
     content: "└───";
   }
 
-  .Navigation a:hover {
+  .Navigation div:hover {
     color: rgb(252, 53, 76); /*Change color on hover */
   }
 
@@ -49,25 +49,25 @@
     width: 100%;
   }
 
-  .Navigation a {
+  .Navigation div {
     color: var(--button-fontcolor);
     font-family: var(--main-fontfamily);
     text-decoration: none;
     transition: color 0.2s, background-color 0.2s;
-    font-size: 25px;
+    font-size: 24px;
     padding-bottom: 50px;
   }
 
-  .Navigation a:before {
+  .Navigation div:before {
     content: "├───";
     padding-right: 10px;
   }
 
-  .Navigation a:last-child:before {
+  .Navigation div:last-child:before {
     content: "└───";
   }
 
-  .Navigation a:hover {
+  .Navigation div:hover {
     color: rgb(252, 53, 76); /*Change color on hover */
   }
 
