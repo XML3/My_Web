@@ -19,7 +19,7 @@ export const Headers = () => {
         <div className={HeadersCSS.HeaderTwo}>
           <h2>{headerTwo}</h2>
         </div>
-      </div>
+      </div>  
     </>
   );
 };
