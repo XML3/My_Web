@@ -37,7 +37,6 @@ export const NavLinks = forwardRef(
 
         <nav className={NavLinksCSS.Navigation}>
           <a
-            href="#"
             onClick={() => handleClick(aboutRef)}
             onMouseEnter={() => handleMouseEnter("about")}
             onMouseLeave={() => handleMouseLeave("about")}
@@ -47,7 +46,6 @@ export const NavLinks = forwardRef(
             About
           </a>
           <a
-            href="#"
             onClick={() => handleClick(projectRef)}
             onMouseEnter={() => handleMouseEnter("projects")}
             onMouseLeave={() => handleMouseLeave("projects")}
@@ -57,7 +55,6 @@ export const NavLinks = forwardRef(
             Projects
           </a>
           <a
-            href="#"
             onClick={() => handleClick(skillsRef)}
             onMouseEnter={() => handleMouseEnter("skills")}
             onMouseLeave={() => handleMouseLeave("skills")}
@@ -67,7 +64,6 @@ export const NavLinks = forwardRef(
             Skills
           </a>
           <a
-            href="#"
             onClick={() => handleClick(contactRef)}
             onMouseEnter={() => handleMouseEnter("contact")}
             onMouseLeave={() => handleMouseLeave("contact")}
