@@ -1,16 +1,5 @@
 /*screen size 300*/
 @media screen and (min-width: 300px) {
-  .Container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-  }
-
   /* Middle Section / Header */
   .HeadersContainer {
     display: flex;
@@ -19,6 +8,10 @@
     justify-content: center;
     width: 100%;
     height: auto;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
     text-align: center;
   }
 
@@ -34,6 +27,8 @@
   .HeaderOne {
     position: relative;
     z-index: 1;
+    position: relative;
+    bottom: 5%;
   }
 
   .HeaderOne h1 {
@@ -44,7 +39,8 @@
   .HeaderTwo {
     color: var(--main-fontcolor);
     font-family: var(--header-fontfamily);
-    margin-top: 10px;
+    position: relative;
+    bottom: 2%;
   }
 
   .HeaderTwo h2 {
@@ -54,17 +50,6 @@
 
 /* Screen size Larger / min-width 400 px */
 @media screen and (min-width: 400px) {
-  .Container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-  }
-
   .Cubes {
     display: flex;
     justify-content: center;
@@ -77,16 +62,22 @@
   .HeadersContainer {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: auto;
     text-align: center;
-    margin-top: 20px;
   }
 
   .HeaderOne {
-    /* margin-top: 60px; */
     position: relative;
+    bottom: 5%;
     z-index: 1;
   }
 
@@ -98,7 +89,8 @@
   .HeaderTwo {
     color: var(--main-fontcolor);
     font-family: var(--header-fontfamily);
-    margin-top: 10px;
+    position: relative;
+    bottom: 3%;
   }
 
   .HeaderTwo h2 {
@@ -108,7 +100,8 @@
 
 /* Screen size Larger / min-width 700 px */
 @media screen and (min-width: 700px) {
-  .Container {
+  /* Middle Section / Header */
+  .HeadersContainer {
     grid-column-start: 1;
     grid-column-end: -1;
     display: flex;
@@ -119,6 +112,7 @@
     height: 100%;
     margin: 0;
     padding: 0;
+    text-align: center;
   }
 
   .Cubes {
@@ -131,19 +125,13 @@
     z-index: -1;
     background-color: #fc354c;
   }
-  /* Middle Section / Header */
-  .HeadersContainer {
-    width: 100%;
-    text-align: center;
-    margin-top: 20px;
-  }
 
   .HeaderOne {
     color: var(--main-fontcolor);
     font-family: var(--header-fontfamily);
     font-size: 34px;
     position: relative;
-    top: 30%;
+    top: 12%;
     z-index: 1;
   }
 
@@ -151,7 +139,7 @@
     color: var(--main-fontcolor);
     font-family: var(--header-fontfamily);
     position: relative;
-    top: 60%;
+    top: 15%;
   }
 
   .HeaderTwo h2 {
@@ -161,7 +149,8 @@
 
 /* Screen size Larger / min-width 1200 px */
 @media screen and (min-width: 1200px) {
-  .Container {
+  /* Middle Section / Header with Text*/
+  .HeadersContainer {
     grid-column-start: 1;
     grid-column-end: -1;
     display: flex;
@@ -172,6 +161,9 @@
     height: 100%;
     margin: 0;
     padding: 0;
+    text-align: center;
+    position: relative;
+    bottom: 25%;
   }
 
   .Cubes {
@@ -186,18 +178,10 @@
     top: 43%;
     transform: translateY(-52%);
   }
-  /* Middle Section / Header with Text*/
-  .HeadersContainer {
-    width: 100%;
-    text-align: center;
-    margin-top: 20px;
-    position: relative;
-    bottom: 25%;
-  }
 
   .HeaderOne {
     position: relative;
-    top: 75%;
+    top: 25%;
     z-index: 1;
   }
 
@@ -210,7 +194,7 @@
     color: var(--main-fontcolor);
     font-family: var(--header-fontfamily);
     position: relative;
-    top: 75%;
+    top: 26%;
   }
 
   .HeaderTwo h2 {
