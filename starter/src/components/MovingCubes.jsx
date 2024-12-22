@@ -33,14 +33,14 @@ export const MovingCubes = () => {
     let canvasWidth, canvasHeight;
 
     if (p5.windowWidth >= 1200) {
-      canvasWidth = 1500;
-      canvasHeight = 800;
+      canvasWidth = Math.min(p5.windowWidth * 1.2, 1700);
+      canvasHeight = Math.min(p5.windowHeight * 0.8, 1000);
     } else if (p5.windowWidth <= 768) {
-      canvasWidth = Math.min(p5.windowWidth * 0.9, 320);
-      canvasHeight = Math.min(p5.windowHeight * 0.7, 300);
+      canvasWidth = Math.min(p5.windowWidth * 0.9, 700);
+      canvasHeight = Math.min(p5.windowHeight * 0.7, 400);
     } else {
-      canvasWidth = Math.min(p5.windowWidth * 0.9, 1500);
-      canvasHeight = Math.min(p5.windowHeight * 0.7, 800);
+      canvasWidth = Math.min(p5.windowWidth * 0.9, 1000);
+      canvasHeight = Math.min(p5.windowHeight * 0.7, 600);
     }
 
     p5.createCanvas(canvasWidth, canvasHeight, p5.WEBGL).parent(
@@ -104,14 +104,14 @@ export const MovingCubes = () => {
     let newWidth, newHeight;
 
     if (p5.windowWidth >= 1200) {
-      newWidth = 1700;
-      newHeight = 800;
+      newWidth = Math.min(p5.windowWidth * 1.2, 1700);
+      newHeight = Math.min(p5.windowHeight * 0.8, 1000);
     } else if (p5.windowWidth <= 768) {
-      newWidth = Math.min(p5.windowWidth * 0.9, 320);
-      newHeight = Math.min(p5.windowHeight * 0.7, 300);
+      newWidth = Math.min(p5.windowWidth * 0.9, 700);
+      newHeight = Math.min(p5.windowHeight * 0.7, 400);
     } else {
-      newWidth = Math.min(p5.windowWidth * 0.9, 1700);
-      newHeight = Math.min(p5.windowHeight * 0.7, 800);
+      newWidth = Math.min(p5.windowWidth * 0.9, 1000);
+      newHeight = Math.min(p5.windowHeight * 0.7, 600);
     }
 
     if (p5.width !== newWidth || p5.height !== newHeight) {
