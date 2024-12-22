@@ -7,11 +7,10 @@ import sideLogo from "/img/webgold_logo.png";
 export const GridMenu = ({ aboutRef, projectRef, contactRef, skillsRef }) => {
   const [click, setClick] = useState(false);
 
-  const topRef = useRef(null);
   //Function to scroll to the top of the page (logo)
   const scrollToTop = (e) => {
     e.preventDefault();
-    topRef.current.scrollIntoView({ behavior: "smooth" });
+   window.scrollTo({ top:0, behavior: "smooth" });
   };
 
   // Nav Grid Icon / Open Menu on Click
@@ -37,7 +36,6 @@ export const GridMenu = ({ aboutRef, projectRef, contactRef, skillsRef }) => {
 
   return (
     <>
-      <div ref={topRef}></div>
       <div className={GridMenuCSS.NavBarContainer}>
         <div>
           <a href="#" onClick={scrollToTop}>
