@@ -9,21 +9,17 @@ export const Headers = () => {
 
   return (
     <>
-      <div className={HeadersCSS.Container}>
-        {/* <div className={HeadersCSS.Headers}> */}
-        <div className={HeadersCSS.HeadersContainer}>
-          <div className={HeadersCSS.Cubes}>
-            <MovingCubes />
-          </div>
-          <div className={HeadersCSS.HeaderOne}>
-            <h1>{headerOne}</h1>
-          </div>
-          <div className={HeadersCSS.HeaderTwo}>
-            <h2>{headerTwo}</h2>
-          </div>
+      <div className={HeadersCSS.HeadersContainer}>
+        <div className={HeadersCSS.Cubes}>
+          <MovingCubes />
+        </div>
+        <div className={HeadersCSS.HeaderOne}>
+          <h1>{headerOne}</h1>
+        </div>
+        <div className={HeadersCSS.HeaderTwo}>
+          <h2>{headerTwo}</h2>
         </div>
       </div>
-      {/* </div> */}
     </>
   );
 };
