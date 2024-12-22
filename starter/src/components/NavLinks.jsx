@@ -37,8 +37,7 @@ export const NavLinks = forwardRef(
         {/* navigation */}
 
         <nav className={NavLinksCSS.Navigation}>
-          <link
-            href="#about"
+          <div
             onClick={(e) => handleClick(e, aboutRef)}
             onMouseEnter={() => handleMouseEnter("about")}
             onMouseLeave={() => handleMouseLeave("about")}
@@ -46,9 +45,8 @@ export const NavLinks = forwardRef(
             className={hoveredItem.about ? NavLinksCSS.hovered : ""}
           >
             About
-          </link>
-          <link
-            href="#projects"
+          </div>
+          <div
             onClick={(e) => handleClick(e, projectRef)}
             onMouseEnter={() => handleMouseEnter("projects")}
             onMouseLeave={() => handleMouseLeave("projects")}
@@ -56,9 +54,8 @@ export const NavLinks = forwardRef(
             className={hoveredItem.projects ? NavLinksCSS.hovered : ""}
           >
             Projects
-          </link>
-          <link
-            href="skills"
+          </div>
+          <div
             onClick={(e) => handleClick(e, skillsRef)}
             onMouseEnter={() => handleMouseEnter("skills")}
             onMouseLeave={() => handleMouseLeave("skills")}
@@ -66,9 +63,8 @@ export const NavLinks = forwardRef(
             className={hoveredItem.projects ? NavLinksCSS.hovered : ""}
           >
             Skills
-          </link>
-          <link
-            href="#contact"
+          </div>
+          <div
             onClick={(e) => handleClick(e, contactRef)}
             onMouseEnter={() => handleMouseEnter("contact")}
             onMouseLeave={() => handleMouseLeave("contact")}
@@ -76,7 +72,7 @@ export const NavLinks = forwardRef(
             className={hoveredItem.contact ? NavLinksCSS.hovered : ""}
           >
             Contact
-          </link>
+          </div>
         </nav>
       </>
     );
