@@ -21,7 +21,8 @@ export const NavLinks = forwardRef(
     };
 
     //Function that handles the onClick for two functions: scrollToSection and closeMenu() (closeMenu is passed as a prop from GridMenu component)
-    const handleClick = (ref) => {
+    const handleClick = (e, ref) => {
+      e.preventDefault();
       scrollToSection(ref);
       closeMenu();
     };
@@ -34,48 +35,43 @@ export const NavLinks = forwardRef(
     return (
       <>
         {/* navigation */}
-
         <nav className={NavLinksCSS.Navigation}>
-          <a
-            href="#"
-            onClick={() => handleClick(aboutRef)}
+          <div
+            onClick={(e) => handleClick(e, aboutRef)}
             onMouseEnter={() => handleMouseEnter("about")}
             onMouseLeave={() => handleMouseLeave("about")}
             // style={{ fontSize: hoveredItem.about ? "20px" : "17px" }}
             className={hoveredItem.about ? NavLinksCSS.hovered : ""}
           >
             About
-          </a>
-          <a
-            href="#"
-            onClick={() => handleClick(projectRef)}
+          </div>
+          <div
+            onClick={(e) => handleClick(e, projectRef)}
             onMouseEnter={() => handleMouseEnter("projects")}
             onMouseLeave={() => handleMouseLeave("projects")}
             // style={{ fontSize: hoveredItem.projects ? "20px" : "17px" }}
             className={hoveredItem.projects ? NavLinksCSS.hovered : ""}
           >
             Projects
-          </a>
-          <a
-            href="#"
-            onClick={() => handleClick(skillsRef)}
+          </div>
+          <div
+            onClick={(e) => handleClick(e, skillsRef)}
             onMouseEnter={() => handleMouseEnter("skills")}
             onMouseLeave={() => handleMouseLeave("skills")}
             // style={{ fontSize: hoveredItem.projects ? "20px" : "17px" }}
             className={hoveredItem.projects ? NavLinksCSS.hovered : ""}
           >
             Skills
-          </a>
-          <a
-            href="#"
-            onClick={() => handleClick(contactRef)}
+          </div>
+          <div
+            onClick={(e) => handleClick(e, contactRef)}
             onMouseEnter={() => handleMouseEnter("contact")}
             onMouseLeave={() => handleMouseLeave("contact")}
             // style={{ fontSize: hoveredItem.contact ? "20px" : "17px" }}
             className={hoveredItem.contact ? NavLinksCSS.hovered : ""}
           >
             Contact
-          </a>
+          </div>
         </nav>
       </>
     );

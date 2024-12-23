@@ -42,7 +42,6 @@ export const MovingCubes = () => {
       canvasWidth = Math.min(p5.windowWidth * 0.9, 1700);
       canvasHeight = Math.min(p5.windowHeight * 0.7, 800);
     }
-
     p5.createCanvas(canvasWidth, canvasHeight, p5.WEBGL).parent(
       canvasParentRef
     );
@@ -126,3 +125,4 @@ export const MovingCubes = () => {
 
   return <Sketch setup={setup} draw={draw} windowResized={windowResized} />;
 };
+//conatiner made need screen size changes

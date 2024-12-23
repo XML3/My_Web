@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import { NavLinks } from "./NavLinks";
 import { CgMenuGridO, CgCloseO } from "react-icons/cg";
 import GridMenuCSS from "../components/GridMenu.module.css";
@@ -6,6 +6,12 @@ import sideLogo from "/img/webgold_logo.png";
 
 export const GridMenu = ({ aboutRef, projectRef, contactRef, skillsRef }) => {
   const [click, setClick] = useState(false);
+
+  //Function to scroll to the top of the page (logo)
+  const scrollToTop = (e) => {
+    e.preventDefault();
+   window.scrollTo({ top:0, behavior: "smooth" });
+  };
 
   // Nav Grid Icon / Open Menu on Click
   const GridMenuIcon = (
@@ -32,11 +38,13 @@ export const GridMenu = ({ aboutRef, projectRef, contactRef, skillsRef }) => {
     <>
       <div className={GridMenuCSS.NavBarContainer}>
         <div>
-          <img
-            className={GridMenuCSS.SideLogo}
-            src={sideLogo}
-            alt="Side logo "
-          />
+          <a href="#" onClick={scrollToTop}>
+            <img
+              className={GridMenuCSS.SideLogo}
+              src={sideLogo}
+              alt="Side logo"
+            />
+          </a>
         </div>
         <nav className={GridMenuCSS.GridMenu}>
           {click ? GridMenuClose : GridMenuIcon}
