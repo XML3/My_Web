@@ -4,7 +4,7 @@
       "id": "1",
       "img": "https://i.ibb.co/5BLLmnS/link-img.png",
       "title": "Recipes - Front-End",
-      "text": "A simple Front-end React.js project which explores an array of recipes by searching with keywords, along with specific dietary preferences: [label, diet labels, cautions, and health labels]. The project incorporates color-coded sections on recipe cards to denote whether the recipe is Vegetarian or Vegan, as well as color labels highlighting cautions and dietary preferences.  A delightful culinary adventure, crafted to cater to dietary needs and preferences.",
+      "text": "A simple Front-end React.js project which explores an array of recipes, search by specific dietary preferences: [label, diet labels, cautions, and health labels]...",
       "tools": "React.js, ChakraUI",
       "link": "https://tastyrecipechecker.netlify.app/",
       "front": "https://i.ibb.co/zfS4GkH/recipe-checker-331.png"
@@ -13,7 +13,7 @@
       "id": "2",
       "img": "https://i.ibb.co/5BLLmnS/link-img.png",
       "title": "Events Management - Front-End",
-      "text": "Front-end React.js project, designed to simulate an event management system. It allows users to search events by location, name, or category, dive into articles, and connect via contact form.  It also allows event organizers with intuitive tools to manage their events. From creating, editing, to deleting their events.",
+      "text": "Front-end React.js project, designed to simulate an event management system. It allows users to upload and manage events...",
       "tools": "React.js, ChakraUI",
       "link": "https://eventsmanagementapp.netlify.app",
       "front": "https://i.ibb.co/F6jvdh2/evets-management-333.png"
@@ -22,7 +22,7 @@
       "id": "3",
       "img": "https://i.ibb.co/5BLLmnS/link-img.png",
       "title": "Events Management - Express API",
-      "text": "This Back-end Express API project is the backbone of the Events management system. It manages the database, enabling posting, editing, and deletion of events.  Additionally, it handles the contact form functionality using nodemailer, facilitating communication between users and App managers. Furthermore, it manages image uploads by event organizers, ensuring they are efficiently hosted on an image hosting site for their respective events.  It integrates with the front-end solution to deliver a comprehensive event management experience.",
+      "text": "This Back-end Express API project is the backbone of the Events management system. It manages the database, enabling posting, editing, and deletion of events...",
       "tools": "Node/Express.js, Prisma[PostgreSQL], Sentry, AuthO",
       "link": "https://github.com/XML3/BED-Express-Event-API",
       "front": "https://i.ibb.co/7tnhv2s/events-management-331.png"
@@ -31,7 +31,7 @@
       "id": "4",
       "img": "https://i.ibb.co/5BLLmnS/link-img.png",
       "title": "Bookings Express API",
-      "text": "Back-end Express API project, with the functionality of a property booking system online. It manages users and hosts interaction with the platform to handle the create, view, update, and delete sections of the App for personal bookings or properties with an integrated secure authentication and authorization in order to verify user's identity and grant appropiate permissions and access.  Moreover, the API facilitates the rating of properties and the creation of reviews, allowing users to share their experiences and insights. Notably, the system dynamically calculates the average rating for each property, ensuring up-to-date and accurate feedback for users. ",
+      "text": "Back-end Express API project, that simulates a property booking application... ",
       "tools": "Node/Express.js, Prisma[MySQL], Sentry, AuthO",
       "link": "https://github.com/XML3/BED-Final-Project",
       "front": "https://i.ibb.co/R7T5ksg/bookings-api.png"
@@ -41,8 +41,7 @@
       "id": "5",
       "img": "https://i.ibb.co/5BLLmnS/link-img.png",
       "title": "Sample Drum Machine",
-      "text": "An interactive Sample Drum Machine built with React.js. By featuring two sets of dynamic sound banks, it offers a versatile sound experience. Whether tapping the drum pads with your mouse or with the use of the keyboard, this fun project allows users to immerse themselves in the beat and unleash their creativity.",
-      "tools": "React.js, CSS",
+      "text": "An interactive Sample Drum Machine built with React.js...",
       "link": "https://codepen.io/XML3/pen/vYwOgao?editors=1111",
       "front": "https://i.ibb.co/6RWHKBZ/drum-machine-33.png"
     },
@@ -50,7 +49,7 @@
       "id": "6",
       "img": "https://i.ibb.co/5BLLmnS/link-img.png",
       "title": "Orbit Control",
-      "text": "A 3D Orbit Control design made with P5.js.  It allows users to control the design to manage intricate patterns on screen with the use of the mouse, whether to zoon in/out with the use of the wheel or spin the 3D design in various directions.  This iteractive project can also be found on this website on the 'About Me' section.",
+      "text": "A 3D Orbit Control design made with P5.js. It allows mouse control...",
       "tools": "P5.js",
       "link": "https://codepen.io/XML3/pen/LYobbBa",
       "front": "https://i.ibb.co/BwNH2RM/orbit-control-331.png"
