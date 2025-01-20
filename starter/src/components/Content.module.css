@@ -283,7 +283,7 @@
 
 @media screen and (min-width: 1200px) {
   .Content {
-    min-height: 30rem;
+    min-height: 20rem;
     -webkit-min-width: 210rem;
     min-width: 210rem;
     padding: 40px;
