@@ -28,7 +28,7 @@
     align-items: center;
     position: relative;
     width: 20%; /* width connected to HorizonScroll carousel (dragConstraints = -width)*/
-    height: 10%;
+    height: 20%;
     padding: 20px;
     border-radius: 20px;
     border: 2px solid #162737;
@@ -57,7 +57,7 @@
   .FlipCardBack {
     position: absolute;
     width: 100%;
-    height: auto;
+    height: 100%;
     backface-visibility: hidden;
     -webkit-backface-visibility: hidden; /*web browser compatible  Safari and Chrome*/
   }
@@ -86,8 +86,8 @@
 
   .FlipButtonFront {
     display: flex;
-    justify-content: center;
-    align-content: flex-end;
+    position: relative;
+    transform: translateX(-50%);
     margin-top: 30px;
     margin-bottom: 10px;
     padding: 5px, 10px;
@@ -366,7 +366,7 @@
 
   .FlipButtonFront {
     position: relative;
-    transform: translateX(-90%);
+    transform: translateX(-50%);
     margin-bottom: 10px;
     margin-top: 30px;
     padding: 10px, 20px;
