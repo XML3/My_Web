@@ -4,13 +4,19 @@ import { CgMenuGridO, CgCloseO } from "react-icons/cg";
 import GridMenuCSS from "../components/GridMenu.module.css";
 import sideLogo from "/img/webgold_logo.png";
 
-export const GridMenu = ({ aboutRef, projectRef, contactRef, skillsRef }) => {
+export const GridMenu = ({
+  aboutRef,
+  projectRef,
+  contactRef,
+  skillsRef,
+  multimediaRef,
+}) => {
   const [click, setClick] = useState(false);
 
   //Function to scroll to the top of the page (logo)
   const scrollToTop = (e) => {
     e.preventDefault();
-   window.scrollTo({ top:0, behavior: "smooth" });
+    window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
   // Nav Grid Icon / Open Menu on Click
@@ -55,6 +61,7 @@ export const GridMenu = ({ aboutRef, projectRef, contactRef, skillsRef }) => {
               aboutRef={aboutRef}
               projectRef={projectRef}
               skillsRef={skillsRef}
+              multimediaRef={multimediaRef}
               contactRef={contactRef}
             />
           )}

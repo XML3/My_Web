@@ -8,6 +8,7 @@ import { Content } from "./components/Content.jsx";
 import { ContactForm } from "./components/Contact.jsx";
 import { About } from "./components/About.jsx";
 import { Skills } from "./components/Skills.jsx";
+import { Multimedia } from "./components/Multimedia.jsx";
 
 const router = createBrowserRouter([
   {
@@ -29,6 +30,10 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Skills />,
+      },
+      {
+        path: "/",
+        element: <Multimedia />,
       },
       {
         path: "/",

@@ -1,13 +1,17 @@
-import React, { useState, forwardRef } from "react";
+import React, { useState, forwardRef, useEffect } from "react";
 import NavLinksCSS from "../components/NavLinks.module.css";
 
 export const NavLinks = forwardRef(
-  ({ aboutRef, projectRef, skillsRef, contactRef, closeMenu }, ref) => {
+  (
+    { aboutRef, projectRef, skillsRef, multimediaRef, contactRef, closeMenu },
+    ref
+  ) => {
     //State to track hover status of navigation items
     const [hoveredItem, setHoveredItem] = useState({
       about: false,
       projects: false,
       skills: false,
+      multimedia: false,
       contact: false,
     });
 
@@ -59,9 +63,18 @@ export const NavLinks = forwardRef(
             onMouseEnter={() => handleMouseEnter("skills")}
             onMouseLeave={() => handleMouseLeave("skills")}
             // style={{ fontSize: hoveredItem.projects ? "20px" : "17px" }}
-            className={hoveredItem.projects ? NavLinksCSS.hovered : ""}
+            className={hoveredItem.skills ? NavLinksCSS.hovered : ""}
           >
-            Skills
+            Stacks
+          </div>
+          <div
+            onClick={(e) => handleClick(e, multimediaRef)}
+            onMouseEnter={() => handleMouseEnter("multimedia")}
+            onMouseLeave={() => handleMouseLeave("multimedia")}
+            // style={{ fontSize: hoveredItem.projects ? "20px" : "17px" }}
+            className={hoveredItem.multimedia ? NavLinksCSS.hovered : ""}
+          >
+            Hobbies
           </div>
           <div
             onClick={(e) => handleClick(e, contactRef)}

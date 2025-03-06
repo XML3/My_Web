@@ -12,7 +12,7 @@
   .Container {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 600px 1fr 400px 500px 750px 800px 100px;
+    grid-template-rows: 600px 1fr 400px 500px 750px 1fr 800px 100px;
   }
 }
 
@@ -21,7 +21,7 @@
   .Container {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 600px 1fr 400px 600px 750px 800px 100px;
+    grid-template-rows: 600px 1fr 400px 600px 750px 1fr 800px 100px;
   }
 }
 
@@ -30,7 +30,7 @@
   .Container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 700px 800px 400px 1fr 1000px 850px 150px;
+    grid-template-rows: 700px 800px 400px 1fr 1000px 1fr 850px 150px;
   }
 }
 
@@ -39,6 +39,6 @@
   .Container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr 1fr 500px 1fr 1fr 1fr 200px;
+    grid-template-rows: 1fr 1fr 500px 1fr 1fr 1fr 1fr 120px;
   }
 }

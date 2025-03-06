@@ -6,7 +6,7 @@ import { useInView } from "react-intersection-observer";
 import { API_URL } from "../UI/constants";
 
 export const Skills = forwardRef((props, ref) => {
-  const headTitle = "Skills";
+  const headTitle = "Stacks";
   const underTitle = "Object Relational Mapping";
 
   const [skillsData, setSkillsData] = useState([]);

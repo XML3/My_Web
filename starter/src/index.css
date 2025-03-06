@@ -86,7 +86,7 @@ body {
 @media screen and (min-width: 1200px) {
   h1 {
     font-size: calc(
-      1rem * var(--scale-ratio) * var(--scale-ratio) * var(--scale-ratio)
+      0.8rem * var(--scale-ratio) * var(--scale-ratio) * var(--scale-ratio)
     );
     line-height: 1.1;
   }

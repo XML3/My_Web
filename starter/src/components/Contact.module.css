@@ -1,8 +1,8 @@
 @media screen and (min-width: 300px) {
   .ContactForm {
     grid-column: 1 / -1;
-    grid-row-start: 6;
-    grid-row-end: 7;
+    grid-row-start: 7;
+    grid-row-end: 8;
   }
 
   .SecondContainer {
@@ -98,8 +98,8 @@
 @media screen and (min-width: 400px) {
   .ContactForm {
     grid-column: 1 / -1;
-    grid-row-start: 6;
-    grid-row-end: 7;
+    grid-row-start: 7;
+    grid-row-end: 8;
   }
 
   .SecondContainer {
@@ -195,8 +195,8 @@
 @media screen and (min-width: 700px) {
   .ContactForm {
     grid-column: 1 / -1;
-    grid-row-start: 6;
-    grid-row-end: 7;
+    grid-row-start: 7;
+    grid-row-end: 8;
   }
 
   .SecondContainer {
@@ -291,8 +291,8 @@
   .ContactForm {
     grid-column-start: 1;
     grid-column-end: -1;
-    grid-row-start: 6;
-    grid-row-end: 7;
+    grid-row-start: 7;
+    grid-row-end: 8;
     background-color: transparent;
   }
 

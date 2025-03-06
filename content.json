@@ -13,13 +13,22 @@
       "id": "2",
       "img": "https://i.ibb.co/5BLLmnS/link-img.png",
       "title": "Events Management - Front-End",
-      "text": "Front-end React.js project, designed to simulate an event management system. It allows users to upload and manage events...",
+      "text": "Front-end React.js project, designed to simulate an event management system. It allows users to upload and manage events... [ This project will take a few moments to load! ]",
       "tools": "React.js, ChakraUI",
       "link": "https://eventsmanagementapp.netlify.app",
       "front": "https://i.ibb.co/F6jvdh2/evets-management-333.png"
     },
     {
       "id": "3",
+      "img": "https://i.ibb.co/5BLLmnS/link-img.png",
+      "title": "Cinema TV - Front-End",
+      "text": "Mock Streaming service + video sculpture",
+      "tools": "Vanilla JS, P5.JS, CSS",
+      "link": "https://cinematv.netlify.app/",
+      "front": "https://i.ibb.co/9G2PZk9/cinema-tv.png"
+    },
+    {
+      "id": "4",
       "img": "https://i.ibb.co/5BLLmnS/link-img.png",
       "title": "Events Management - Express API",
       "text": "This Back-end Express API project is the backbone of the Events management system. It manages the database, enabling posting, editing, and deletion of events...",
@@ -28,22 +37,13 @@
       "front": "https://i.ibb.co/7tnhv2s/events-management-331.png"
     },
     {
-      "id": "4",
+      "id": "5",
       "img": "https://i.ibb.co/5BLLmnS/link-img.png",
       "title": "Bookings Express API",
       "text": "Back-end Express API project, that simulates a property booking application... ",
       "tools": "Node/Express.js, Prisma[MySQL], Sentry, AuthO",
       "link": "https://github.com/XML3/BED-Final-Project",
       "front": "https://i.ibb.co/R7T5ksg/bookings-api.png"
-    },
-
-    {
-      "id": "5",
-      "img": "https://i.ibb.co/5BLLmnS/link-img.png",
-      "title": "Sample Drum Machine",
-      "text": "An interactive Sample Drum Machine built with React.js...",
-      "link": "https://codepen.io/XML3/pen/vYwOgao?editors=1111",
-      "front": "https://i.ibb.co/6RWHKBZ/drum-machine-33.png"
     },
     {
       "id": "6",
@@ -53,6 +53,15 @@
       "tools": "P5.js",
       "link": "https://codepen.io/XML3/pen/LYobbBa",
       "front": "https://i.ibb.co/BwNH2RM/orbit-control-331.png"
+    },
+    {
+      "id": "7",
+      "img": "https://i.ibb.co/5BLLmnS/link-img.png",
+      "title": "Sample Drum Machine",
+      "text": "An interactive Sample Drum Machine built with React.js...",
+      "tools": "React.js, CSS",
+      "link": "https://codepen.io/XML3/pen/vYwOgao?editors=1111",
+      "front": "https://i.ibb.co/6RWHKBZ/drum-machine-33.png"
     }
   ],
 
@@ -60,7 +69,7 @@
     {
       "id": "1",
       "title": "About Me",
-      "AboutMe": "Hi! I am Xagly a Full-stack Web Developer with a passion for web development and all things creative. In addition to my web development stack, I decided to start a new journey in order to improve the user experience through research and design. Therefore, I am currently working on the Google UX Design Professional Certificate in order to create digital products that are not only enjoyable, useful and visually appealing, but also ensure an equitable user experience.  When I am not busy, I enjoy producing electronic music, experimenting with new cooking recipes, and cycling to keep fit."
+      "AboutMe": "Hi! I am Xagly a Full-stack Web Developer with a passion for web development and all things creative. In addition to my web development stack, I decided to start a new journey in order to improve the user experience through research and design. Therefore, I am currently working on the Google UX Design Professional Certificate in order to create digital products that are not only enjoyable, useful and visually appealing, but also ensure an equitable user experience.  When I am not busy, I enjoy producing electronic music, experimenting with visuals through code and video editing software."
     }
   ],
   "port": [
