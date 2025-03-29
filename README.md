@@ -4,7 +4,7 @@ A personal portfolio website built with React.js, Module CSS, and p5.js to showc
 
 Note: The design of this website is original and should not be copied or reproduced without permission. All visual elements, layout, and creative coding techniques are copyrighted and belong to the author.
 
-![Personal Portfolio Website](https://i.ibb.co/B53gFPZd/myweb.png)
+![Image](https://github.com/user-attachments/assets/608a0c31-ddcf-4147-8f69-b087fbe4a3cf)
 
 # Features
 About Me Section: A personal introduction where you can share a little bit about yourself, your background, and your skills.
