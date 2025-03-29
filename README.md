@@ -72,6 +72,6 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 Copyright
 © 2024 Xagly Montilva. All rights reserved.
-All design elements, videos, sound/music, multimedia, and intellectual property related to this website are protected by copyright and may not be copied, reproduced, or used without the express permission of the author, except for the images used in the project card headers.
+All design elements, videos, sound/music, multimedia, and intellectual property related to this website are protected by copyright and may not be copied, reproduced, or used without the express permission of the author, with the exception of all images used in the projects' (section) card headers.
 
 
