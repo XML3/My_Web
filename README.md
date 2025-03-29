@@ -2,7 +2,7 @@
 # Personal Portfolio Website
 A personal portfolio website built with React.js, Module CSS, and p5.js to showcase both full-stack application projects and creative coding projects. The website provides a clean, modern interface for presenting various projects, hobbies, and personal details, with interactive elements powered by p5.js.
 
-Note: The design of this website is original and should not be copied or reproduced without permission. All visual elements, layout, and creative coding techniques are copyrighted and belong to the author.
+Note: The design of this website is original and should not be copied or reproduced without permission. All visual elements, including video, multimedia sound and layout are copyrighted and belong to the author.
 
 ![Image](https://github.com/user-attachments/assets/608a0c31-ddcf-4147-8f69-b087fbe4a3cf)
 
