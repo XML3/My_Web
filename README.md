@@ -1,5 +1,5 @@
-
 # Personal Portfolio Website
+
 A personal portfolio website built with React.js, Module CSS, and p5.js to showcase both full-stack application projects and creative coding projects. The website provides a clean, modern interface for presenting various projects, hobbies, and personal details, with interactive elements powered by p5.js.
 
 Note: The design of this website is original and should not be copied or reproduced without permission. All visual elements, including video, multimedia, sound and layout are copyrighted and belong to the author.
@@ -7,6 +7,7 @@ Note: The design of this website is original and should not be copied or reprodu
 ![Image](https://github.com/user-attachments/assets/608a0c31-ddcf-4147-8f69-b087fbe4a3cf)
 
 # Features
+
 About Me Section: A personal introduction where you can share a little bit about yourself, your background, and your skills.
 
 Links to GitHub & CodePen: Quick access to your GitHub and CodePen profiles, where viewers can explore your repositories and coding projects.
@@ -17,9 +18,10 @@ Tech Stack Section: A section showcasing the technologies and tools you are fami
 
 Hobbies Section: A section highlighting your multimedia hobbies (e.g., video, music, digital art, etc.) with videos and description.
 
-Contact Form: A fully functional contact form that allows visitors to send messages or inquiries. 
+Contact Form: A fully functional contact form that allows visitors to send messages or inquiries.
 
 ## Technologies Used
+
 React.js: Front-end framework for building the interactive user interface.
 
 Module CSS: CSS modules to scope styles locally to components for better maintainability.
@@ -30,8 +32,8 @@ GitHub: Source code hosting platform.
 
 CodePen: A platform for showcasing front-end coding projects.
 
-
 ## Folder Structure
+
 src/: Folder containing all the source code for the app.
 
 components/: Contains all React components used in the app.
@@ -65,13 +67,8 @@ Hobbies: Explore my creative side with multimedia hobbies such as photography, m
 
 Contact Form: Send me a message or inquiry via the contact form section.
 
-License
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-## Copyright Notice: 
+## Copyright Notice:
 
 Copyright
 © 2024 Xagly Montilva. All rights reserved.
-All design elements, videos, sound/music, multimedia, and intellectual property related to this website are protected by copyright and may not be copied, reproduced, or used without the express permission of the author, with the exception of all images used in the projects' (section) card headers.
-
-
+All design elements, videos, sound/music, multimedia, and intellectual property related to this website are protected by copyright and may not be copied, reproduced, or used without the express permission of the author.

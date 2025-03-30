@@ -388,5 +388,6 @@
     left: 50%;
     transform: translateX(-50%);
     border-radius: 10px;
+    padding: 0.6em 1.2em;
   }
 }

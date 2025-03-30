@@ -90,17 +90,26 @@ export const Content = forwardRef((props, ref) => {
                       {renderStyledTools(item.tools)}
                     </div>
                     {/* </a> */}
-
-                    <button
-                      className={ContentCSS.FlipButtonBack}
-                      onClick={() => handleFlip(index)}
-                    >
-                      <img
-                        className={ContentCSS.Arrow}
-                        src={arrow}
-                        alt="back arrow svg"
-                      />
-                    </button>
+                    <div className={ContentCSS.BackButtons}>
+                      <div className={ContentCSS.FlipBackWrapper}>
+                        <button
+                          className={ContentCSS.FlipButtonBack}
+                          onClick={() => handleFlip(index)}
+                        >
+                          FLIP BACK
+                        </button>
+                      </div>
+                      <div className={ContentCSS.ReadMoreWrapper}>
+                        <a
+                          className={ContentCSS.ReadMoreButton}
+                          href={item.readMore}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          READ MORE
+                        </a>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>

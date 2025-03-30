@@ -7,7 +7,8 @@
       "text": "A simple Front-end React.js project which explores an array of recipes, search by specific dietary preferences: [label, diet labels, cautions, and health labels]...",
       "tools": "React.js, ChakraUI",
       "link": "https://tastyrecipechecker.netlify.app/",
-      "front": "https://i.ibb.co/zfS4GkH/recipe-checker-331.png"
+      "front": "https://i.ibb.co/W4MfQsf3/recipe-checker-1.png",
+      "readMore": "https://github.com/XML3/React-Recipes-/blob/main/README.md"
     },
     {
       "id": "2",
@@ -16,7 +17,8 @@
       "text": "Front-end React.js project, designed to simulate an event management system. It allows users to upload and manage events... [ This project will take a few moments to load! ]",
       "tools": "React.js, ChakraUI",
       "link": "https://eventsmanagementapp.netlify.app",
-      "front": "https://i.ibb.co/F6jvdh2/evets-management-333.png"
+      "front": "https://i.ibb.co/Pq22MPp/evets-management-77.png",
+      "readMore": "https://github.com/XML3/Events-Management-React/blob/main/README.md"
     },
     {
       "id": "3",
@@ -25,7 +27,8 @@
       "text": "Mock Streaming service + video sculpture",
       "tools": "Vanilla JS, P5.JS, CSS",
       "link": "https://cinematv.netlify.app/",
-      "front": "https://i.ibb.co/9G2PZk9/cinema-tv.png"
+      "front": "https://i.ibb.co/h0HckG2/cinema.png",
+      "readMore": "https://github.com/XML3/Streaming_Project/blob/main/README.md"
     },
     {
       "id": "4",
@@ -34,7 +37,8 @@
       "text": "This Back-end Express API project is the backbone of the Events management system. It manages the database, enabling posting, editing, and deletion of events...",
       "tools": "Node/Express.js, Prisma[PostgreSQL], Sentry, AuthO",
       "link": "https://github.com/XML3/BED-Express-Event-API",
-      "front": "https://i.ibb.co/7tnhv2s/events-management-331.png"
+      "front": "https://i.ibb.co/Mk84LbwJ/new-events-api-disk.png",
+      "readMore": "https://github.com/XML3/BED-Express-Event-API/blob/main/README.md"
     },
     {
       "id": "5",
@@ -43,7 +47,8 @@
       "text": "Back-end Express API project, that simulates a property booking application... ",
       "tools": "Node/Express.js, Prisma[MySQL], Sentry, AuthO",
       "link": "https://github.com/XML3/BED-Final-Project",
-      "front": "https://i.ibb.co/R7T5ksg/bookings-api.png"
+      "front": "https://i.ibb.co/zVSLBQtM/property-api.png",
+      "readMore": "https://github.com/XML3/BED-Property-Booking-API/blob/main/README.md"
     },
     {
       "id": "6",
@@ -52,16 +57,18 @@
       "text": "A 3D Orbit Control design made with P5.js. It allows mouse control...",
       "tools": "P5.js",
       "link": "https://codepen.io/XML3/pen/LYobbBa",
-      "front": "https://i.ibb.co/BwNH2RM/orbit-control-331.png"
+      "front": "https://i.ibb.co/BwNH2RM/orbit-control-331.png",
+      "readMore": "https://codepen.io/XML3/pen/LYobbBa"
     },
     {
       "id": "7",
       "img": "https://i.ibb.co/5BLLmnS/link-img.png",
-      "title": "Sample Drum Machine",
-      "text": "An interactive Sample Drum Machine built with React.js...",
-      "tools": "React.js, CSS",
-      "link": "https://codepen.io/XML3/pen/vYwOgao?editors=1111",
-      "front": "https://i.ibb.co/6RWHKBZ/drum-machine-33.png"
+      "title": "React Emails",
+      "text": "The project utilizes React Email for building reusable email components, Resend for email sending, and Next.js for the API routes...",
+      "tools": "NEXTjs, React Email, Resend, CSS",
+      "link": "https://github.com/XML3/react-emails",
+      "front": "https://i.ibb.co/XrP0TRwR/react-emailspng.png",
+      "readMore": "https://github.com/XML3/react-emails/blob/main/README.md"
     }
   ],
 
