@@ -8,7 +8,7 @@
       "tools": "React.js, ChakraUI",
       "link": "https://tastyrecipechecker.netlify.app/",
       "front": "https://i.ibb.co/W4MfQsf3/recipe-checker-1.png",
-      "readMore": "https://github.com/XML3/React-Recipes-/blob/main/README.md"
+      "ReadMore": "https://github.com/XML3/React-Recipes-/blob/main/README.md"
     },
     {
       "id": "2",
@@ -18,7 +18,7 @@
       "tools": "React.js, ChakraUI",
       "link": "https://eventsmanagementapp.netlify.app",
       "front": "https://i.ibb.co/Pq22MPp/evets-management-77.png",
-      "readMore": "https://github.com/XML3/Events-Management-React/blob/main/README.md"
+      "ReadMore": "https://github.com/XML3/Events-Management-React/blob/main/README.md"
     },
     {
       "id": "3",
@@ -28,7 +28,7 @@
       "tools": "Vanilla JS, P5.JS, CSS",
       "link": "https://cinematv.netlify.app/",
       "front": "https://i.ibb.co/h0HckG2/cinema.png",
-      "readMore": "https://github.com/XML3/Streaming_Project/blob/main/README.md"
+      "ReadMore": "https://github.com/XML3/Streaming_Project/blob/main/README.md"
     },
     {
       "id": "4",
@@ -38,7 +38,7 @@
       "tools": "Node/Express.js, Prisma[PostgreSQL], Sentry, AuthO",
       "link": "https://github.com/XML3/BED-Express-Event-API",
       "front": "https://i.ibb.co/Mk84LbwJ/new-events-api-disk.png",
-      "readMore": "https://github.com/XML3/BED-Express-Event-API/blob/main/README.md"
+      "ReadMore": "https://github.com/XML3/BED-Express-Event-API/blob/main/README.md"
     },
     {
       "id": "5",
@@ -48,7 +48,7 @@
       "tools": "Node/Express.js, Prisma[MySQL], Sentry, AuthO",
       "link": "https://github.com/XML3/BED-Final-Project",
       "front": "https://i.ibb.co/zVSLBQtM/property-api.png",
-      "readMore": "https://github.com/XML3/BED-Property-Booking-API/blob/main/README.md"
+      "ReadMore": "https://github.com/XML3/BED-Property-Booking-API/blob/main/README.md"
     },
     {
       "id": "6",
@@ -58,7 +58,7 @@
       "tools": "P5.js",
       "link": "https://codepen.io/XML3/pen/LYobbBa",
       "front": "https://i.ibb.co/BwNH2RM/orbit-control-331.png",
-      "readMore": "https://codepen.io/XML3/pen/LYobbBa"
+      "ReadMore": "https://codepen.io/XML3/pen/LYobbBa"
     },
     {
       "id": "7",
@@ -68,7 +68,7 @@
       "tools": "NEXTjs, React Email, Resend, CSS",
       "link": "https://github.com/XML3/react-emails",
       "front": "https://i.ibb.co/XrP0TRwR/react-emailspng.png",
-      "readMore": "https://github.com/XML3/react-emails/blob/main/README.md"
+      "ReadMore": "https://github.com/XML3/react-emails/blob/main/README.md"
     }
   ],
 
