@@ -59,7 +59,7 @@ export const Content = forwardRef((props, ref) => {
                       className={ContentCSS.FlipButtonFront}
                       onClick={() => handleFlip(index)}
                     >
-                      Flip
+                      FLIP
                     </button>
                   </div>
 
