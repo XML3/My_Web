@@ -100,14 +100,20 @@ export const Content = forwardRef((props, ref) => {
                         </button>
                       </div>
                       <div className={ContentCSS.ReadMoreWrapper}>
-                        <a
-                          className={ContentCSS.ReadMoreButton}
-                          href={item.readMore}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          READ MORE
-                        </a>
+                        {item.readMore ? (
+                          <a
+                            className={ContentCSS.ReadMoreButton}
+                            href={item.readMore}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            READ MORE
+                          </a>
+                        ) : (
+                          <span className={ContentCSS.ReadMoreDisabled}>
+                            No additional content
+                          </span>
+                        )}
                       </div>
                     </div>
                   </div>

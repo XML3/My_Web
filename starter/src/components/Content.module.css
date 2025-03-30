@@ -175,6 +175,11 @@
     color: var(--main-fontcolor);
     padding: 7px 15px;
   }
+
+  .ReadMoreDisabled {
+    color: gray;
+    cursor: not-allowed;
+  }
 }
 
 @media screen and (min-width: 400px) {
