@@ -142,7 +142,7 @@ export const ContactForm = forwardRef((props, ref) => {
                 )}
               </div>
               <button className={ContactCSS.SendButton} type="submit">
-                Send Message
+                SEND MESSAGE
               </button>
             </form>
           </div>
