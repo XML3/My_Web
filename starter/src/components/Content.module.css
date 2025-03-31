@@ -84,16 +84,20 @@
   }
 
   .FlipButtonFront {
+    width: 85%;
+    height: 10%;
     display: flex;
+    align-items: center;
+    justify-content: center;
     position: relative;
     left: 50%;
+    top: 35%;
     transform: translateX(-50%);
     color: var(--main-fontcolor);
     background-color: transparent;
     border: 1px solid var(--main-fontcolor);
-    margin-top: 30px;
     margin-bottom: 10px;
-    padding: 5px, 15px;
+    padding: 10px, 15px;
     cursor: pointer;
     border-radius: 5px;
     font-size: 16px;
@@ -254,10 +258,12 @@
   }
 
   .FlipButtonFront {
+    width: 30%;
+    height: 10%;
     position: relative;
     left: 50%;
     transform: translateX(-50%);
-    top: 5%;
+    margin-top: 10%;
     padding: 10px 25px;
     cursor: pointer;
     border-radius: 5px;
