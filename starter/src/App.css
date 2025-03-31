@@ -12,7 +12,7 @@
   .Container {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 600px 1100px 400px 530px 750px 1fr 800px 100px;
+    grid-template-rows: 600px 1fr 400px 630px 750px 1fr 800px 100px;
   }
 }
 
