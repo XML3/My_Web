@@ -12,7 +12,7 @@
   .Container {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 600px 1fr 400px 530px 750px 1fr 800px 100px;
+    grid-template-rows: 600px 1100px 400px 530px 750px 1fr 800px 100px;
   }
 }
 
@@ -21,7 +21,7 @@
   .Container {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 600px 1fr 400px 750px 750px 1fr 800px 100px;
+    grid-template-rows: 600px 1050px 440px 670px 750px 1fr 800px 100px;
   }
 }
 
@@ -30,7 +30,7 @@
   .Container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 700px 800px 400px 800px 1000px 1fr 850px 150px;
+    grid-template-rows: 700px 1000px 400px 770px 1000px 1fr 850px 150px;
   }
 }
 
