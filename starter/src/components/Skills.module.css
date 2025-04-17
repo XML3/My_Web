@@ -91,25 +91,7 @@
 }
 
 @media screen and (min-width: 400px) {
-  .SkillsMainContainer {
-    grid-column: 1;
-    grid-row: 5;
-    width: 100;
-    height: 100%;
-    background-color: transparent;
-  }
-  .MainHeader h1 {
-    position: relative;
-    color: var(--main-fontcolor);
-    font-family: var(--header-fontfamily);
-    font-weight: 700;
-    text-align: center;
-  }
-
   .SecondContainer {
-    display: flex;
-    justify-content: center;
-    align-content: center;
     width: 100%;
     height: 85%;
     background-color: rgb(213, 209, 191);
@@ -181,29 +163,31 @@
   }
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 600px) {
+  .SecondContainer {
+    width: 100%;
+    height: 85%;
+  }
+}
+
+@media screen and (min-width: 768px) {
   .SkillsMainContainer {
     grid-column: 1 / -1;
-    grid-row: 5;
-    width: 100;
+    width: 100%;
     height: 100%;
     background-color: transparent;
   }
   .MainHeader h1 {
     position: relative;
-    color: var(--main-fontcolor);
-    font-family: var(--header-fontfamily);
     font-weight: 700;
     text-align: center;
   }
 
   .SecondContainer {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    width: 100%;
+    width: 85%;
     height: 85%;
-    background-color: rgb(213, 209, 191);
+    position: relative;
+    left: 8%;
     border-radius: 15px;
   }
 
@@ -250,6 +234,38 @@
   }
 }
 
+@media screen and (min-width: 992px) {
+  .MainHeader h1 {
+    position: relative;
+    bottom: 20px;
+    font-weight: 700;
+    text-align: center;
+  }
+
+  .SecondContainer {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    position: relative;
+    left: 13%;
+    bottom: 5%;
+    width: 75%;
+    height: 85%;
+    padding: 1rem 1rem;
+  }
+
+  .DarkContainer {
+    width: 100%;
+    height: 95%;
+    gap: 0.5rem;
+    padding-top: 20px;
+    padding-bottom: 40px;
+  }
+  .Skills {
+    padding-top: 2rem;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .SkillsMainContainer {
     grid-column: 1 / -1;
@@ -263,14 +279,12 @@
   }
 
   .SecondContainer {
-    width: 78%;
+    width: 75%;
     height: 85%;
     position: relative;
     top: 20%;
     left: 50%;
     transform: translate(-50%, -30%);
-    border-radius: 15px;
-    background-color: rgb(213, 209, 191);
     padding: 0 5rem;
   }
 
@@ -289,12 +303,9 @@
     gap: 1.5rem;
     justify-content: center;
     align-items: center;
-    width: 95%;
+    width: 100%;
     height: 95%;
-    position: relative;
-    background-color: var(--background-color);
-    border-radius: 15px;
-    padding: 10rem;
+    padding: 6rem;
   }
 
   .Skills {

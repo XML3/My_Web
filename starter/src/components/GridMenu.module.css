@@ -92,8 +92,23 @@
     transform: translate(-50%, 10%);
   }
 }
+@media screen and (min-width: 600px) {
+  .SideLogo {
+    left: 10%;
+    top: 1%;
+    transform: translate(-50%, 5%);
+  }
 
-@media screen and (min-width: 700px) {
+  .GridMenu {
+    width: 45px;
+    height: 45px;
+    right: 4%;
+    top: 6%;
+    transform: translateY(-50%);
+  }
+}
+
+@media screen and (min-width: 768px) {
   .NavBarContainer {
     grid-row: 1;
     background-color: var(--background-color);
@@ -111,7 +126,7 @@
     height: auto;
     position: fixed;
     z-index: 10;
-    left: 7%;
+    left: 12%;
     top: 0.8%;
     transform: translate(-50%, 5%);
     pointer-events: auto;
@@ -122,11 +137,10 @@
     height: 45px;
     position: fixed;
     z-index: 2;
-    right: 30%;
-    top: 5%;
+    right: 8%;
+    top: 6%;
     transform: translateY(-50%);
     color: var(--main-fontcolor);
-    /* border: 1px solid rgb(252, 53, 76); */
   }
 
   .GridMenuClose {
@@ -137,6 +151,44 @@
     right: 90%;
     top: 10%;
     transform: translate(-50%, 10%);
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .NavBarContainer {
+    border-bottom: none;
+  }
+
+  .SideLogo {
+    width: 110px;
+    height: auto;
+    position: fixed;
+    z-index: 20;
+    left: 13%;
+    transform: translateX(-90%);
+    top: 5%;
+    pointer-events: auto;
+  }
+
+  .GridMenu {
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    z-index: 2;
+    right: 5%;
+    top: 10%;
+    transform: translateY(-50%);
+    color: var(--main-fontcolor);
+  }
+
+  .GridMenuClose {
+    width: 30px;
+    height: 40px;
+    position: relative;
+    z-index: 10;
+    top: 1%;
+    left: 50%;
+    transform: translateX(-40%);
   }
 }
 

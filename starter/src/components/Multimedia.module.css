@@ -5,12 +5,11 @@
     height: 100%;
     background-color: transparent;
     margin: 0;
-    padding: 0 1rem;
     margin-bottom: 5rem;
   }
 
   .SecondContainer {
-    width: 90%;
+    width: 100%;
     height: auto;
     position: relative;
     top: 0;
@@ -19,7 +18,7 @@
     border-radius: 15px;
     background-color: var(--background-color);
     border: 1px solid #213547;
-    padding: 0.5rem;
+    padding: 0.7rem;
   }
 
   .ItemsContainer {
@@ -131,11 +130,11 @@
   }
 
   .SecondContainer {
-    width: 85%;
     padding: 1rem 2rem;
   }
 
   .ItemsContainer {
+    width: 100%;
     gap: 1.5rem;
     padding: 1rem;
   }
@@ -147,16 +146,39 @@
   }
 }
 
-/* Min-width: 700px */
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 600px) {
   .MainContainer {
     grid-column: 1 / -1;
     width: 100%;
   }
 
   .SecondContainer {
-    width: 80%;
-    padding: 1rem 2.5rem;
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .ItemsContainer {
+    width: 100%;
+    height: auto;
+    gap: 1rem;
+    border-radius: 15px;
+  }
+}
+
+/* Min-width: 700px */
+@media screen and (min-width: 768px) {
+  .MainContainer {
+    grid-column: 1 / -1;
+    width: 100%;
+  }
+
+  .SecondContainer {
+    width: 85%;
+    padding: 1rem 1rem;
+  }
+  .ItemsContainer {
+    width: 100%;
+    height: auto;
   }
 
   .ItemsContainer video {
@@ -175,6 +197,24 @@
   }
 }
 
+@media screen and (min-width: 992px) {
+  .MainContainer {
+    width: 100%;
+    height: auto;
+  }
+
+  .SecondContainer {
+    width: 75%;
+    padding: 1rem 1rem;
+  }
+
+  .ItemsContainer {
+    width: 100%;
+    height: auto;
+    padding-bottom: 8%;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .MainContainer {
     grid-column: 1 / -1;
@@ -187,7 +227,7 @@
   }
 
   .SecondContainer {
-    width: 78%;
+    width: 75%;
     height: 85%;
     position: relative;
     top: 43%;
@@ -201,11 +241,10 @@
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    width: 95%;
+    width: 100%;
     height: 95%;
     position: relative;
-    left: 2.5%;
-    top: 2%;
+    top: 2.5%;
     padding: 0 2rem;
     overflow: hidden;
   }

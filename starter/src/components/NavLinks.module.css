@@ -37,6 +37,23 @@
   }
 }
 
+@media screen and (min-width: 992px) {
+  .Navigation {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: relative;
+    right: 30%;
+    height: 20vh;
+    width: 100%;
+  }
+
+  .Navigation div {
+    font-size: 18px;
+    padding-bottom: 20px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .Navigation {
     display: flex;

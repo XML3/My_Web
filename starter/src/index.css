@@ -59,7 +59,7 @@ body {
   }
 }
 /*screen size 700 */
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 768px) {
   h1 {
     font-size: calc(1.2rem * var(--scale-ratio) * var(--scale-ratio));
     line-height: 1.1;
@@ -76,9 +76,17 @@ body {
   }
 
   p {
-    font-size: calc(0.6rem * var(--scale-ratio));
+    font-size: calc(0.4rem * var(--scale-ratio));
     font-weight: 100;
     line-height: 1;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  p {
+    font-size: calc(0.5rem * var(--scale-ratio));
+    font-weight: 100;
+    line-height: 1.2;
   }
 }
 

@@ -13,13 +13,32 @@
   }
 }
 
+@media screen and (min-width: 600px) {
+  .MainScroll {
+    margin: 8% 1%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .MainScroll {
+    margin: 10% 7%;
+    position: relative;
+    right: 0%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .MainScroll {
+    margin: 8% 12%;
+    position: relative;
+    left: 0.5%;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .MainScroll {
-    grid-column-start: 1;
-    grid-column-end: -1;
-    grid-row-start: 4;
-    grid-row-end: 5;
-    cursor: grab;
+    position: relative;
+    right: 0;
     overflow: hidden;
     margin: 10% 12%;
     background-image: linear-gradient(to right, #0abfbc, #fc354c);

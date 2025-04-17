@@ -10,7 +10,6 @@
     height: auto;
     margin: 0;
     padding: 0;
-    align-items: center;
     justify-content: center;
     text-align: center;
   }
@@ -26,7 +25,6 @@
   .HeaderOne {
     position: relative;
     z-index: 1;
-    position: relative;
     bottom: 5%;
   }
 
@@ -49,30 +47,7 @@
 
 /* Screen size Larger / min-width 400 px */
 @media screen and (min-width: 400px) {
-  .Cubes {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 200px;
-  }
-
   /* Middle Section / Header */
-  .HeadersContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
 
   .HeaderOne {
     position: relative;
@@ -81,13 +56,10 @@
   }
 
   .HeaderOne h1 {
-    color: var(--main-fontcolor);
-    font-family: var(--header-fontfamily);
     font-weight: 400;
   }
+
   .HeaderTwo {
-    color: var(--main-fontcolor);
-    font-family: var(--header-fontfamily);
     position: relative;
     bottom: 3%;
   }
@@ -97,12 +69,29 @@
   }
 }
 
-/* Screen size Larger / min-width 700 px */
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 600px) {
   /* Middle Section / Header */
   .HeadersContainer {
-    grid-column-start: 1;
-    grid-column-end: -1;
+    grid-column: 1 /-1;
+  }
+
+  .HeaderOne {
+    position: relative;
+    bottom: 10%;
+    z-index: 1;
+  }
+
+  .HeaderTwo {
+    position: relative;
+    bottom: 15%;
+  }
+}
+
+/* Screen size Larger / min-width 700 px */
+@media screen and (min-width: 768px) {
+  /* Middle Section / Header */
+  .HeadersContainer {
+    grid-column: 1 / -1;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -119,30 +108,56 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    /* height: 200px; */
+    height: 250px;
+    background-color: #fc354c;
     position: fixed;
     z-index: -1;
-    background-color: #fc354c;
+    top: 30%;
+    left: 52%;
+    transform: translate(-52%, -40%);
   }
 
   .HeaderOne {
-    color: var(--main-fontcolor);
-    font-family: var(--header-fontfamily);
     font-size: 34px;
     position: relative;
-    top: 12%;
+    top: 10%;
     z-index: 1;
   }
 
   .HeaderTwo {
-    color: var(--main-fontcolor);
-    font-family: var(--header-fontfamily);
     position: relative;
-    top: 15%;
+    top: 2%;
   }
 
   .HeaderTwo h2 {
     font-weight: 300;
+  }
+}
+@media screen and (min-width: 992px) {
+  /* Middle Section / Header with Text*/
+
+  .Cubes {
+    width: 100%;
+    height: 300px;
+  }
+
+  .HeaderOne {
+    position: relative;
+    top: 30%;
+    z-index: 1;
+  }
+
+  .HeaderOne h1 {
+    font-weight: 400;
+  }
+  .HeaderTwo {
+    position: relative;
+    top: 25%;
+  }
+
+  .HeaderTwo h2 {
+    font-weight: 400;
+    font-size: calc(0.7em * var(--scale-ratio) * var(--scale-ratio));
   }
 }
 
@@ -150,50 +165,29 @@
 @media screen and (min-width: 1200px) {
   /* Middle Section / Header with Text*/
   .HeadersContainer {
-    grid-column-start: 1;
-    grid-column-end: -1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     width: 100%;
     height: 100%;
-    margin: 0;
-    padding: 0;
-    text-align: center;
     position: relative;
-    bottom: 25%;
+    bottom: 30%;
   }
 
   .Cubes {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 100%;
     height: 400px;
-    background-color: #fc354c;
-    position: fixed;
-    z-index: -1;
     top: 43%;
+    left: 0;
     transform: translateY(-52%);
   }
 
   .HeaderOne {
     position: relative;
-    top: 25%;
+    top: 42%;
     z-index: 1;
   }
 
-  .HeaderOne h1 {
-    color: var(--main-fontcolor);
-    font-family: var(--header-fontfamily);
-    font-weight: 400;
-  }
   .HeaderTwo {
-    color: var(--main-fontcolor);
-    font-family: var(--header-fontfamily);
     position: relative;
-    top: 26%;
+    top: 38%;
   }
 
   .HeaderTwo h2 {

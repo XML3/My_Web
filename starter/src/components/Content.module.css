@@ -314,6 +314,16 @@
   }
 }
 
+@media screen and (min-width: 768px) {
+  .Content {
+    min-height: 20rem;
+    -webkit-min-width: 150rem;
+    min-width: 150rem;
+    padding: 40px;
+    margin: 5% 0;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .Content {
     min-height: 20rem;

@@ -1,5 +1,7 @@
 @media screen and (min-width: 300px) {
   .AboutContainer {
+    grid-column: 1 / -1;
+    grid-row: 2 / 3;
     position: relative;
     padding: 0 1rem;
     background-color: rgb(213, 209, 191);
@@ -56,44 +58,84 @@
   }
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 600px) {
   .AboutContainer {
-    grid-column: 1 / -1;
-    grid-row: 2 / 3;
     position: relative;
     padding: 0 1rem;
-    width: auto;
+    width: 100%;
     height: auto;
-    background-color: rgb(213, 209, 191);
-    margin-top: 2rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .AboutContainer {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    position: relative;
+    padding: 0 1rem;
+    max-width: 85%;
+    height: auto;
+    margin: auto;
   }
 
   .About {
-    display: flex;
-    padding-left: 1rem;
+    padding-left: 0.5rem;
   }
 
   .Section h2 {
-    color: var(--backgroudn-color);
-    font-family: var(--header-fontfamily);
     margin-top: 1.5rem;
   }
 
+  .AnimateSphereContainer {
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+  }
+
+  .CanvasContainer {
+    width: 100%;
+    height: auto;
+    padding: 0 2rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .AboutContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 400px 430px;
+    width: 75%;
+    height: auto;
+    margin: auto;
+    padding: 20px;
+    position: relative;
+    left: 0.5%;
+  }
+
+  .About {
+    grid-column: 1 / 3;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  .Section h2 {
+    margin-bottom: 1rem;
+    margin-top: 2.5rem;
+  }
+
   .AboutText p {
-    color: var(--backgound-color);
-    font-family: var(--main-fontfamily);
-    line-height: 1.5;
+    text-align: left;
+    line-height: 1.8em;
     font-weight: 400;
   }
 
   .AnimateSphereContainer {
-    grid-column: 1;
-    max-width: 100%;
-    height: auto;
-    margin: auto;
+    grid-column: 1 / 3;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 3%;
   }
 
   .CanvasContainer {
@@ -104,7 +146,7 @@
     justify-content: center;
     position: relative;
     overflow: hidden;
-    padding: 0 2rem;
+    padding: 0 3rem;
     box-sizing: border-box;
     margin: 0 auto;
   }
@@ -113,47 +155,39 @@
 @media screen and (min-width: 1200px) {
   .AboutContainer {
     display: grid;
-    grid-template-columns: 3fr 2fr; /* About section takes more space */
-    padding: 0 5rem;
-    background-color: rgb(213, 209, 191);
+    grid-template-columns: 1fr 1fr; /* About section takes more space */
+    grid-template-rows: 1fr;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 75%;
-    height: auto; /* 75% */
+    height: 650px;
     margin: auto;
-    padding: 2%;
+    padding: 1%;
   }
 
   .About {
     grid-column: 1 / 2;
     padding: 3rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
   }
 
   .Section h2 {
-    color: var(--background-color);
-    font-family: var(--header-fontfamily);
     margin-bottom: 1rem;
-  }
-
-  .AboutText p {
-    color: var(--background-color);
-    font-family: var(--main-fontfamily);
-    line-height: 1.5em;
-    font-weight: 400;
+    margin-top: 2.5rem;
   }
 
   .AnimateSphereContainer {
-    grid-column: 2 / 3;
+    grid-column: 2 / -1;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: 2rem; /* Small margin between About and AnimatedSphere */
-    margin-right: 2rem;
+    margin-left: 0.5rem; /* Small margin between About and AnimatedSphere */
+    margin-right: 0rem;
+    min-width: 50%;
   }
 
   .CanvasContainer {
-    width: 100%;
+    min-width: 100%;
     height: auto;
     display: flex;
     align-items: center;
