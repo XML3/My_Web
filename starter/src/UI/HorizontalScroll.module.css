@@ -7,9 +7,11 @@
     cursor: grab;
     overflow: hidden;
     margin: 10% 2%;
-    background-image: linear-gradient(to right, #0abfbc, #fc354c);
+    /* background-image: linear-gradient(to right, #0abfbc, #fc354c); */
+
+    background-color: rgb(5, 22, 34);
     border-radius: 15px;
-    border: 1px solid rgb(213, 209, 191);
+    border: 1px solid #213547;
   }
 }
 
@@ -41,8 +43,10 @@
     right: 0;
     overflow: hidden;
     margin: 10% 12%;
-    background-image: linear-gradient(to right, #0abfbc, #fc354c);
+    /* background-image: linear-gradient(to right, #0abfbc, #fc354c); */
+
+    background-color: rgb(5, 22, 34);
     border-radius: 15px;
-    border: 1px solid rgb(213, 209, 191);
+    border: 1px solid #213547;
   }
 }

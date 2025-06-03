@@ -3,72 +3,73 @@
     {
       "id": "1",
       "img": "https://i.ibb.co/5BLLmnS/link-img.png",
-      "title": "Recipes - Front-End",
-      "text": "A simple Front-end React.js project which explores an array of recipes, search by specific dietary preferences: [label, diet labels, cautions, and health labels]...",
-      "tools": "React.js, ChakraUI",
-      "link": "https://tastyrecipechecker.netlify.app/",
-      "front": "https://i.ibb.co/W4MfQsf3/recipe-checker-1.png",
-      "ReadMore": "https://github.com/XML3/React-Recipes-/blob/main/README.md"
-    },
-    {
-      "id": "2",
-      "img": "https://i.ibb.co/5BLLmnS/link-img.png",
       "title": "Events Management - Front-End",
       "text": "Front-end React.js project, designed to simulate an event management system. It allows users to upload and manage events... [ This project will take a few moments to load! ]",
       "tools": "React.js, ChakraUI",
       "link": "https://eventsmanagementapp.netlify.app",
-      "front": "https://i.ibb.co/Pq22MPp/evets-management-77.png",
+      "front": "https://i.ibb.co/MyKQrvLg/Events.png",
       "ReadMore": "https://github.com/XML3/Events-Management-React/blob/main/README.md"
     },
     {
-      "id": "3",
-      "img": "https://i.ibb.co/5BLLmnS/link-img.png",
-      "title": "Cinema TV - Front-End",
-      "text": "Mock Streaming service + video sculpture",
-      "tools": "Vanilla JS, P5.JS, CSS",
-      "link": "https://cinematv.netlify.app/",
-      "front": "https://i.ibb.co/h0HckG2/cinema.png",
-      "ReadMore": "https://github.com/XML3/Streaming_Project/blob/main/README.md"
-    },
-    {
-      "id": "4",
+      "id": "2",
       "img": "https://i.ibb.co/5BLLmnS/link-img.png",
       "title": "Events Management - Express API",
       "text": "This Back-end Express API project is the backbone of the Events management system. It manages the database, enabling posting, editing, and deletion of events...",
       "tools": "Node/Express.js, Prisma[PostgreSQL], Sentry, AuthO",
       "link": "https://github.com/XML3/BED-Express-Event-API",
-      "front": "https://i.ibb.co/Mk84LbwJ/new-events-api-disk.png",
+      "front": "https://i.ibb.co/MDSZzvH7/Events-API.png",
       "ReadMore": "https://github.com/XML3/BED-Express-Event-API/blob/main/README.md"
+    },
+    {
+      "id": "3",
+      "img": "https://i.ibb.co/5BLLmnS/link-img.png",
+      "title": "Recipe Checker - Front-End",
+      "text": "A simple Front-end React.js project which explores an array of recipes, search by specific dietary preferences: [label, diet labels, cautions, and health labels]...",
+      "tools": "React.js, ChakraUI",
+      "link": "https://tastyrecipechecker.netlify.app/",
+      "front": "https://i.ibb.co/3mxL5Hyd/REcipe-Main-Page.png",
+      "ReadMore": "https://github.com/XML3/React-Recipes-/blob/main/README.md"
+    },
+    {
+      "id": "4",
+      "img": "https://i.ibb.co/5BLLmnS/link-img.png",
+      "title": "Bookings Express API",
+      "text": "Back-end Express API project, aimed at replicating the functionality of a property booking system online.  It manages users and hosts interaction with the platform to handle... ",
+      "tools": "Node/Express.js, Prisma[MySQL], Sentry, AuthO",
+      "link": "https://github.com/XML3/BED-Final-Project",
+      "front": "https://i.ibb.co/jkjJmcz5/Rental-hub.png",
+      "ReadMore": "https://github.com/XML3/BED-Property-Booking-API/blob/main/README.md"
     },
     {
       "id": "5",
       "img": "https://i.ibb.co/5BLLmnS/link-img.png",
-      "title": "Bookings Express API",
-      "text": "Back-end Express API project, that simulates a property booking application... ",
-      "tools": "Node/Express.js, Prisma[MySQL], Sentry, AuthO",
-      "link": "https://github.com/XML3/BED-Final-Project",
-      "front": "https://i.ibb.co/zVSLBQtM/property-api.png",
-      "ReadMore": "https://github.com/XML3/BED-Property-Booking-API/blob/main/README.md"
+      "title": "Email Campaign",
+      "text": "The project utilizes React Email for building reusable email components, Resend for email sending, and Next.js for the API routes...",
+      "tools": "NEXTjs, React Email, Resend, CSS",
+      "link": "https://github.com/XML3/react-emails",
+      "front": "https://i.ibb.co/5xJr3F5M/email-camp.png",
+      "ReadMore": "https://github.com/XML3/react-emails/blob/main/README.md"
     },
     {
       "id": "6",
       "img": "https://i.ibb.co/5BLLmnS/link-img.png",
-      "title": "Orbit Control",
-      "text": "A 3D Orbit Control design made with P5.js. It allows mouse control...",
-      "tools": "P5.js",
-      "link": "https://codepen.io/XML3/pen/LYobbBa",
-      "front": "https://i.ibb.co/BwNH2RM/orbit-control-331.png",
-      "ReadMore": "https://codepen.io/XML3/pen/LYobbBa"
+      "title": "Cinema TV - Front-End",
+      "text": "A front-end project built with HTML, CSS, JavaScript, and p5.js that simulates a streaming service with a unique video sculpture experience.",
+      "tools": "Vanilla JS, P5.JS, CSS",
+      "link": "https://cinematv.netlify.app/",
+      "front": "https://i.ibb.co/C36q8rpD/Stream-TV-Main-PAGE.png",
+      "ReadMore": "https://github.com/XML3/Streaming_Project/blob/main/README.md"
     },
+
     {
       "id": "7",
       "img": "https://i.ibb.co/5BLLmnS/link-img.png",
-      "title": "React Emails",
-      "text": "The project utilizes React Email for building reusable email components, Resend for email sending, and Next.js for the API routes...",
-      "tools": "NEXTjs, React Email, Resend, CSS",
-      "link": "https://github.com/XML3/react-emails",
-      "front": "https://i.ibb.co/XrP0TRwR/react-emailspng.png",
-      "ReadMore": "https://github.com/XML3/react-emails/blob/main/README.md"
+      "title": "Orbit Control",
+      "text": "A dynamic p5.js 3D sketch where the user can explore a vibrant, rotating pattern of points in space. The points move in relation to the frame count, creating a swirling...",
+      "tools": "P5.js",
+      "link": "https://codepen.io/XML3/pen/LYobbBa",
+      "front": "https://i.ibb.co/vvRrKLCK/email-camp.png",
+      "ReadMore": "https://codepen.io/XML3/pen/LYobbBa"
     }
   ],
 
@@ -76,7 +77,7 @@
     {
       "id": "1",
       "title": "About Me",
-      "AboutMe": "Hi! I am Xagly a Full-stack Web Developer with a passion for web development and all things creative. In addition to my web development stack, I decided to start a new journey in order to improve the user experience through research and design. Therefore, I am currently working on the Google UX Design Professional Certificate in order to create digital products that are not only enjoyable, useful and visually appealing, but also ensure an equitable user experience.  When I am not busy, I enjoy producing electronic music, experimenting with visuals through code and video editing software."
+      "AboutMe": "Hi! I'm Xagly, a full-stack web developer with a creative mindset and a growing focus on user experience.  I recently completed two courses in Google UX Design Professional Certificate, Foundations of UX and Empathise, Define & Ideate, which have deepened my approach to building accessible, user-centred digital products.  I enjoy blending code with creativity, from interactive design to electronic music and visual experiments.  My goal is to craft experiences that are both functional and meaningful across platforms and audiences."
     }
   ],
   "port": [
